@@ -2,6 +2,6 @@
 layout: default
 title: Synonyms
 has_children: false
-has_parent: Thesaurus
+parent: Thesaurus
 ---
 Synonyms content
