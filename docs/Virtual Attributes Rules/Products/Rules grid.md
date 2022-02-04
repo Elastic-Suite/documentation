@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rule grid
+title: Rules grid
 has_children: false
 parent: Products
 grand_parent: Virtual Attributes Rules
