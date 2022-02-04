@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Relevance Configuration
-has_children: true
+has_children: false
 parent: Search Relevance
 grand_parent: Search Engine
 nav_order: 1
@@ -19,7 +19,7 @@ You can manage several parameters here.
 
 This panel contains base fulltext configuration settings.
 
-![Fulltext base settings](static/fulltext-base-settings.png)
+![fulltext-base-settings](https://user-images.githubusercontent.com/98949123/152519823-f2c48223-b305-457e-815b-2587ca3c75e2.png)
 
 Parameter                    | Default value  | Description
 -----------------------------|----------------|------------
@@ -34,7 +34,7 @@ E.g : For the query "the little white horse", we will look for documents matchin
 
 This feature is based on ElasticSearch Shingle Token Filters, for which you can find more documentation here : [ElasticSearch Shingle Token Filter](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-shingle-tokenfilter.html)
 
-![Phrase match configuration](static/phrasematch-config.png)
+![phrasematch-config](https://user-images.githubusercontent.com/98949123/152519954-3514b47c-5fc2-4252-8824-a6212ce976dc.png)
 
 Parameter                    | Default value  | Description
 -----------------------------|----------------|------------
@@ -48,7 +48,7 @@ This is used as an **automatic stopwords detection** based on their frequency in
 
 You can go further with the official documentation here : [ElasticSearch Cutoff Frequency](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query.html#query-dsl-match-query-cutoff)
 
-![Cutoff Frequency configuration](static/cutoff-frequency-config.png)
+![cutoff-frequency-config](https://user-images.githubusercontent.com/98949123/152519984-93081ffb-ef80-420a-ba0b-16d8d9945e99.png)
 
 Parameter                    | Default value  | Description
 -----------------------------|----------------|------------
@@ -61,7 +61,7 @@ This is used to **fix misspelled terms in queries**.
 
 See also the official documentation here : [ElasticSearch Fuzzy Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#query-dsl-fuzzy-query)
 
-![Fuzziness Configuration](static/fuzziness-config.png)
+![fuzziness-config](https://user-images.githubusercontent.com/98949123/152520004-c1a17ac3-f296-4523-b153-5adc3bafdc14.png)
 
 Parameter                    | Default value  | Description
 -----------------------------|----------------|------------
@@ -80,7 +80,7 @@ Phonetic search can be also improved with fuzziness. The parameters are used the
 
 Official documentation related to phonetic search : [ElasticSearch Phonetic Search](https://www.elastic.co/guide/en/elasticsearch/plugins/master/analysis-phonetic.html)
 
-![Phonetic Search Configuration](static/phoneticsearch-config.png)
+![phoneticsearch-config](https://user-images.githubusercontent.com/98949123/152520029-88973903-0ff3-400e-82d8-7f88180e3697.png)
 
 Parameter                             | Default value  | Description
 --------------------------------------|----------------|------------
