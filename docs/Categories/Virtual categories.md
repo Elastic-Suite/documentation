@@ -2,6 +2,6 @@
 layout: default
 title: Virtual categories
 has_children: false
-parent: Categories
+parent: Managing product listing
 nav_order: 3
 ---
