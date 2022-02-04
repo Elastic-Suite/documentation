@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Explain results
-has_children: true
+has_children: false
 parent: Search Engine
 ---
