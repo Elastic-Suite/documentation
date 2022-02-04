@@ -4,5 +4,5 @@ title: General
 has_children: false
 parent: Recommender
 grand_parent: Settings
-nav order: 1
+nav_order: 1
 ---
