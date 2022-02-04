@@ -2,6 +2,7 @@
 layout: default
 title: AB Testing Campaign grid
 has_children: false
-parent: AB Testing Campaign
+parent: Optimizer Campaign
+grand_parent: AB Testing Campaign
 nav_order: 1
 ---
