@@ -3,5 +3,5 @@ layout: default
 title: Recommender
 has_children: true
 parent: Settings
-nav order: 8
+nav_order: 8
 ---
