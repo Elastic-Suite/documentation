@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Visual Search
-has_children: false
-parent: Tracking
+has_children: true
+parent: Settings
 nav order: 7
 ---
