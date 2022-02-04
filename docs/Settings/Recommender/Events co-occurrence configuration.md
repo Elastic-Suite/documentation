@@ -4,5 +4,5 @@ title: Events co-occurrence configuration
 has_children: false
 parent: Recommender
 grand_parent: Settings
-nav order: 2
+nav_order: 2
 ---
