@@ -2,6 +2,6 @@
 layout: default
 title: Merchandising categories
 has_children: true
-parent: Categories
+parent: Managing product listing
 nav_order: 1
 ---
