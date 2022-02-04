@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Global Configuration
+title: Search Engine
 has_children: true
 nav_order: 2
 ---
