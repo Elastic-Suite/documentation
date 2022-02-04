@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Thesaurus
+title: Elasticsearch Client
 has_children: false
-parent: Base Settings
+parent: Base Settings.md
 ---
