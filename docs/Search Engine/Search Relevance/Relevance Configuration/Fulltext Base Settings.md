@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Relevance Configuration
-has_children: true
+has_children: false
 parent: Relevance Configuration
 grand_parent: Search Relevance
 nav_order: 1
