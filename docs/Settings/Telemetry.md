@@ -19,6 +19,7 @@ Telemetry can be disabled with 3 clicks by going to **Stores > Configuration > E
 ![disable-telemetry](https://user-images.githubusercontent.com/98949123/152796825-dfcabfe8-e46b-4d97-b29a-68a76fe33333.png)
 
 ##Telemetry data
+
 We want to be completely transparent about what we plan to collect and how, so here is a list of collected informations :
 
 | Name        | Details         | Example |
