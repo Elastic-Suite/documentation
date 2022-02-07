@@ -13,12 +13,12 @@ On the first launch after the upgrade, you’ll see a lightbox offering you the 
 
 ![telemetry_popin](https://user-images.githubusercontent.com/98949123/152796487-54b56130-83d6-4186-84e3-1e4926175cc9.png)
 
-##Disable Telemetry
+## Disable Telemetry
 Telemetry can be disabled with 3 clicks by going to **Stores > Configuration > Elasticsuite > Tracking > Telemetry** and setting the _Enable Telemetry_ parameter to No :
 
 ![disable-telemetry](https://user-images.githubusercontent.com/98949123/152796825-dfcabfe8-e46b-4d97-b29a-68a76fe33333.png)
 
-##Telemetry data
+## Telemetry data
 
 We want to be completely transparent about what we plan to collect and how, so here is a list of collected informations :
 
