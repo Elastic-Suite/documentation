@@ -38,7 +38,7 @@ We want to be completely transparent about what we plan to collect and how, so h
 |customer.zipcode|	Customer Zip code	|33000 * (only applicable when logged-in)|
 |referrer.domain	|Referrer domain	|elasticsuite.io|
 |referrer.page|	Referrer page|	https://elasticsuite.io/features|
-|url	|Current url	https://myshop/red-shoes.html|
+|url	|Current url|	https://myshop/red-shoes.html|
 |domain	|Current domain	|myshop.com|
 |title|	Current page title	|Nike Red Shoes - Myshop shoes shop|
 |resolution.x	|Screen width	|1024|
@@ -55,11 +55,11 @@ We want to be completely transparent about what we plan to collect and how, so h
 |search.query	|In search results, the search query|	red shoes|
 |search.is_spellchecked|	If the query is spellchecked	|1|
 |**Listing pages : Category Pages and Search Result Pages**|
-|product_list.page_count|	Page number for product listing	12
-|product_list.product_count|	Total number of product in a listing	194
-|product_list.current_page|	Current page of a listing	1
-|product_list.sort_order|	Sort order of a listing	price
-|product_list.sort_direction|	Direction for sort order of a listing	asc
+|product_list.page_count|	Page number for product listing	|12|
+|product_list.product_count|	Total number of product in a listing|	194|
+|product_list.current_page|	Current page of a listing	|1|
+|product_list.sort_order|	Sort order of a listing|	price|
+|product_list.sort_direction|	Direction for sort order of a listing	|asc|
 |product_list.display_mode|	Display mode of a listing (grid or list)|	grid|
 |product_list.filter|	Applied filter in a listing	|product_list.filters.price=75-501, product_list.filters.manufacturer= 'Salomon|
 ||Labels of applied filters (not attribute code)|Prix=75-501, Marque=Salomon|
