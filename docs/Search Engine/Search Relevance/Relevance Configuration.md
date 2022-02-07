@@ -11,9 +11,7 @@ nav_order: 1
 
 Search relevance configuration is editable via a dedicated screen in the back-office.
 
-It can be accessed under the **Stores** menu, via the **Search Relevance** entry.
-
-You can manage several parameters here.
+It can be accessed by going to ELASTICSUITE > Search Engine > Search Relevance > Relevance Configuration.
 
 ## Fulltext base settings
 
@@ -53,39 +51,3 @@ You can go further with the official documentation here : [ElasticSearch Cutoff 
 Parameter                    | Default value  | Description
 -----------------------------|----------------|------------
 Cutoff Frequency             |           0.15 | The cutoff frequency value, as a float number between 0 and 1.
-
-## Fuzziness Configuration
-
-Fuzzy queries uses a distance algorithm to calculate matching terms within a specified edit distance related to the current search terms.
-This is used to **fix misspelled terms in queries**.
-
-See also the official documentation here : [ElasticSearch Fuzzy Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#query-dsl-fuzzy-query)
-
-![fuzziness-config](https://user-images.githubusercontent.com/98949123/152520004-c1a17ac3-f296-4523-b153-5adc3bafdc14.png)
-
-Parameter                    | Default value  | Description
------------------------------|----------------|------------
-Enable fuzziness             |           Yes  | Set it to "Yes" to enable fuzzy queries to the engine.
-Fuzziness value              |           AUTO | The maximum edit distance for a fuzzy query. More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
-Fuzziness Prefix Length      |              1 | The number of initial characters that must not be "fuzzified". More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
-Fuzziness Max. expansion     |             10 | Maximum number of terms the fuzzy query will expand to. More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
-
-## Phonetic Search Configuration
-
-**This requires the Phonetic Analysis Plugin : [Phonetic Analysis Plugin](https://github.com/elastic/elasticsearch/tree/master/plugins/analysis-phonetic)**
-
-Phonetic search provides a variety of filters that convert tokens to their phonetic representation.
-
-Phonetic search can be also improved with fuzziness. The parameters are used the same way as described above.
-
-Official documentation related to phonetic search : [ElasticSearch Phonetic Search](https://www.elastic.co/guide/en/elasticsearch/plugins/master/analysis-phonetic.html)
-
-![phoneticsearch-config](https://user-images.githubusercontent.com/98949123/152520029-88973903-0ff3-400e-82d8-7f88180e3697.png)
-
-Parameter                             | Default value  | Description
---------------------------------------|----------------|------------
-Enable phonetic search                |           Yes  | Set it to "Yes" to enable phonetic search.
-Enable fuzziness                      |           Yes  | Set it to "Yes" to enable phonetic fuzziness.
-Phonetic fuzziness value              |           AUTO | The maximum edit distance for a phonetic fuzzy query. More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
-Phonetic fuzziness Prefix Length      |              1 | The number of initial characters that must not be "fuzzified". More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
-Phonetic fuzziness Max. expansion     |             10 | Maximum number of terms the phonetic fuzzy query will expand to. More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
