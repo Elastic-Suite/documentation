@@ -23,7 +23,7 @@ See also the official documentation here : [ElasticSearch Fuzzy Query](https://w
 Parameter                    | Default value  | Description
 -----------------------------|----------------|------------
 Enable fuzziness             |           Yes  | Set it to "Yes" to enable fuzzy queries to the engine.
-Fuzziness value              |           **Automatic, 1, 2**| The maximum edit distance for a fuzzy query. More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
+Fuzziness value              |           **Automatic, 1, 2**| The maximum edit distance for a fuzzy query. AUTOMATIC : spellchecking will be ajusted according to word length. 1 : only one edit authorized. 2 : two edits authorized. More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
 Fuzziness Prefix Length      |              1 | The number of initial characters that must not be "fuzzified". More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
 Fuzziness Max. expansion     |             10 | Maximum number of terms the fuzzy query will expand to. More informations in [the fuzzy query documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html#_parameters_7).
 
