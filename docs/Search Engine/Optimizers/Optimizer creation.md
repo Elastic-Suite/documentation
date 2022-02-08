@@ -67,7 +67,7 @@ The value given to the optimizer will impact the score of the products in listin
 |Boost value||Value for the multiplication|
 
 Calculation is as follow : 
-<br/>- Low : log (attribute value * boost value)
+<br/>- Low : log (attribute value * boost value). For example : boost value is 2 and attribute is weight = 1kg, product score will be multiplied by log(2*1) = 0,3. Weight = 3kg, product score will be multiplied by log(2*3) = 0,78. Weight = 100kg, product score will be multiplied by log(2*100) = 2,3
 <br/>- Medium : &radic; (attribute value * boost value)
 <br/>- High : attribute value * boost value
 
