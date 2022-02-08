@@ -20,6 +20,14 @@ First thing you will be prompted on when creating a thesaurus is choosing a type
 
 #### Synonym
 
+<img width="631" alt="configuration-synonym-creation" src="https://user-images.githubusercontent.com/98949123/152959831-bd296d83-a678-404b-8acf-2591e2116432.PNG">
+
+| Parameter    | Description |
+|:-------------|:------|
+|Thesaurus name|Name the synonym|
+|Active|The synonym will be active or not|
+|Store|Scope of the synonym. Synonym can only be applied at storeview level.|
+
 Synonyms thesaurus will allow you to add separated lists of words that are synonyms of each other.
 
 ![synonyms](https://user-images.githubusercontent.com/98949123/152956847-2e2cb442-7d04-492e-8bb9-c682bae36189.png)
@@ -29,6 +37,14 @@ You can add as many list of words as you need. Each list of words has to be **co
 In the example above, we have added a synonym between "man" and "men", and also between "woman" and "women".
 
 #### Expansion
+
+<img width="631" alt="configuration-expansion-creation" src="https://user-images.githubusercontent.com/98949123/152960658-111deebf-b7a7-436a-bdf2-d40ff56803f6.PNG">
+
+| Parameter    | Description |
+|:-------------|:------|
+|Thesaurus name|Name the expansion|
+|Active|The expansion will be active or not|
+|Store|Scope of the expansion. Expansion can only be applied at storeview level.|
 
 Expansions thesaurus will allow you to add separated lists of words that are expansions of a reference term.
 
