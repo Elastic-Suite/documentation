@@ -32,10 +32,42 @@ You will then be prompted to the optimizer create form containing the following 
 |:-------------|:------------------|:------|
 |Enable optimizer|Yes|	If the optimizer should be enable or not.|
 |Store View||The store view for this optimizer. An optimizer can only be assigned to one store view.|
-|Model||The model to use for scoring : </br> - **Constant** : to apply a constant score (Details bellow) </br> - **Based on attribute value** : to apply a boost that will be proportional to an attribute value (Details bellow)|
+|Model|Constant|The model to use for scoring : </br> - **Constant** : to apply a constant score (Details bellow) </br> - **Based on attribute value** : to apply a boost that will be proportional to an attribute value (Details bellow) </br> - **Based on behavioral data** : to apply a boost that will be proportional to the selected metric (Details bellow)|
 |Optimizer Name||The name of the optimizer.|
 |Active From||Start date of the optimizer. Use it for temporary events.|
 |Active To||	End date of the optimizer.|
 |Request Type||The request to apply the optimizer : </br>- Catalog Product Search : the catalog search results. </br>- Catalog Product Autocomplete : product results in the autocomplete </br>- Category Product View : the catalog navigation. </br>- Quick Order Suggest Search : product results in the quick order suggest search. </br>- Related Products : products in the related product blocks. </br>- Upsell Products : products in the upsell product blocks. </br>- Cross-sell Products : products in the Cross-sell product blocks. </br>- Visitor Products : products in the visitor product blocks.|
 
+![searchoptimizers_rule](https://user-images.githubusercontent.com/98949123/153025564-244f6818-b090-42cb-b36e-d471f8dfa14a.png)
+
+This fieldset figures a rule editor where you are able to chose any combination of conditions you want to match.
+
+Eg :
+* "Color is Blue" to apply a boost on products having the value "Blue" for the "Color" Attribute
+* "Only discounted products" to apply a boost on products actually having a special price applied
+* "Only in stock products" to display immediately salable products on top of your product list
+and so on ...
+
+##### Constant optmizer 
+
+<img width="509" alt="boost-bury" src="https://user-images.githubusercontent.com/98949123/153023601-442ead62-0715-4fa7-8c84-4beeaca0ea05.PNG">
+
+The value given to the optimizer will impact the score of the products in listings.
+</br>For example : a value of 10 will multiply by 10% the score of products affected by the boost. As a result, products will go up in affected listing. 
+</br>A value of -40 will multiply by -40% the score of products affected by the boost. As a result, products will go down in affected listing.
+
+##### Optimizer based on attribute value
+
+<img width="661" alt="boost-attribute-value" src="https://user-images.githubusercontent.com/98949123/153027839-5e845eeb-1b17-43ac-9803-8d1a09d0dcdb.PNG">
+
+| Parameter    | Default value | Description |
+|:-------------|:------------------|:------|
+|Attribute||Select the attribute the boost will based on|
+|Boost impact||Low <br/> Medium <br/> High |
+|Boost value||Value for the multiplication|
+
+Calculation is as follow : 
+<br/>- Low : log (attribute value * boost value)
+<br/>- Medium : &radic; (attribute value * boost value)
+<br/>- High : attribute value * boost value
 
