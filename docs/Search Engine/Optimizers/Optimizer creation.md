@@ -36,7 +36,7 @@ You will then be prompted to the optimizer create form containing the following 
 |Optimizer Name||The name of the optimizer.|
 |Active From||Start date of the optimizer. Use it for temporary events.|
 |Active To||	End date of the optimizer.|
-|Request Type||The request to apply the optimizer : </br>- Catalog Product Search : the catalog search results. </br>- Catalog Product Autocomplete : product results in the autocomplete </br>- Category Product View : the catalog navigation. </br>- Quick Order Suggest Search : product results in the quick order suggest search. </br>- Related Products : products in the related product blocks. </br>- Upsell Products : products in the upsell product blocks. </br>- Cross-sell Products : products in the Cross-sell product blocks. </br>- Visitor Products : products in the visitor product blocks.|
+|Request Type||The request to apply the optimizer : </br> - Catalog Product Search : the catalog search results. </br> - Catalog Product Autocomplete : product results in the autocomplete </br> - Category Product View : the catalog navigation. </br> - Quick Order Suggest Search : product results in the quick order suggest search. </br> - Related Products : products in the related product blocks. </br> - Upsell Products : products in the upsell product blocks. </br> - Cross-sell Products : products in the Cross-sell product blocks. </br> - Visitor Products : products in the visitor product blocks.|
 
 ![searchoptimizers_rule](https://user-images.githubusercontent.com/98949123/153025564-244f6818-b090-42cb-b36e-d471f8dfa14a.png)
 
