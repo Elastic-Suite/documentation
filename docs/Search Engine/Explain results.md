@@ -35,5 +35,11 @@ It can be accessed under the Smile ElasticSuite menu, via the Optimizers entry.
 |Score|Score of the product resulting from optimizer value|
 |Question mark|By clicking, a popup will be displayed for giving more information about the score calculation (more details bellow)|
 
+<img width="703" alt="explain-detail-product" src="https://user-images.githubusercontent.com/98949123/153388237-c0694c32-1c9c-4ac5-b978-c643b1fe3298.PNG">
+
+| Block    | Description |
+|:-------------|:------|
+|Product information|Product name, SKU, price and stock status|
+|Table||
 
 
