@@ -4,7 +4,7 @@ title: Optimizers grid
 has_children: false
 parent: Optimizers
 grand_parent: Search Engine
-nav_order: 1
+nav_order: 2
 ---
 It can be accessed under the Smile ElasticSuite menu, via the Optimizer entry.
 
