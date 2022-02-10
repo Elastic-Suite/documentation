@@ -4,7 +4,7 @@ title: Optimizer creation
 has_children: false
 parent: Optimizers
 grand_parent: Search Engine
-nav_order: 2
+nav_order: 1
 ---
 ## Customizing product Sorting.
 
