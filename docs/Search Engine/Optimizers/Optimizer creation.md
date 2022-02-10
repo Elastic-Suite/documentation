@@ -85,3 +85,31 @@ For example : boost value = 2
 - Attribute weight = 3kg --> product score will be multiplied by 2*3 = **6**
 - Attribute weight = 100kg --> product score will be multiplied by 2*100 = **200**
 
+##### Optimizer based on metric (behavioral)
+
+<img width="533" alt="boost-metric" src="https://user-images.githubusercontent.com/98949123/153369608-aa6d96ec-233c-4ede-b5f6-e540af3dd371.PNG">
+
+| Parameter    | Default value | Description |
+|:-------------|:------------------|:------|
+|Metric||Select the metric the boost will based on. Boost can be based on daily views, weekly views, sales, daily sales, weekly sales, conversion rate and daily conversion rate. For every metric, you can select the average metric or the exact number|
+|Boost impact||Low <br/> Medium <br/> High |
+|Boost value||Value for the multiplication|
+
+Calculation is as follow : 
+<br/>**Low** : log (attribute value * boost value). 
+For example : Boost value = 5 
+- Metric = 100 --> product score will be multiplied by log(5*100) = **2,70** 
+- Metric = 5000 --> product score will be multiplied by log(5*5000) = **4,40**
+- Metric = 8000 --> product score will be multiplied by log(5*8000) = **4,60**
+
+<br/> **Medium** : &radic; (attribute value * boost value). 
+For example : boost value = 5 
+- Metric = 100 --> product score will be multiplied by &radic;(5*100) = **22,36** 
+- Metric = 5000 --> product score will be multiplied by &radic;(5*5000) = **158,11**
+- Metric = 8000 --> product score will be multiplied by &radic;(5*8000) = **200**
+
+<br/> **High** : attribute value * boost value. 
+For example : boost value = 5 
+- Metric = 100 --> product score will be multiplied by 5*100 = **500** 
+- Metric = 5000 --> product score will be multiplied by 5*5000 = **25000**
+- Metric = 8000 --> product score will be multiplied by 5*8000 = **40000**
