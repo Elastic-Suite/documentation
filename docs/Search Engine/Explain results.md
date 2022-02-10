@@ -40,6 +40,12 @@ It can be accessed under the Smile ElasticSuite menu, via the Optimizers entry.
 | Block    | Description |
 |:-------------|:------|
 |Product information|Product name, SKU, price and stock status|
-|Table||
+|Matches|Field : Field indexed <br/> Term : searched <br/> Weight : Weight of the field <br/> Score : Score of the field <br/> ____________________ <br/> **Field matches total** : sum of all the field score <br/> **Boost** : value of the boost. Score of the product is multiplied by this value <br/> **Total** : Field matches total * boost value|
 
+<img width="695" alt="explain-field-explanation" src="https://user-images.githubusercontent.com/98949123/153420502-44fbf2bc-aee8-4b77-a859-53e26a39a82e.png">
 
+This table gives explanation about how fields are working.
+
+<img width="684" alt="explain-indexed-content" src="https://user-images.githubusercontent.com/98949123/153421509-9492b62e-7d04-49d0-bece-47d07cf16ce5.png">
+
+This table gives detail about how product content is indexed.
