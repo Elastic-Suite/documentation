@@ -56,6 +56,17 @@ For each scenario, 3 possible choices are available :
 |Rule|Detail of the rule used in the boost|
 |Action|2 possible actions : <br/> - Edit : open the popup for editing the boost <br/> - Delete : dissociate the boost with the campaign|
 
+### Publish or stop a campaign
+
+Campaign has to be published in order to be activated when start date is reached. Otherwise it will stay on draft mode.
+
+![publish-ab-testing](https://user-images.githubusercontent.com/98949123/154094956-1021f7f4-ecf6-486b-978f-4e48d9c25065.PNG)
+
+If a campaign has to be stoped, a button "stop" is available. Once a campaign is stopped, it is considered completed.
+
+![stop-ab-testing](https://user-images.githubusercontent.com/98949123/154095425-cfbba9c1-bf87-412d-93a0-356f72df7244.PNG)
+
+
 ### Results analytics
 
 <img width="890" alt="result-analytics" src="https://user-images.githubusercontent.com/98949123/154087639-5d2d0546-f889-4cdf-a882-3c0f48147a5f.PNG">
