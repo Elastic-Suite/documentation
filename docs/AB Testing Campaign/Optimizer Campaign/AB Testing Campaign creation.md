@@ -54,7 +54,7 @@ For each scenario, 3 possible choices are available :
 |Name||Name of the boost|
 |Model||Constant, based on attribute value or based on behavioral data|
 |Rule||Detail of the rule used in the boost|
-|Action||2 actions possible : <br/> Edit : open the popup for editing the boost <br/> Delete : dissociate the boost with the campaign|
+|Action||2 possible actions : <br/> - Edit : open the popup for editing the boost <br/> - Delete : dissociate the boost with the campaign|
 
 
 
