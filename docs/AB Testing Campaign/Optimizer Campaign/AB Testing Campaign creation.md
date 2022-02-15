@@ -67,6 +67,6 @@ For each scenario, 3 possible choices are available :
 |Conv. rate A|Conversion rate for scenario A|
 |Sessions B|How many sessions were exposed to scenario B|
 |Conv. rate B|Conversion rate for scenario B|
-|Significant result|Does data collected are sufficient to consider the results significant.|
+|Significant result|Data collected are sufficient to consider the results significant or not.|
 
 
