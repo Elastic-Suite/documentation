@@ -6,7 +6,7 @@ parent: System
 ---
 It can be accessed under the ElasticSuite menu > System > Indices.
 
-<img width="850" alt="indices" src="https://user-images.githubusercontent.com/98949123/154101252-92380626-37a2-45b6-855f-aae6ec409a4d.PNG">
+<img width="850" alt="indices" src="https://user-images.githubusercontent.com/98949123/154101763-a7895148-3742-4386-aed4-72aa174ecbba.PNG">
 
 | Parameter    | Description |
 |:-------------|:------|
