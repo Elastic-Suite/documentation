@@ -39,12 +39,22 @@ General configuration must be defined first, and then scenario A and B could be 
 
 ### Scenario definition
 
-Name and a distribution percentage must be given to both of the scenario.
-If Scenario A have 60% and Scenario B 40%, it means that 60% of users will see scenario A in front, and 40% of users will see scenario B in front.
+Name and distribution percentage must be given to both of the scenario.
+If Scenario A have 60% and Scenario B 40%, it means that 60% of users will see scenario A and 40% of users will see scenario B in front.
+For each scenario, 3 possible choices are available :
+* Create a new boost
+* Create a new boost from existing
+* Select no boost at all (it allows to compare a scenario with boost and the other without boost)
 
 <img width="581" alt="AB-testing-scenario" src="https://user-images.githubusercontent.com/98949123/153431742-812fef64-db59-48c5-9fb5-0baa65b2a489.PNG">
 
 | Parameter    | Default value | Description |
 |:-------------|:------------------|:------|
-||||
+|ID||ID of the boost|
+|Name||Name of the boost|
+|Model||Constant, based on attribute value or based on behavioral data|
+|Rule||Detail of the rule used in the boost|
+|Action||2 actions possible : <br/> Edit : open the popup for editing the boost <br/> Delete : dissociate the boost with the campaign|
+
+
 
