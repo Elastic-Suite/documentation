@@ -48,13 +48,25 @@ For each scenario, 3 possible choices are available :
 
 <img width="581" alt="AB-testing-scenario" src="https://user-images.githubusercontent.com/98949123/153431742-812fef64-db59-48c5-9fb5-0baa65b2a489.PNG">
 
-| Parameter    | Default value | Description |
-|:-------------|:------------------|:------|
-|ID||ID of the boost|
-|Name||Name of the boost|
-|Model||Constant, based on attribute value or based on behavioral data|
-|Rule||Detail of the rule used in the boost|
-|Action||2 possible actions : <br/> - Edit : open the popup for editing the boost <br/> - Delete : dissociate the boost with the campaign|
+| Parameter    | Description |
+|:-------------|:------|
+|ID|ID of the boost|
+|Name|Name of the boost|
+|Model|Constant, based on attribute value or based on behavioral data|
+|Rule|Detail of the rule used in the boost|
+|Action|2 possible actions : <br/> - Edit : open the popup for editing the boost <br/> - Delete : dissociate the boost with the campaign|
 
+### Results analytics
+
+<img width="890" alt="result-analytics" src="https://user-images.githubusercontent.com/98949123/154087639-5d2d0546-f889-4cdf-a882-3c0f48147a5f.PNG">
+
+| Parameter     | Description |
+|:--------------|:------|
+|Total Sessions|How many sessions were exposed to the campaign|
+|Sessions A|How many sessions were exposed to scenario A|
+|Conv. rate A|Conversion rate for scenario A|
+|Sessions B|How many sessions were exposed to scenario B|
+|Conv. rate B|Conversion rate for scenario B|
+|Significant result|Does data collected are sufficient to consider the results significant.|
 
 
