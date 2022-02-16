@@ -78,6 +78,6 @@ If a campaign has to be stoped, a button "stop" is available. Once a campaign is
 |Conv. rate A|Conversion rate for scenario A|
 |Sessions B|How many sessions were exposed to scenario B|
 |Conv. rate B|Conversion rate for scenario B|
-|Significant result|Data collected are sufficient to consider the results significant or not.|
+|Significant result|A campaign is significant if results are statiscally significant at 95% or more. In other words, results are significant for more than 95% of the targetted population. Statistic significance is calculated thanks to a mathematical formula that takes into account the number of session and conversion rate for scenario A and B.|
 
 
