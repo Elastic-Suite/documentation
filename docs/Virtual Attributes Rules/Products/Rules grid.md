@@ -19,5 +19,5 @@ It can be accessed under the ElasticSuite menu > Virtual Attributes Rules > via 
 |Status|The rule is active or not|
 |Store view|Which storeview the rule is applied on|
 |Refresh scheduled|The task that will apply the rule on front is done or not <br/> If Yes : the task needs to run to apply rule in front. <br/> If No : the task is done, rule is applied on front|
-|Action|3 possible actions : <br/> Edit : redirect to rule page <br/> Refresh : force the task to run <br/> Delete : Delete the rule|
+|Action|3 possible actions : <br/> - Edit : redirect to rule page <br/> - Refresh : force the task to run <br/> - Delete : Delete the rule|
 |||
