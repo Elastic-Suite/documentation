@@ -18,7 +18,7 @@ It can be accessed under the ElasticSuite menu > AB Testing Campaign via the Opt
 | Parameter    | Default value | Description |
 |:-------------|:------------------|:------|
 |Name||The name of the campaign|
-|Store View||The store view for this AB Testing campaign. AB Testing campaign can only be assigned to one store view.|
+|Store View|Default Store View|The store view for this AB Testing campaign. AB Testing campaign can only be assigned to one store view.|
 |Description||The description of the campaign|
 |Start Date||Start date of the campaign|
 |End Date||End date of the campaign|
