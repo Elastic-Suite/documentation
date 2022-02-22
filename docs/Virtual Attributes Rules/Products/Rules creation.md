@@ -27,3 +27,9 @@ The targetted attribute and the option that is going to be used must be selected
 |Option|Selection of the targetted attribute option|
 |Store view|Selection of the store view or all store views|
 |Priority|Priority given to the rule in case several rules are contradictory|
+
+Then, a rule engine is available to define the rule for feeding the value defined above. One or a combination of rule can be set for one value : 
+
+<img width="310" alt="rule-engine-virtual-attribute" src="https://user-images.githubusercontent.com/98949123/155108027-158dca5d-7874-4efb-982a-c717051ca966.PNG">
+
+Once the virtual is saved, the task will be run and filter will be displayed in front.
