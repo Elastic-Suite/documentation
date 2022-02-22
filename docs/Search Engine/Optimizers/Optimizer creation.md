@@ -53,8 +53,8 @@ and so on ...
 <img width="509" alt="boost-bury" src="https://user-images.githubusercontent.com/98949123/153023601-442ead62-0715-4fa7-8c84-4beeaca0ea05.PNG">
 
 The value given to the optimizer will impact the score of the products in listings.
-</br>For example : a value of 10 will multiply by 10% the score of products affected by the boost. As a result, products will go up in affected listing. 
-</br>A value of -40 will multiply by -40% the score of products affected by the boost. As a result, products will go down in affected listing.
+<br/>For example : a value of 10 will multiply by 10% the score of products affected by the boost. As a result, products will go up in affected listing. 
+<br/>A value of -40 will multiply by -40% the score of products affected by the boost. As a result, products will go down in affected listing.
 
 ##### Optimizer based on attribute value
 
