@@ -31,7 +31,7 @@ It can be accessed under the Smile ElasticSuite menu, via the Optimizers entry.
 | Block    | Description |
 |:-------------|:------|
 |Locker|The product is manually sorted|
-|Green arrow|The product is boost thanks to an optimizer|
+|Green arrow|The product is boosted thanks to an optimizer|
 |Score|Score of the product resulting from optimizer value|
 |Question mark|By clicking, a popup will be displayed for giving more information about the score calculation (more details bellow)|
 
