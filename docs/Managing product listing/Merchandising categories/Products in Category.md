@@ -38,7 +38,7 @@ These functionnalities can be used both for standard categories and virtual cate
 |Drag and dropper|Allows to move product manually in the category. This action is possible only on products in "Manual sort" mode|
 |Show/hider|Allows to hide or show a product on front. If hidden, products will not be displayed in front, but will stay in the category|
 |Green/red tag|If green : product has been viewed this week. Tooltip is displayed in mousehover and gives the number of views this week for this product <br/> If red : product has not been viewed this week|
-|Switcher automatic or manual sort mode|If Automatic sort : product will be sorted according to sorting configuration and boosts. <br/> If Manual sorting : product is pinged to this position and can be drag and droped to another position (only among products that are on manual mode)|
+|Switcher automatic or manual sort mode|If Automatic sort : product will be sorted according to sorting configuration and boosts. <br/> If Manual sorting : product is pinged to this position and can be dragged and droped to another position (only among products that are on manual mode)|
 
 
 
