@@ -26,5 +26,12 @@ Then under "Storefront properties", configuration for search and facets will be 
 |Visible in Advanced Search|No|If this attribute can be used on the Advanced Search page.|
 |Use in Layered Navigation|No|Set this to "Filterable (with results)" to display this attribute as a search filter (facet) on the Catalog Navigation pages.|
 |Use in Search Results Layered Navigation|No|Set this to "Yes" to display this attribute as a search filter (facet) on the Search Result pages.|
+|Facet coverage rate|90|The minimum coverage rates of results by this attribute.
+<br/> Example, if set to 90% on the "Brand" attribute, the facet will be displayed only if 90% of the products in the search results or category have a brand.|
+|Facet max.size|10|The maximum number of values that will be displayed for this facet. If the attribute features more values than this limit, a Show more button will be displayed after the values listing and an autocomplete search box will appear automatically above the values listing.|
+|Use in facets recommendations|No|If set to yes, the attribute will be used in the facet recommender.|
+|Facet sort order|Result count|This is how the facet values will be ordered. <br/> Result count : Will order values according to their number of results (descending). <br/>Admin sort : Values will be displayed as ordered in attribute's options values in Magento back-office. <br/>Name : Values will be displayed alphabetically (ascending). <br/>Relevance : Values are displayed by relevance.|
+|Facet internal logic|Logical OR (default)||
+|Used for Sorting in Product Listing|No||
 
-NOT DONE 
+
