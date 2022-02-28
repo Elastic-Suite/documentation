@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tracking
-has_children: true
+has_children: false
 parent : Settings
 nav_order: 2
 ---
