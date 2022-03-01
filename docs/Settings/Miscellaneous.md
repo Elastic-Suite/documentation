@@ -5,3 +5,15 @@ has_children: false
 parent: Settings
 nav_order: 11
 ---
+
+It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Miscellaneous entry
+
+<img width="481" alt="miscellaneous-footer-settings" src="https://user-images.githubusercontent.com/98949123/156195865-63602680-1828-48e4-9a7a-1716ff8d4d33.PNG">
+
+| Parameter    | Default value | Description |
+|:-------------|:------------------|:------|
+|Display ElasticSuite link|Yes|Select Yes if you want to display an ElasticSuite copyright link in the footer.|
+
+In front, following copyright will be displayed : 
+
+<img width="938" alt="footer-copyright" src="https://user-images.githubusercontent.com/98949123/156196141-cdac8e5e-3cf7-432c-b6c3-0088fc78d79d.PNG">
