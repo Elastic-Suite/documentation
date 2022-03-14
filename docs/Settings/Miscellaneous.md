@@ -12,7 +12,7 @@ It can be accessed under the Stores menu > Configuration > ElasticSuite entry > 
 
 | Parameter    | Default value | Description |
 |:-------------|:------------------|:------|
-|Display ElasticSuite link|Yes|Select Yes if you want to display an ElasticSuite copyright link in the footer.|
+|Display ElasticSuite link|Yes|If set to yes, ElasticSuite copyright link will be displayed in the footer.|
 
 In front, following copyright will be displayed : 
 
