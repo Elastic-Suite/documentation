@@ -12,4 +12,4 @@ It can be accessed under the Stores menu > Configuration > ElasticSuite entry > 
 
 | Parameter     | Description |
 |:-------------|:------|
-|Client ID|The Client ID provided to you by our Elasticsuite Premium support team.|
+|Client ID|The Client ID provided by Elasticsuite Premium support team.|
