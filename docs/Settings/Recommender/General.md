@@ -13,7 +13,7 @@ It can be accessed under the Stores menu > Configuration > ElasticSuite entry > 
 
 | Parameter    | Default value | Description |
 |:-------------|:------------------|:------|
-|Exclude from recommendations any product already bought by the visitor|Yes|Applies only to automated recommendations and not to manually selected products.|
+|Exclude from recommendations any product already bought by the visitor|Yes|If set to yes, products already bought by user will not be displayed on recommenders product blocks. Applies only to automated recommendations and not to manually selected products. Exclusion duration is set on following field.|
 |Product bought exclusion window size as a number of days|90|For instance "90" will mean no product bought by the visitor in the past 90 days will be recommended. 0 means no time restriction at all : no product ever bought by the visitor will be recommended to him. Be careful that this setting impact is heavily dependent on the tracker "Retention delay" and "Visitor Cookie Lifetime" parameters.|
 |Prevent defaulting to whole catalog|Yes|In some conditions, there might not be any event yet (searches, views, sales, ...) for a product (e.g. for a new product) and so not constraint on the recommendation request for that product. If set to Yes, this will prevent such a recommendation request to be executed and no products will be shown. If set to No, the request would end up displaying generic products picked from the whole catalog.|
 |Maximum Number of Products in Related Products List|6|Maximum number of products to display in the block for related products|
