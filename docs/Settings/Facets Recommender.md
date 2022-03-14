@@ -12,7 +12,7 @@ It can be accessed under the Stores menu > Configuration > ElasticSuite entry > 
 
 | Parameter    | Default value | Description |
 |:-------------|:------------------|:------|
-|Enabled|Yes|When enabled, facets regularly used by a customer for a given category will be recommended to him. Elasticsuite tracking must also be enabled.|
+|Enabled|Yes|When enabled, facets regularly used by a customer for a given category will be recommended. Elasticsuite tracking must also be enabled.|
 |Max number of facets to recommend|5|Maximum number of facets recommender displayed in layer navigation|
 
 If Facets recommender is activated, it will be displayed as follow in front : 
