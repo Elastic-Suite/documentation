@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Indices [RORUA to complete]
+title: Indices
 has_children: false
 parent: System
 ---
@@ -8,11 +8,11 @@ It can be accessed under the ElasticSuite menu > System > Indices.
 
 <img width="850" alt="indices" src="https://user-images.githubusercontent.com/98949123/154101763-a7895148-3742-4386-aed4-72aa174ecbba.PNG">
 
-| Parameter    | Description |
-|:-------------|:------|
-|Index Title||
-|Index Alias||
-|Number of documents||
-|Size||
-|Index Status||
-|Action||
+| Parameter    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|:-------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Index Title| The name of the index in Elasticsearch                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|Index Alias| The alias of the index. Depends on the content type of indexed data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|Number of documents| The number of documents in the index.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|Size| Size of the index.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|Index Status| Status of the index : <br/><br/> <ul><li>**External** : An index that is not related to this Magento/Elasticsuite instance. Perhaps you are having other Magento instance or applications using the Elasticsearch server.</li><li> **Live** : This index is actually used by the search engine when browsing your website.</li><li> **Rebuilding** : This index is actually rebuilt by the Magento indexing process.</li><li> **Ghost** : The rebuilding of this index has started more than 24 hours ago. It's likely it did not succeed. In any case, it's not used by the website and can be safely deleted.</li></ul> |
+|Action| Actions you can make on the index : <br/><br/> <ul><li>**View Mapping** : View the index mapping.</li><li> **View Settings** : View the settings of this index.</li><li> **Delete** : Only available for ghost indices, you can use this to get rid of them.</li></ul>                                                                                                                                                                                                                                                                                                                                                    |
