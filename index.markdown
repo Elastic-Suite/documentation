@@ -10,6 +10,6 @@ permalink: /
     <a href="https://elasticsuite.io"><img alt="Smile" width="400px" src="static/elasticsuite-logo.jpg" /></a>
 </p>
 
-## What is ElasticSuite for Magento 2 ?
+## Welcome to ElasticSuite user documentation
 
-ElasticSuite is a search, merchandising and personalization suite for Magento that comes in two flavors : Open Source and Premium.
+In these pages you'll find anything needed to configure your ElasticSuite engine and to take the most benefits from it.
