@@ -7,7 +7,7 @@ permalink: /
 ---
 
 <p align="center">
-    <a href="https://elasticsuite.io"><img alt="Smile" width="400px" src="static/doc-developer-elasticsuite.png" /></a>
+    <a href="https://elasticsuite.io"><img alt="Smile" src="static/doc-developer-elasticsuite.png" /></a>
 </p>
 
 ## Welcome to ElasticSuite user documentation
