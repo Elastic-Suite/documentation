@@ -19,7 +19,7 @@ You will then be prompted to the optimizer create form containing the following 
 |:-------------|:------------------|:------|
 |Enable optimizer|Yes|	If the optimizer should be enable or not.|
 |Store View||The store view for this optimizer. An optimizer can only be assigned to one store view.|
-|Model|Constant|The model to use for scoring : <br/> - **Constant** : to apply a constant score (Details bellow) <br/> - **Based on attribute value** : to apply a boost that will be proportional to an attribute value (Details bellow) <br/> - **Based on behavioral data** : to apply a boost that will be proportional to the selected metric (Details bellow)|
+|Model|Constant|The model to use for scoring : <br/> - **Constant** : to apply a constant score <br/> - **Based on attribute value** : to apply a boost that will be proportional to an attribute value <br/> - **Based on behavioral data** : to apply a boost that will be proportional to the selected metric (Details bellow)|
 |Optimizer Name||The name of the optimizer.|
 |Active From||Start date of the optimizer. Use it for temporary events.|
 |Active To||	End date of the optimizer.|
