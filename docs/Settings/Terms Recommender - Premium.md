@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Terms Recommender
+title: Terms Recommender - Premium
 has_children: false
 parent: Settings
 nav_order: 14
