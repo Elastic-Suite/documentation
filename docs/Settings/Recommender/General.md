@@ -2,7 +2,7 @@
 layout: default
 title: General
 has_children: false
-parent: Recommender
+parent: Recommender - Premium
 grand_parent: Settings
 nav_order: 1
 ---
