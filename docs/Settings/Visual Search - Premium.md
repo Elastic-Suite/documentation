@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Visual Search
+title: Visual Search - Premium
 has_children: false
 parent: Settings
 nav_order: 7
