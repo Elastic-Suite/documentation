@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Behavioral Optimizer creation - **Premium**
+title: Behavioral Optimizer creation - Premium
 has_children: false
 parent: Optimizers
 grand_parent: Search Engine
