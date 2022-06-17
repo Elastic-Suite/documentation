@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Facets Recommender
+title: Facets Recommender - Premium
 has_children: false
 parent: Settings
 nav_order: 12
