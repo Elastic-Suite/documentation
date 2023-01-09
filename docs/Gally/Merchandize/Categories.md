@@ -45,11 +45,8 @@ Once user selected a category, following configuration will be available :
 |Parameter   | Default value | Description|
 |:-------------|:------------------|:------|
 |Use category name in product search|Yes|If set to yes, when the category name is used in search, then products contained in this category will be displayed as results.|
-|Default sorting|Position|Will set the default sorting for products in the category. 
-Position : products will be sorted according to user’s merchandising (pin products and boost)
-Relevance : products will be sorted according to product score
-Other sortable attributes : in settings > filterable and searchable attributes, user can set attributes as sortable. All sortable attributes will be available in the dropdown. If selected, product will be sorted according to the selected attribute|
-|Virtual attribute|No|If set to yes, category becomes virtual and the rule engine appears : ![image](https://user-images.githubusercontent.com/98949123/211285081-50b745a1-4619-4b29-9f0b-e535306e072d.png)<p>Products will be placed in the category according to configuration in the rule engine.</p><p>Note : Virtual categories configuration is described in a dedicated section.|
+|Default sorting|Position|Will set the default sorting for products in the category. <br/> Position : products will be sorted according to user’s merchandising (pin products and boost) <br/> Relevance : products will be sorted according to product score <br/> Other sortable attributes : in settings > filterable and searchable attributes, user can set attributes as sortable. All sortable attributes will be available in the dropdown. If selected, product will be sorted according to the selected attribute|
+|Virtual attribute|No|If set to yes, category becomes virtual and the rule engine appears : ![image](https://user-images.githubusercontent.com/98949123/211285081-50b745a1-4619-4b29-9f0b-e535306e072d.png)<br/> Products will be placed in the category according to configuration in the rule engine.<br/>Note : Virtual categories configuration is described in a dedicated section.|
 
 All configuration on this page must be saved in order to be effective.
 
@@ -61,7 +58,14 @@ Grid contains following columns :
  
 |Selection|Code|Image|Name|Score|Stock|Price|Display|
 |:-------------|:------------------|:------|
-|Checkbox for selecting products and having action on it|Product SKU|Image of the product. The base image is displayed on Gally, other images are not displayed.|Product label|Product score. If boosts are applied on this category listing, score will be affected (detail for boost calculation is described in a dedicated section.|Stock status. 2 possible values : "In stock" or "Out of stock"|Product price|Switcher allowing to display or hide a in front.|
+|Checkbox for selecting products and having action on it|
+|Product SKU|
+|Image of the product. The base image is displayed on Gally, other images are not displayed.|
+|Product label|
+|Product score. If boosts are applied on this category listing, score will be affected (detail for boost calculation is described in a dedicated section.|
+|Stock status. 2 possible values : "In stock" or "Out of stock"|
+|Product price|
+|Switcher allowing to display or hide a in front.|
 
  
   
