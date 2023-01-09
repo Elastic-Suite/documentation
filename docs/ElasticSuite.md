@@ -1,1 +1,6 @@
-
+---
+layout: default
+title: ElasticSuite
+has_children: true
+nav_order: 1
+---
