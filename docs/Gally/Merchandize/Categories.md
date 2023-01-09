@@ -69,6 +69,15 @@ This product grid is a preview area. It means that sorting must be the same then
 User can pin and unpin products at the top of product listing. 
 This feature is available only if category default sorting = Position.
 
+Products can be selected in the user grid. Once it's the case, an action bar appears : 
+
+![image](https://user-images.githubusercontent.com/98949123/211294079-1cbf76a6-4769-4f70-ac86-a422949f4c64.png)
+
+If products are selected on the standard grid, products can be only pinned at the top products block.
+If products are selected on the top products grid, products can be only unpinned in the standard product grid.
+
+
+
 
 
  
