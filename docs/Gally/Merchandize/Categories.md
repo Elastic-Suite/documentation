@@ -42,7 +42,7 @@ Once user selected a category, following configuration will be available :
 
 ![image](https://user-images.githubusercontent.com/98949123/211284999-8b87e336-1ecf-4398-b5ed-a4faec422f05.png)
 
-| Parameter   | Default value | Description |
+|Parameter   | Default value | Description|
 |:-------------|:------------------|:------|
 |Use category name in product search|Yes|If set to yes, when the category name is used in search, then products contained in this category will be displayed as results.|
 |Default sorting|Position|Will set the default sorting for products in the category. 
