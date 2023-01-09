@@ -56,16 +56,9 @@ Once user selects a category in the category tree, products from this category a
 
 Grid contains following columns :
  
-|Selection|Code|Image|Name|Score|Stock|Price|Display|
-|:-------------|:------------------|:------|
-|Checkbox for selecting products and having action on it|
-|Product SKU|
-|Image of the product. The base image is displayed on Gally, other images are not displayed.|
-|Product label|
-|Product score. If boosts are applied on this category listing, score will be affected (detail for boost calculation is described in a dedicated section.|
-|Stock status. 2 possible values : "In stock" or "Out of stock"|
-|Product price|
-|Switcher allowing to display or hide a in front.|
+|Selection |Code |Image |Name |Score |Stock |Price |Display |
+|:-------------|:------------------|:------|:------|:------|:------|:------|:------|
+|Checkbox for selecting products and pin or unpin products (see dedicated section)|Product SKU|Image of the product. The base image is displayed on Gally, other images are not displayed.|Product label|Product score. If boosts are applied on this category listing, score will be affected (detail for boost calculation is described in a dedicated section.|Stock status. 2 possible values : "In stock" or "Out of stock"|Product price|Switcher allowing to display or hide a in front.|
 
  
   
