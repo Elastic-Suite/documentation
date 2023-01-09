@@ -49,9 +49,21 @@ Once user selected a category, following configuration will be available :
 Position : products will be sorted according to user’s merchandising (pin products and boost)
 Relevance : products will be sorted according to product score
 Other sortable attributes : in settings > filterable and searchable attributes, user can set attributes as sortable. All sortable attributes will be available in the dropdown. If selected, product will be sorted according to the selected attribute|
-|Virtual attribute|No|If set to yes, category becomes virtual and the rule engine appears : ![image](https://user-images.githubusercontent.com/98949123/211285081-50b745a1-4619-4b29-9f0b-e535306e072d.png)<p>Products will be placed in the category according to configuration in the rule engine.</p>|
+|Virtual attribute|No|If set to yes, category becomes virtual and the rule engine appears : ![image](https://user-images.githubusercontent.com/98949123/211285081-50b745a1-4619-4b29-9f0b-e535306e072d.png)<p>Products will be placed in the category according to configuration in the rule engine.</p><p>Note : Virtual categories configuration is described in a dedicated section.|
 
 All configuration on this page must be saved in order to be effective.
 
+## Product grid
+ 
+Once user selects a category in the category tree, products from this category are displayed in the product grid.
+
+Grid contains following columns :
+ 
+|Selection|Code|Image|Name|Score|Stock|Price|Display|
+|:-------------|:------------------|:------|
+|Checkbox for selecting products and having action on it|Product SKU|Image of the product. The base image is displayed on Gally, other images are not displayed.|Product label|Product score. If boosts are applied on this category listing, score will be affected (detail for boost calculation is described in a dedicated section.|Stock status. 2 possible values : "In stock" or "Out of stock"|Product price|Switcher allowing to display or hide a in front.|
+
+ 
+  
 
 
