@@ -3,6 +3,7 @@ layout: default
 title: Categories
 has_children: false
 parent: Merchandize
+grand_parent: Gally
 ---
 
 It can be accessed under MERCHANDIZE menu : MERCHANDIZE > Categories.
