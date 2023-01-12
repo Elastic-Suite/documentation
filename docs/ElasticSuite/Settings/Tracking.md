@@ -2,7 +2,8 @@
 layout: default
 title: Tracking
 has_children: false
-parent : Settings
+parent: Settings
+grand_parent: ElasticSuite
 nav_order: 2
 ---
 

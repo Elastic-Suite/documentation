@@ -3,6 +3,7 @@ layout: default
 title: Merchandising Search results
 has_children: false
 parent: Managing product listing
+grand_parent: ElasticSuite
 nav_order: 2
 ---
 It can be accessed under the Magento Marketing menu > catalog menu > SEO & Search > Search Terms > Select the search terms > Button "Merchandiser" at the top right of the page.

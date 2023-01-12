@@ -3,6 +3,7 @@ layout: default
 title: Elasticsuite Premium Beacon
 has_children: false
 parent: Settings
+grand_parent: ElasticSuite
 nav_order: 10
 ---
 

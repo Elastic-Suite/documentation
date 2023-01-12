@@ -3,6 +3,7 @@ layout: default
 title: Indices Mapping
 has_children: false
 parent: Settings
+grand_parent: ElasticSuite
 nav_order: 4
 ---
 

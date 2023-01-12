@@ -3,6 +3,7 @@ layout: default
 title: Telemetry
 has_children: false
 parent: Settings
+grand_parent: ElasticSuite
 nav_order: 3
 ---
 Since releases 2.8.16 2.8.16 and 2.10.9 Elasticsuite is embedding a telemetry tracking mechanism.

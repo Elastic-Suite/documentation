@@ -3,6 +3,7 @@ layout: default
 title: Explain results - Premium
 has_children: false
 parent: Search Engine
+grand_parent: ElasticSuite
 ---
 ElasticSuite allows you to access to the explain and compare page : it will give insights about the search result, the optimizer and product scores.
 

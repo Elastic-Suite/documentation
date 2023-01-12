@@ -3,6 +3,7 @@ layout: default
 title: Virtual categories
 has_children: false
 parent: Managing product listing
+grand_parent: ElasticSuite
 nav_order: 3
 ---
 It can be accessed under the Magento Catalog menu > Categories > Select a category in the tree > heading "Products in Category"

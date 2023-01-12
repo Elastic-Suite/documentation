@@ -2,7 +2,8 @@
 layout: default
 title: Indices
 has_children: false
-parent: System
+parent: Settings
+grand_parent: ElasticSuite
 ---
 It can be accessed under the ElasticSuite menu > System > Indices.
 

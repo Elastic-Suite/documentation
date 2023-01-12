@@ -3,6 +3,7 @@ layout: default
 title: Autocomplete
 has_children: false
 parent: Settings
+grand_parent: ElasticSuite
 nav_order: 5
 ---
 
