@@ -4,6 +4,7 @@ title: Global configuration
 has_children: false
 nav_order: 1
 parent: Filters and attributes
+grand_parent: ElasticSuite
 ---
 
 Magento attributes listing allows ElasticSuite users to configure attribute that will be useful for search and for facets.

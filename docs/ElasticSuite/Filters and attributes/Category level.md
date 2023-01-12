@@ -4,6 +4,7 @@ title: Category level
 has_children: false
 nav_order: 2
 parent: Filters and attributes
+grand_parent: ElasticSuite
 ---
 
 ElasticSuite allows to customize layered navigation configuration of each category.

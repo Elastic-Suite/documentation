@@ -4,6 +4,7 @@ title: Sliders
 has_children: false
 nav_order: 3
 parent: Filters and attributes
+grand_parent: ElasticSuite
 ---
 
 Elastic Suite allows to display custom attributes with sliders (Price for example).

@@ -3,6 +3,7 @@ layout: default
 title: Search Usage
 has_children: false
 parent: Analytics
+grand_parent: ElasticSuite
 ---
 
 It can be accessed under the ElasticSuite menu, via the Search Usage entry.
