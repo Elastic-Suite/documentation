@@ -4,6 +4,7 @@ title: Categories
 has_children: false
 parent: Merchandize
 grand_parent: Gally
+nav_order: 1
 ---
 
 It can be accessed under MERCHANDIZE menu : MERCHANDIZE > Categories.
