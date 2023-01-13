@@ -3,6 +3,7 @@ layout: default
 title: Searchable and filterable attributes
 has_children: false
 parent: Settings
+grand_parent: Gally
 nav_order: 2
 ---
 It can be accessed under Settings > Searchable and filterable attributes. This entry will allow user to configure each attribute.
