@@ -76,6 +76,7 @@ Products can be selected in the user grid. Once it's the case, an action bar app
 
 If products are selected on the standard grid, products will be pinned at the top products block : 
 ![image](https://user-images.githubusercontent.com/98949123/212338480-5175f61e-2b79-4208-94b7-b6187a1cacd1.png)
+
 Once products are pinned at the top of product listing, their score no longer manners for sorting them in the product listing. Products are manually placed in this position and will not moove from it.
 
 Products in the top products block can be unpinned. Once products are selected, and action bar appears : 
