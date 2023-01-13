@@ -3,6 +3,7 @@ layout: default
 title: Scope
 has_children: true
 parent: Settings
+grand_parent: Gally
 nav_order: 1
 ---
 
