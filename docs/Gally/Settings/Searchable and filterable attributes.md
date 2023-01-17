@@ -31,3 +31,9 @@ In addition to attribute from the e-commerce data dictionnary, some system attri
 |Searchable|No|Is the attribute searchable in the e-commerce application or not. Meaning : Is attribute values will be used to compute product search and give results to front user. If set to yes, attribute is available in SEARCH > Configuration > Attributes|
 |Sortable|No|Is the attribute sortable in the e-commerce application or not. Meaning : is attribute value will be used as a sorting criteria in product listing. If set to yes, attribute is available in MERCHANDIZE > Categories > Default sorting dropdown.|
 |Use in rule engine|No|Is the attribute used in rule engine in Gally admin or not. Meaning : Is attribute and its values will be used as conditions in rule engines. If set to yes, attribute is available in every rule engine of Gally admin (virtual category, boosts...)|
+
+Attributes can be selected in the user grid. Once it's the case, an action bar appears allowing to mass edit attributes and change their configuration : 
+
+![image](https://user-images.githubusercontent.com/98949123/212877815-7b693a9e-dc8d-42d6-a818-5ebb3cd7f100.png)
+
+Every configuration (filterable, searchable, sortable and use in rule engine) can be managed in the action bar.
