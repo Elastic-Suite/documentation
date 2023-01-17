@@ -81,7 +81,7 @@ Once products are pinned at the top of product listing, their score no longer ma
 
 Products in the top products block can be unpinned. Once products are selected, and action bar appears : 
 
-![image](https://user-images.githubusercontent.com/98949123/212867448-fd8ab3b2-a6e2-404f-aae6-f94bea36f2ca.png)
+![image](https://user-images.githubusercontent.com/98949123/212869955-d05bbd05-e4a4-4134-9be1-2c4092e3d68d.png)
 
 By clicking on unpin, products will be placed back in their original position (according to their score).
 
