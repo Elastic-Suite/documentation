@@ -5,7 +5,7 @@ has_children: false
 parent: Configuration
 ---
 
-It can be accessed under SEARCH > Configuration > Attributes. This entry will allow user to configure searchable attributes.
+It can be accessed under SEARCH > Configuration > Attributes. This entry allows user to configure searchable attributes.
 
 At the top of the page, a filter bar is available. User can filter based on attribute code and label. User can also filter on attribute configuration (search weight and used in spellcheck).
 
