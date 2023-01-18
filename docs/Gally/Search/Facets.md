@@ -3,6 +3,7 @@ layout: default
 title: Facets
 has_children: false
 parent: Search
+grand_parent: Gally
 ---
 It can be accessed under SEARCH > Facets. This entry allows user to configure filterable attributes.
 
