@@ -3,6 +3,7 @@ layout: default
 title: Attributes
 has_children: false
 parent: Configuration
+grand_parent: Search
 ---
 
 It can be accessed under SEARCH > Configuration > Attributes. This entry allows user to configure searchable attributes.
