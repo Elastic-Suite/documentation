@@ -56,4 +56,8 @@ The grid with all attributes configured as filterable in Settings > Searchable a
 |Sort order|Result count|This is how the facet values will be ordered. <br/>- Result count : Will order values according to their number of results (descending). <br/>- Admin sort : Values will be displayed as ordered in attribute's options values in Magento back-office. <br/>- Name : Values will be displayed alphabetically (ascending). <br/>- Relevance : Values are displayed by relevance.|
 |Position|0|This configuration allows to sort facets in layered in navigation. Position = 0 --> the facet will be displayed first, then Position = 1, then Position = 2 and so on. <br/> Caution : as the default position is 0, if only one facet is changed from 0 to 1, it will be placed in the last position. If Position is configured, user has to make sure that all facets have a position.|
 
+Attributes can be selected in the user grid. Once it's the case, an action bar appears allowing to mass edit attributes and change their configuration : 
 
+--> SCREEN <--
+
+Every configuration (Display, Coverage, Max size, Sort order, Position) can be managed in the action bar.
