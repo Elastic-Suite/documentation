@@ -4,6 +4,7 @@ title: Facets
 has_children: false
 parent: Search
 grand_parent: Gally
+nav_order: 2
 ---
 It can be accessed under SEARCH > Facets. This entry allows user to configure filterable attributes.
 
