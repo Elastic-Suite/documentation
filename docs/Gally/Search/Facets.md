@@ -36,6 +36,11 @@ On a category level, values from "General configuration" are applied by default.
 
 ![image](https://user-images.githubusercontent.com/98949123/212886000-7f297508-f3aa-4a57-8a31-4ea3197e6821.png)
 
+At the top of the page in the right, user has the ability to switch all configuration to default values. Once it's pressed, all custom configuration will be lost : 
+
+![image](https://user-images.githubusercontent.com/98949123/213145257-0130d834-b6e8-4302-b72a-4866968f394d.png)
+
+
 ## Filterable attribute grid
 
 The grid with all attributes configured as filterable in Settings > Searchable and filterable attributes are displayed here :
