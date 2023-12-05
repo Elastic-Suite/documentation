@@ -29,8 +29,10 @@ These functionnalities can be used both for standard categories and virtual cate
 |Green/red tag|If green : product has been viewed this week. Tooltip is displayed in mousehover and gives the number of views this week for this product <br/> If red : product has not been viewed this week|
 |Switcher automatic or manual sort mode|If Automatic sort : product will be sorted according to sorting configuration and boosts. <br/> If Manual sorting : product is pinged to this position and can be dragged and droped to another position (only among products that are on manual mode)|
 
+When you display out of stock products in the frontend, it can be annoying that a product manually positioned in a category or for a search query be still displayed at the configured position when it is no longer in stock.
+A new setting named “Ignore manual positions of out of stock products” available in “Stores > Configuration > Elasticsuite > Catalog Search > Catalog Search Configuration” can now prevent this situation.
 
-
+![image](https://github.com/Elastic-Suite/documentation/assets/98949123/7aeca0ce-4f81-4335-8640-6609b07d32c5)
 
 
 
