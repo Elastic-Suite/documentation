@@ -4,7 +4,7 @@ title: Configure AB Testing in Headless
 has_children: false
 parent: Headless
 grand_parent: Installing
-nav_order: 1
+nav_order: 2
 ---
 
 ## Ensure AB Testing is working in Headless mode
