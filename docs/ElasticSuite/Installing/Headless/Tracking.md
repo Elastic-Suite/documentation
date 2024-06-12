@@ -271,26 +271,27 @@ Exemple :
 
 ## AB Campaign
 
-If you are using elasticsuite premium, you will need to add campaign data in the tracking data of every pages if one or several campaigns are active  on your website:
+If you are using Elasticsuite Premium, you will need to add campaign data in the tracking data of **every pages** if one or several campaigns are active on your website:
 
-Variable
-Value
-ab_campaign.*X*.id
-Id of the campaign
-ab_campaign.*X*.scenario
-Scenario assign to this visitor for this campaign
+| Variable    | Value | 
+|:-------------|:------------------|
+|ab_campaign.*X*.id | Id of the campaign |
+|ab_campaign.*X*.scenario | Scenario assign to this visitor for this campaign |
 
-You can find all this data in the @AB-CAMPAIGN@ cookie (the cookie will exist only if at least one campaign is active) if you have the Magento cookies on your front or via the API:
+You can find all this data in the @AB-CAMPAIGN@ cookie (the cookie will exist only if at least one campaign is active) if you have the Magento cookies on your front or via the following  API:
 Rest:
 
+```
 GET /V1/elasticsuite-ab-campaign/hasCampaigns
 GET /V1/elasticsuite-ab-campaign/campaigns-scenarios
-
+```
 
 GraphQl:
+```
 query elasticsuiteAbCampaigns {
    elasticsuiteAbCampaigns {    
        campaign_id    
        scenario_id  
    }
 }
+```
