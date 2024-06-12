@@ -288,9 +288,3 @@ if (req.url ~ "/elasticsuite/tracker/hit/image(/.*)?$") {
 	return (pass);
 }
 ```
-
-## Headless
-
-If you're running an headless website, please check the two following pages : 
-
-
