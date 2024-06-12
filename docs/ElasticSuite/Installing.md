@@ -17,9 +17,7 @@ For now, the following versions of ElasticSuite Open Source are supported:
  2.10.x (Magento 2.4.x >= 2.4.1 && 2.4.x < 2.4.6)
  2.11.x (Magento 2.4.x >= 2.4.6)
 
-## Installing
-
-### Composer configuration
+## Composer configuration
 Elasticsuite Premium is made of several private packages accessible only through authentication on the privately available Smile packagist. To do so, you need to configure your composer to provide your credentials. 
 That’s exactly the same process as done by Magento with their Commerce version which is available only through a private repository.
 Your credentials are unique and confidential, they will be sent to you once you purchased a license.
@@ -60,20 +58,14 @@ Add the elasticsuite.repo.packagist.com credentials to your composer's auth.json
 }
 ```
 
+## Installation
+On Magento 2.4.5, the Elasticsuite composer requirement is: @composer require smile/elasticsuite ~2.10.0@ .
 
-#### Instant Search
-The smile/module-elasticsuite-instant-search requires smile/magento2-react to provide a React based autocomplete search feature: it will be automatically required and installed when requiring smile/module-elasticsuite-instant-search.
+The Elasticsuite premium modules follow the same syntax. For instance @composer require smile/module-elasticsuite-facet-recommender ~2.10.0@ for the facet recommender module.
 
-smile/magento2-react requires yarn to be installed on the deployment frontend servers, in order to build and package the React JavaScript sources.
-
-See the instructions below for "Installing yarn".
-
-### Installation
-On Magento 2.4.5, the Elasticsuite composer requirement is: “composer require smile/elasticsuite ~2.10.0” .
-The Elasticsuite premium modules follow the same syntax. For instance “composer require smile/module-elasticsuite-facet-recommender ~2.10.0” for the facet recommender module.
 You just need to require the same version that you already have for the Elasticsuite Open Source version.
 
-#### 1a. Install the modules : On Magento Open Source
+### 1a. Install the modules : On Magento Open Source
 
 For Magento Open Source edition, you will not be able to install the modules smile/module-elasticsuite-catalog-optimizer-customer-segment and smile/module-elasticsuite-ab-campaign-customer-segment because they requires the magento/module-customer-segment which is only included in Adobe Commerce.
 
@@ -95,7 +87,7 @@ smile/module-elasticsuite-term-recommender ~2.11.0 \
 smile/module-elasticsuite-virtual-attribute ~2.11.0
 ```
 
-#### 1b. Install the modules : On Adobe Commerce
+### 1b. Install the modules : On Adobe Commerce
 
 ```
 composer --ignore-platform-reqs require \
@@ -120,7 +112,7 @@ smile/module-elasticsuite-virtual-attribute ~2.11.0
 Please note that in the eventuality of forgetting to install @smile/module-elasticsuite-behavioral-data@,it will be automatically installed since it is required by @smile/module-elasticsuite-behavioral-optimizer@'s composer.json.
 Please also note that @smile/magento2-react@ will be automatically required and installed since required by @smile/module-elasticsuite-instant-search@. This module will add @package-magento-react.json@ in your project repository. You will need to merge the content of this file with your @package.json file@. If you don't have any pre-existing @package.json@ at the project root, you can rename the @package-magento-react.jso@ to @package.json@
 
-#### 2a. Enable all modules if needed : On Magento Open Source
+### 2a. Enable all modules if needed : On Magento Open Source
 
 ```
 php bin/magento module:enable Smile_ElasticsuiteBehavioralAutocomplete \
@@ -141,7 +133,7 @@ Smile_ElasticsuiteTermRecommender \
 Smile_ElasticsuiteBeacon
 ```
 
-#### 2b. Enable all modules if needed : On Adobe Commerce
+### 2b. Enable all modules if needed : On Adobe Commerce
 
 ```
 php bin/magento module:enable Smile_ElasticsuiteBehavioralAutocomplete \
@@ -164,7 +156,7 @@ Smile_ElasticsuiteTermRecommender \
 Smile_ElasticsuiteBeacon
 ```
 
-#### 3. Run setup and reindex.
+### 3. Run setup and reindex.
 
 As usual after installing a Magento2 module, clean the cache and run @setup:upgrade@ (if in production mode, also run @setup:di:compile@ and @setup:static-content:deploy@).
 
@@ -175,15 +167,22 @@ bin/magento indexer:reindex (reindexing everything)
 bin/magento indexer:reindex catalogsearch_fulltext (just to reindex catalog products)
 ```
 
-#### 4. Register your client id
+### 4. Register your client id
 Elasticsuite premium packages are embedded with a “beacon” feature that will periodically trigger pings to the Smile information system. This is mandatory to configure it properly by putting the correct client id into it, so that Smile remains able to identify which website is using the solution.
 
 To configure this, you have to go to **Stores > Configuration > Elasticsuite > Elasticsuite Premium Beacon** and fill the Client ID field with the value that has been provided to you.
 
 If we provided environment specific client ids, you will have to configure each environment with the proper client Id.
 
-### Instant Search
-#### Installing Yarn
+## Instant Search
+
+The @smile/module-elasticsuite-instant-search@ requires @smile/magento2-react@ to provide a React based autocomplete search feature: it will be automatically required and installed when requiring @smile/module-elasticsuite-instant-search@.
+
+@smile/magento2-react@ requires yarn to be installed on the deployment frontend servers, in order to build and package the React JavaScript sources.
+
+See the instructions below for "Installing yarn".
+
+### Installing Yarn
 The latest yarn version must be installed by following https://classic.yarnpkg.com/en/docs/install
 E.g. on a debian based environment, the following steps are
 
@@ -193,7 +192,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt update && sudo apt install yarn
 ```
 
-#### Building React sources
+### Building React sources
 In your development environment, you should have a package.json and webpack.config.js files that are copied to the Magento root directory when installing the smile/magento2-react module.
 If that’s not the case, copy the vendor/smile/magento2-react/package.json and vendor/smile/magento2-react/webpack.config.js to your magento root directory.
 On your dev environment, we recommend adding webpack.config.js (and package.json if not already versioned) to your  .gitgnore.
@@ -208,7 +207,7 @@ sudo -u www-data mkdir -p var/tmp && sudo -u www-data yarn build
 In your development environment, you can also replace the yarn build by yarn dev .
 Please note that the user must have write permissions on his home directory.
 
-#### Embed the React sources in delivery packages
+### Embed the React sources in delivery packages
 Depending on how you are building packages to be delivered on staging, pre-production and production environments, you will need to tailor your strategy to either build the React sources locally before packaging, or delegate this task to the target environment at the end of the delivery process.
 
 We recommend doing it locally (or through a CI/CD pipeline) before packaging the application (like Magento does with the di:compile and static-content:deploy step) rather than letting the target servers to proceed.
@@ -231,14 +230,14 @@ You need to add the installation of yarn and the building of the react app in th
 ```yaml
 hooks:
    build: |
-    	set -e
-	npm install --global yarn
-    	composer install
-    	php ./vendor/bin/ece-tools run scenario/build/generate.xml
-      mkdir -p var/tmp
-      yarn install
-      yarn build
-    	php ./vendor/bin/ece-tools run scenario/build/transfer.xml
+        set -e
+        npm install --global yarn
+        composer install
+        php ./vendor/bin/ece-tools run scenario/build/generate.xml
+        mkdir -p var/tmp
+        yarn install
+        yarn build
+        php ./vendor/bin/ece-tools run scenario/build/transfer.xml
 ```
 
 Then you need to indicate to Magento not to update the package.json file during the composer install process of the deployment. In the composer.json file of your project, add these lines :
@@ -260,8 +259,8 @@ Then you need to indicate to Magento not to update the package.json file during 
 ```
 
 
-### Tracking
-#### Integration with Magento Cloud
+## Tracking
+### Integration with Magento Cloud
 You will need to ask magento to add the following configuration to elasticsearch (or opensearch) :
 in  /etc/opensearch/opensearch.yml add :
 
@@ -280,8 +279,7 @@ if (req.url ~ "/elasticsuite/tracker/hit/image(/.*)?$") {
 }
 ```
 
-
-### AB Test
+## AB Test
 Integration in headless mode
 On every page (or once by user session) you need to get the ab testing data from the Magento api with these calls :
 
