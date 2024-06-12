@@ -4,6 +4,16 @@ has_children: true
 parent: ElasticSuite
 nav_order: 1
 ---
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 ## Requirements
 Elasticsuite Open Source is required for any premium module.
