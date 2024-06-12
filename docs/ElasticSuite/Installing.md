@@ -269,8 +269,9 @@ script.allowed_types: inline
 script.allowed_contexts: search,update,aggs
 ```
 
-If you are running tracking in magento cloud. Faslty will block the tracker request.
-To fix this you need to add a custom VCL in fastly configuration : 
+If you are using Magento Cloud. or simply using Fastly, it's likely that it will block the tracker request.
+
+To fix this you need to add a custom VCL in Fastly configuration : 
 
 ```
 if (req.url ~ "/elasticsuite/tracker/hit/image(/.*)?$") {
@@ -278,26 +279,3 @@ if (req.url ~ "/elasticsuite/tracker/hit/image(/.*)?$") {
 	return (pass);
 }
 ```
-
-## AB Test
-Integration in headless mode
-On every page (or once by user session) you need to get the ab testing data from the Magento api with these calls :
-
-REST:
-```
-GET /V1/elasticsuite-ab-campaign/hasCampaigns
-GET /V1/elasticsuite-ab-campaign/campaigns-scenarios
-```
-
-GraphQl:
-```
-query elasticsuiteAbCampaigns {
-   elasticsuiteAbCampaigns {    
-```
-
-The api will return a json response like :
-[{"campaign_id":"3","scenario_id":"A"}]
-
-Then you need to send these data in every api call to magento. There is two options to do this:
-You can save this data in a cookie named @AB-CAMPAIGN@ register in the same domain that the magento api call
-You can set a http header named @AB-CAMPAIGN@ on every magento api call
