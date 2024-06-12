@@ -288,7 +288,7 @@ To fix this you can either add a custom VCL or set the Tracker to use the REST A
 
 You should reach the Fastly configuration : 
 
-![fastly1](https://github.com/Elastic-Suite/documentation/assets/15340849/1d845419-d631-4a93-8065-c7f1437856fc)
+<img alt="Fastly 1" src="static/fastly1.PNG" />
 
 And then add this VCL in the "recv" section : 
 
@@ -299,7 +299,7 @@ if (req.url ~ "/elasticsuite/tracker/hit/image(/.*)?$") {
 }
 ```
 
-![fastly2](https://github.com/Elastic-Suite/documentation/assets/15340849/048dd9ac-2deb-44fa-a74a-620e4e2ae692)
+<img alt="Fastly 2" src="static/fastly2.PNG" />
 
 #### Use the REST Api
 
