@@ -88,8 +88,11 @@ So the next step is to check if this table is properly populated when browsing t
 
 You should see JSON containing the whole event data.
 
-If you see a small json containing only something like "{image : 'h.png'}" and nothing more, you'll need to .
+If you see a small json containing only something like "{image : 'h.png'}" and nothing more, you'll need to perform the actions described in [the installation page](https://elastic-suite.github.io/documentation/docs/ElasticSuite/Installing.html?qsdqsdqs#integration-with-magento-cloud-andor-fastly).
 
-4. The data from this table is then unpiled by a cronjob named elasticsuite_index_log_event that is supposed to run every minutes and that will move the events from the DB into the Elasticsearch server.
+### Check that the data is properly fetched from the DB and sent to the Elasticsearch server
+The data from this table is unpiled by a cronjob named @elasticsuite_index_log_event@ that is supposed to run every minutes and that will move the events from the DB into the Elasticsearch server.
+
+You should check that this cronjob is enabled and running without issues.
 
 
