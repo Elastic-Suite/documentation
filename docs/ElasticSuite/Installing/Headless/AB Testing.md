@@ -3,6 +3,7 @@ layout: default
 title: Configure AB Testing in Headless
 has_children: false
 parent: Headless
+grand_parent: Installing
 nav_order: 1
 ---
 
