@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Installing
-has_children: false
+has_children: true
 parent: Installing
 nav_order: 1
 ---
