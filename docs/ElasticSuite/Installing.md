@@ -278,9 +278,19 @@ script.allowed_types: inline
 script.allowed_contexts: search,update,aggs
 ```
 
+### Integration with Magento Cloud and/or Fastly
+
 If you are using Magento Cloud. or simply using Fastly, it's likely that it will block the tracker request.
 
-To fix this you need to add a custom VCL in Fastly configuration : 
+To fix this you can either add a custom VCL or set the Tracker to use the REST Api.
+
+#### The custom VCL
+
+You should reach the Fastly configuration : 
+
+![fastly1](https://github.com/Elastic-Suite/documentation/assets/15340849/1d845419-d631-4a93-8065-c7f1437856fc)
+
+And then add this VCL in the "recv" section : 
 
 ```
 if (req.url ~ "/elasticsuite/tracker/hit/image(/.*)?$") {
@@ -289,6 +299,11 @@ if (req.url ~ "/elasticsuite/tracker/hit/image(/.*)?$") {
 }
 ```
 
+![fastly2](https://github.com/Elastic-Suite/documentation/assets/15340849/048dd9ac-2deb-44fa-a74a-620e4e2ae692)
+
+#### Use the REST Api
+
+You can go to **Stores > Configuration > Elasticsuite > Tracking** and set **Use the API to collect data** to **Yes**
 
 ## Headless
 
