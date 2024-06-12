@@ -20,10 +20,21 @@ GraphQl:
 ```
 query elasticsuiteAbCampaigns {
    elasticsuiteAbCampaigns {    
+       campaign_id    
+       scenario_id  
+   }
+}
 ```
 
 The API will return a json response like :
-[{"campaign_id":"3","scenario_id":"A"}]
+```json
+[
+    {
+        "campaign_id":"3",
+        "scenario_id":"A"
+    }
+]
+```
 
 **Then you need to send these data in every api call to the Magento backend**. 
 
