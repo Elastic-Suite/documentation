@@ -113,7 +113,6 @@ Otherwise it will think it’s located in a legacy Luma-based Magento theme and 
 To add tagging on a page, we call the following method : 
 
 ```javascript
-   <!--
     try {
             smileTracker.addPageVar('VARIABLE1', VALUE);
             smileTracker.addPageVar('VARIABLE2', VALUE 2);
@@ -123,188 +122,123 @@ To add tagging on a page, we call the following method :
         } catch (err) {
         ;
     }
-    //→
+```
 
-Pages to tag/event
-Homepage
-Variable
-Value
-type.identifier
-cms_index_index
-type.label 
-CMS Home Page
-cms.identifier
-Current page URL key
-cms.title
-Current page title
+### Pages to tag/event
 
+#### Homepage
 
+| Variable    | Value | 
+|:-------------|:------------------|
+| type.identifier  |    cms_index_index    |
+| type.label   | CMS Home Page        |
+| cms.identifier    |  Current page URL key    |
+| cms.title  |  Current page title |
 
-CMS Pages
-Variable
-Value
-type.identifier
-cms_page_view
-type.label 
-CMS Pages (All)
-cms.identifier
-Current page URL key
-cms.title
-Current page title
+#### CMS Pages
 
-Category Page
-Variable
-Value
-type.identifier
-catalog_category_view
-type.label 
-Catalog Category
-category.id
-Numeric id of the category
-category.path
-The 'path' of the category in magento. Exemple 1/2/138/1256
-category.label
-The attribute 'name' of the category
-product_list.page_count
-Number of pages of the product listing
-product_list.product_count
-Number of products of the current listing
-product_list.current_page
-Current page of the product listing
-product_list.sort_order
-Current sort order of listing : price, position, etc…
-product_list.sort_direction
-Direction of the sort order : asc or desc
-product_list.display_mode
-Display mode of the listing (grid or list) not mandatory
+| Variable    | Value | 
+|:-------------|:------------------|
+| type.identifier  |    cms_index_index    |
+| type.label   | CMS Pages (all)        |
+| cms.identifier    |  Current page URL key    |
+| cms.title  |  Current page title |
 
+#### Category Page
 
+| Variable    | Value | 
+|:-------------|:------------------|
+| type.identifier | catalog_category_view   |
+| type.label  |  Catalog Category  |
+| category.id   |  Numeric id of the category  |
+| category.path             |  The 'path' of the category in magento. Exemple 1/2/138/1256  |
+| category.label |  The attribute 'name' of the category  |
+| product_list.page_count  | Number of pages of the product listing |
+| product_list.product_count | Number of products of the current listing |
+| product_list.current_page  | Current page of the product listing |
+| product_list.sort_order | Current sort order of listing : price, position, etc…  |
+| product_list.sort_direction | Direction of the sort order : asc or desc |
+| product_list.display_mode | Display mode of the listing (grid or list) not mandatory |
 
-Filtered category page
+#### Filtered category page
 If the user applied some filters to the category, they must be tracked according the following way :
-Variable
-Value
-product_list.filters.<attribut>
-value
 
-
+| Variable    | Value | 
+|:-------------|:------------------|
+|product_list.filters.<attribut> | value |
 
 As an example, on the Tops categories, I filter on brand = Adidas, Nike, price between 75 and 500€, the tracker must sent :
+```
            smileTracker.addPageVar('product_list.filters.price', '75-501');
            smileTracker.addPageVar('product_list.filters.manufacturer', 'Nike|Adidas');
+```
 
-Search Result page
-It’s pretty much the same than in category page
-Variable
-Value
-type.identifier
-catalogsearch_result_index
-type.label 
-Quick Search Form
-search.query
-The query that has been typed by the user
-search.is_spellchecked
-false
-product_list.page_count
-Number of pages of the product listing
-product_list.product_count
-Number of products of the current listing
-product_list.current_page
-Current page of the product listing
-product_list.sort_order
-Current sort order of listing : price, position, etc…
-product_list.sort_direction
-Direction of the sort order : asc or desc
-product_list.display_mode
-Display mode of the listing (grid or list) not mandatory
+#### Search Result page
+It’s pretty much the same than in category page.
 
+| Variable    | Value | 
+|:-------------|:------------------|
+| type.identifier | catalogsearch_result_index   |
+| type.label  |  Quick Search Form  |
+| search.query | The query that has been typed by the user |
+| search.is_spellchecked | The value of the @is_spellchecked@ variable coming from the @SearchResultPageInfo@ object result |
+| search.query_id   |  The id of the search query, if applicable  |
+| product_list.page_count  | Number of pages of the product listing |
+| product_list.product_count | Number of products of the current listing |
+| product_list.current_page  | Current page of the product listing |
+| product_list.sort_order | Current sort order of listing : price, position, etc…  |
+| product_list.sort_direction | Direction of the sort order : asc or desc |
+| product_list.display_mode | Display mode of the listing (grid or list) not mandatory |
 
-
-Filtered search result page
+#### Filtered search result page
 Exactly the same behavior for filters than on filtered category page.
 
 
-Product Page
-Variable
-Value
-type.identifier
-catalog_product_view
-type.label 
-Catalog Product View (Any)
-product.id
-Numerical Id of the product
-product.label
-The attribute "name" of product
-product.sku
-The SKU of the product
+#### Product Page
+
+| Variable    | Value | 
+|:-------------|:------------------|
+| type.identifier | catalog_product_view   |
+| type.label  |  Catalog Product View (Any)  |
+| product.id   | Numerical Id of the product  |
+| product.label             |  The attribute "name" of product  |
+| product.sku |  The SKU of the product  |
 
 
-
-Add to cart event
+#### Add to cart event
 If you send this event, you need to activate the headless mode in elasticsuite configuration in magento backend.
-Variable
-Value
-type.identifier
-checkout_cart_add
-type.label 
-Add Item to Cart
-cart.product_id
-Numerical Id of the product
 
+| Variable    | Value | 
+|:-------------|:------------------|
+| type.identifier | checkout_cart_add   |
+| type.label  |  Add Item to Cart  |
+| cart.product_id | Numerical Id of the product |
 
+#### Checkout success
 
-
-Checkout success
-Variable
-Value
-type.identifier
-checkout_onepage_success
-type.label 
-One Page Checkout Success
-order.subtotal
-Subtotal of the order, Ex 10.0000
-order.discount_total
-Total discount of the order. Ex 10.0000
-order.shipping_total
-Shipping amount of the order. Ex 10.0000
-order.grand_total
-Grand total of the order. Ex 10.0000
-order.shipping_method
-Carrier code of the order, Ex 'flatrate_flatrate", 'colissimo_colissmo', etc...
-order.payment_method
-Payment method used for the order. Ex 'checkmo'
-order.salesrules
-Sales rules applied on the order. Ex '1,3,68' not mandatory
-order.items.*X*.sku
-The SKU of the product
-order.items.*X*.product_id
-The numerical ID of the product
-order.items.*X*.qty
-Quantity ordered
-order.items.*X*.price
-Unit price of the product
-order.items.*X*.row_total
-Row total for the product
-order.items.*X*.label
-The “name” attribute of the product
-order.items.*X*.salesrules
-Sales rules applied to the product. Ex ‘1,12,4’. not mandatory
-order.items.*X*.category_ids
-Categories the product belongs to, comma-separated.
-
-
-
-
-
-
-
-
-
-
-
-
+| Variable    | Value | 
+|:-------------|:------------------|
+| type.identifier | checkout_onepage_success   |
+| type.label  | One Page Checkout Success  |
+| order.subtotal  | Subtotal of the order, Ex 10.0000  |
+| order.discount_total  | Total discount of the order. Ex 10.0000  |
+| order.shipping_total  | Shipping amount of the order. Ex 10.0000  |
+| order.grand_total  | Grand total of the order. Ex 10.0000  |
+| order.shipping_method  | Carrier code of the order, Ex 'flatrate_flatrate", 'colissimo_colissmo', etc...  |
+| order.payment_method  | Payment method used for the order. Ex 'checkmo'  |
+| order.salesrules  | Sales rules applied on the order. Ex '1,3,68' not mandatory  |
+| order.items.*X*.sku  | The SKU of the product  |
+| order.items.*X*.product_id  | The numerical ID of the product  |
+| order.items.*X*.qty  | Quantity ordered  |
+| order.items.*X*.price  | Unit price of the product  |
+| order.items.*X*.row_total  | Row total for the product  |
+| order.items.*X*.label  | The “name” attribute of the product  |
+| order.items.*X*.salesrules  | Sales rules applied to the product. Ex ‘1,12,4’. not mandatory  |
+| order.items.*X*.category_ids  | Categories the product belongs to, comma-separated.  |
 
 Exemple :
+
+```javascript
    <!--
     try {
             smileTracker.addPageVar('type.identifier', 'checkout_onepage_success');
@@ -337,12 +271,9 @@ Exemple :
         ;
     }
     //→
+```
 
-
-
-
-
-AB Campaign
+## AB Campaign
 
 If you are using elasticsuite premium, you will need to add campaign data in the tracking data of every pages if one or several campaigns are active  on your website:
 
@@ -353,9 +284,7 @@ Id of the campaign
 ab_campaign.*X*.scenario
 Scenario assign to this visitor for this campaign
 
-
-
-You can find all this data in the AB-CAMPAIGN cookie (the cookie will exist only if at least one campaign is active) if you have the magento cookies on your front or via the API:
+You can find all this data in the @AB-CAMPAIGN@ cookie (the cookie will exist only if at least one campaign is active) if you have the Magento cookies on your front or via the API:
 Rest:
 
 GET /V1/elasticsuite-ab-campaign/hasCampaigns
@@ -390,6 +319,7 @@ query elasticsuiteAbCampaigns {
 The api will return a json response like :
 [{"campaign_id":"3","scenario_id":"A"}]
 
-Then you need to send these data in every api call to magento. There is two options to do this:
-You can save this data in a cookie named @AB-CAMPAIGN@ register in the same domain that the magento api call
-You can set a http header named @AB-CAMPAIGN@ on every magento api call
+Then you need to send these data in every api call to the Magento backend . There are two options to do this:
+
+- You can save this data in a cookie named @AB-CAMPAIGN@ register in the same domain that the magento api call
+- You can set a http header named @AB-CAMPAIGN@ on every magento api call
