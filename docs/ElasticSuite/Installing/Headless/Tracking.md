@@ -6,6 +6,9 @@ parent: Headless
 nav_order: 1
 ---
 
+## How-To
+Elasticsuite tracking mechanism has to be embedded into the frontend application like you would proceed with any other tracking mechanism (like Google Analytics, Tag Commander, etc…).
+
 ### Legacy tracking script
 You can use the legacy tracking script directly from here : 
 2.10.x version : https://github.com/Smile-SA/elasticsuite/blob/2.10.x/src/module-elasticsuite-tracker/view/frontend/web/js/tracking.js
@@ -14,7 +17,7 @@ You can use the legacy tracking script directly from here :
 This is a vanilla javascript file that should be able to work in any other javascript framework.
 This script will add 2 cookies, STUID and STVID. The short term cookie (STUID) will materialize an unique navigation session, the long term one (STVID) will allow to identify the final customer for a long duration and to recognize him when he comes back to the website.
 
-### Configuration
+## Configuration
 You will have to configure the tracker by using the setConfig({}) method.
 
 This method takes several parameters : 
