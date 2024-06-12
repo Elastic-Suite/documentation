@@ -3,6 +3,7 @@ layout: default
 title: Headless
 has_children: true
 parent: Installing
+grand_parent: ElasticSuite
 nav_order: 1
 ---
 
