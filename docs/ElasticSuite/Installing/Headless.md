@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Installing
+title: Headless
 has_children: true
 parent: Installing
 nav_order: 1
