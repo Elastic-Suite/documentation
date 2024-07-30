@@ -19,6 +19,6 @@ Here is the way to go for overriding the Product component of the Instant search
 - Rebuild the react app in order to test it locally yarn dev
 - Check that everything works as expected.
  
-You can find an example in this Git repository that is hiding the PriceBlock for the products.
+You can find an example in [this Git repository](https://github.com/Elastic-Suite/extending-instant-search-example) that is hiding the PriceBlock for the products.
  
 You can put this module into `app/code/Elasticsuite/Autocomplete` if you want to use it as a base for your local customization.
