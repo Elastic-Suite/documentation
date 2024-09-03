@@ -20,7 +20,7 @@ The following plugins must be installed on your Opensearch instance :
 - opensearch-ml
 - opensearch-knn
 
-## Pre-Requisites : Opensearch cluster configuration 
+## Pre-Requisites : OpenSearch cluster configuration & sizing
 
 The knn and neural search operations are costly to proceed and we recommend (as per [the good practices](https://opensearch.org/docs/latest/ml-commons-plugin/cluster-settings/)) to dedicate one ore more nodes of your Opensearch cluster to the ML tasks.
 
@@ -33,6 +33,8 @@ node.roles: [ ml ]
 Please take into account that, by default, Opensearch will only accept to run the "ml" operations on "ml" nodes, and will fail if no node has been tagged with the "ml" role.
 
 If you want to supersede this configuration (because you're running a dev/testing environment), you can check the next chapter.
+
+As said previously, the "ml" operations are costly to proceed, both at indexing time, and at querying time. You need to anticipate this by sizing your OpenSearch server accurately, especially by allocating a correct amount of RAM to the "ml" nodes. This is a process our support team can accompany you with.
 
 ## Optional : Single-node configuration
 
