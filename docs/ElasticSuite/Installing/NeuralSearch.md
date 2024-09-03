@@ -19,3 +19,11 @@ The following plugins must be installed on your Opensearch instance :
 - opensearch-neural-search
 - opensearch-ml
 - opensearch-knn
+
+## Optional : Single-node configuration
+
+If you plan to run the Neural Search feature on a single-node cluster (which is **not recommended**, but migh be useful for development/testing), you'll have to adapt the configuration of your Opensearch server with the following configuration (on the /etc/opensearch/opensearch.yml) : 
+
+```
+plugins.ml_commons.only_run_on_ml_node: false
+```
