@@ -22,7 +22,7 @@ The following plugins must be installed on your Opensearch instance :
 
 ## Pre-Requisites : Opensearch cluster configuration 
 
-The knn and neural search operations are costly to proceed and we recommend (as per [the good practices](https://opensearch.org/docs/latest/ml-commons-plugin/cluster-settings/) to dedicate one ore more nodes of your Opensearch cluster to the ML tasks.
+The knn and neural search operations are costly to proceed and we recommend (as per [the good practices](https://opensearch.org/docs/latest/ml-commons-plugin/cluster-settings/)) to dedicate one ore more nodes of your Opensearch cluster to the ML tasks.
 
 To do so, you must assign the "ml" role to one of your nodes by adding this line in the /etc/opensearch/opensearch.yml configuration file : 
 
