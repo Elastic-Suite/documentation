@@ -179,7 +179,7 @@ It’s pretty much the same than in category page.
 | type.label  |  Quick Search Form  |
 | search.query | The query that has been typed by the user |
 | search.is_spellchecked | The value of the @is_spellchecked@ variable coming from the @SearchResultPageInfo@ object result |
-| search.query_id   |  The id of the search query, if applicable  |
+| search.query_id   | The value of the @query_id@ variable coming from the @SearchResultPageInfo@ object result |
 | product_list.page_count  | Number of pages of the product listing |
 | product_list.product_count | Number of products of the current listing |
 | product_list.current_page  | Current page of the product listing |
