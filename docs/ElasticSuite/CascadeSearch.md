@@ -50,3 +50,8 @@ Before the suggestions to be shown on the frontend part, you will need to reinde
 
 Once you're done with this, suggestions will begin to show in the website frontend.
 
+## Tweaking of the suggestions
+
+Once you're seeing suggestions in the frontend, you can go to the **ElasticSuite > Preview and Manage Suggestions** screen. Here, you'll be able to get the list of suggestions for a given query term, and to fine-tune them by either hiding them globally or for this query only.
+
+![Sélection_1861](https://elastic-suite.github.io/documentation/docs/ElasticSuite/static/Sélection_1862.png)
