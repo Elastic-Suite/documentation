@@ -14,7 +14,7 @@ Before going further, ensure your technical team completed the [pre-requisites](
 
 You can head to **Stores > Configuration > ElasticSuite > Neural Search**
 
-![Sélection_1857](https://github.com/user-attachments/assets/5493fa35-b2b7-447d-92a4-39dc4e354f36)
+![Sélection_1857](https://elastic-suite.github.io/documentation/docs/ElasticSuite/static/Sélection_1857.png)
 
 | Parameter    | Default value | Description |
 |:-------------|:------------------|:------|
@@ -31,7 +31,7 @@ Enable the "Use for Vector Search" option on the attributes you plan to use with
 
 You can head to **ElasticSuite > Search Relevance > Neural Search**
 
-![Sélection_1858](https://github.com/user-attachments/assets/0e20c03c-7757-4e4b-aea6-78d9531b365a)
+![Sélection_1858](https://elastic-suite.github.io/documentation/docs/ElasticSuite/static/Sélection_1858.png)
 
 | Parameter    | Default value | Description |
 |:-------------|:------------------|:------|
