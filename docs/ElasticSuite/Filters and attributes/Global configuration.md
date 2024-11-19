@@ -17,7 +17,7 @@ Then under "Storefront properties", configuration for search and facets will be 
 |:-------------|:------------------|:------|
 |Use for Promo Rule Conditions|No|This is a Magento field, but it's important that this field is set to yes if the attribute is needed in rule engine (virtual categories, virtual attributes, optimizers)|
 
-![Sélection_1854](https://github.com/user-attachments/assets/1a050684-d039-4e6f-b4ba-13340796b9dd)
+![Sélection_1854](https://elastic-suite.github.io/documentation/docs/ElasticSuite/static/Sélection_1854.png)
 
 
 | Parameter    | Default value | Description |
@@ -31,7 +31,7 @@ Then under "Storefront properties", configuration for search and facets will be 
 |Visible in Advanced Search|No|If this attribute can be used on the Advanced Search page.|
 |Used for Sorting in Product Listing|No||
 
-![Sélection_1855](https://github.com/user-attachments/assets/bfb4caf3-53be-45a3-a7e7-27ff260665fa)
+![Sélection_1855](https://elastic-suite.github.io/documentation/docs/ElasticSuite/static/Sélection_1855.png)
 
 | Parameter    | Default value | Description |
 |:-------------|:------------------|:------|
@@ -44,7 +44,7 @@ Then under "Storefront properties", configuration for search and facets will be 
 |Facet internal logic|Logical OR (default)||
 |Position|Order of the facet in the filters block||
 
-![Sélection_1856](https://github.com/user-attachments/assets/07d3ebaa-bd70-4438-b9a3-19378779a3f1)
+![Sélection_1856](https://elastic-suite.github.io/documentation/docs/ElasticSuite/static/Sélection_1856.png)
 
 
 | Parameter    | Default value | Description |
