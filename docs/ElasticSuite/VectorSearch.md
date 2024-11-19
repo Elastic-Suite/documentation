@@ -23,6 +23,10 @@ You can head to **Stores > Configuration > ElasticSuite > Neural Search**
 |Pretrained Model||A list of pre-trained models available in Opensearch. The default one is recommended.|
 |Compute embeddings from a specific store|No|When using a LLM capable of dealing with multiple languages, you can choose to compute the embeddings from a particular store view and use them for all the other languages. That's particularly valuable if you have a store view which is greatly contribued. It can then be used to leverage the data of the other stores.|
 
+## Enabling attributes for Neural Search
+
+Enable the "Use for Vector Search" option on the attributes you plan to use with Neural Search. Refer to the [attribute configuration page](https://elastic-suite.github.io/documentation/docs/ElasticSuite/Filters%20and%20attributes/Global%20configuration.html) to do so.
+
 ## Configuring neural search feature
 
 You can head to **ElasticSuite > Search Relevance > Neural Search**
