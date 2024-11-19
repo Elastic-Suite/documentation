@@ -6,9 +6,13 @@ parent: ElasticSuite
 nav_order: 8
 ---
 
-## Prerequisites
+## Technical Prerequisites
 
 Before going further, ensure your technical team completed the [pre-requisites](https://elastic-suite.github.io/documentation/docs/ElasticSuite/Installing/NeuralSearch.html).
+
+## Installing the module
+
+The module responsible for neural search is `smile/module-elasticsuite-neural-search` and this module is not part of the standard Premium package. You'll need to install it manually prior going further.
 
 ## Enabling neural search feature
 
