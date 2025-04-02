@@ -19,6 +19,7 @@ The following plugins must be installed on your Opensearch instance :
 - opensearch-neural-search
 - opensearch-ml
 - opensearch-knn
+- opensearch-job-scheduler
 
 ## Pre-Requisites : OpenSearch cluster configuration & sizing
 
