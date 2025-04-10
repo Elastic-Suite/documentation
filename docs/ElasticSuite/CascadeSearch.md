@@ -14,7 +14,7 @@ You should head to the Troubleshooting section of this documentation before goin
 
 ## Installing the module
 
-The module responsible for neural search is `smile/module-elasticsuite-cascade-search` and this module is not part of the standard Premium package. You'll need to install it manually prior going further.
+The module responsible for neural search is `smile/module-elasticsuite-cascade-search` and this module was not part of the standard Premium package initially. You might need to install it manually prior going further.
 
 ## Configuring the Cascade Search
 
