@@ -84,6 +84,8 @@ smile/module-elasticsuite-ab-campaign ~2.11.0 \
 smile/module-elasticsuite-behavioral-autocomplete ~2.11.0 \
 smile/module-elasticsuite-behavioral-data ~2.11.0 \
 smile/module-elasticsuite-behavioral-optimizer ~2.11.0 \
+smile/module-elasticsuite-cascade-search ~2.11.0 \
+smile/module-elasticsuite-catalog-optimizer-customer-group \
 smile/module-elasticsuite-configurable-product ~2.11.0 \
 smile/module-elasticsuite-explain ~2.11.0 \
 smile/module-elasticsuite-facet-recommender ~2.11.0 \
@@ -105,6 +107,8 @@ smile/module-elasticsuite-ab-campaign-customer-segment ~2.11.0 \
 smile/module-elasticsuite-behavioral-autocomplete ~2.11.0 \
 smile/module-elasticsuite-behavioral-data ~2.11.0 \
 smile/module-elasticsuite-behavioral-optimizer ~2.11.0 \
+smile/module-elasticsuite-cascade-search ~2.11.0 \
+smile/module-elasticsuite-catalog-optimizer-customer-group \
 smile/module-elasticsuite-catalog-optimizer-customer-segment ~2.11.0 \
 smile/module-elasticsuite-configurable-product ~2.11.0 \
 smile/module-elasticsuite-explain ~2.11.0 \
@@ -139,6 +143,8 @@ Smile_ElasticsuiteConfigurableProduct \
 Smile_ElasticsuiteLayeredNavigation \
 Smile_ElasticsuiteMerchandiser \
 Smile_ElasticsuiteTermRecommender \
+Smile_ElasticsuiteCascadeSearch \
+Smile_ElasticsuiteCatalogOptimizerCustomerGroup \
 Smile_ElasticsuiteBeacon
 ```
 
@@ -162,6 +168,8 @@ Smile_ElasticsuiteConfigurableProduct \
 Smile_ElasticsuiteLayeredNavigation \
 Smile_ElasticsuiteMerchandiser \
 Smile_ElasticsuiteTermRecommender \
+Smile_ElasticsuiteCascadeSearch \
+Smile_ElasticsuiteCatalogOptimizerCustomerGroup \
 Smile_ElasticsuiteBeacon
 ```
 
