@@ -46,5 +46,29 @@ The first part of the boost edition page is dedicated to the basic configuration
 |Rule engine||This fieldset figures a rule editor where you are able to chose any combination of conditions you want to match. For example : apply boost only on organic cotton products. Attributes available in the rule engine are attributes that have been set as "Use in rule engine" in Settings > Searchable and filterable attributes|
 
 
+### Boost configuration
+
+This section will allow user to choose the model. According to the model, following configuraiton will be different : 
+
+#### Constant model
+
+<img width="484" height="276" alt="image" src="https://github.com/user-attachments/assets/8a11b60e-8041-4712-a296-f7d08f5bdf91" />
+
+With the constant model, the value of the boost will influence the score of the products and change sorting in selected product listings. 
+For example a boost value of 30% will multiply the score of the product by 1.3.
+
+It's also possible to deboost a product by selecting a negative value
+
+<img width="417" height="95" alt="image" src="https://github.com/user-attachments/assets/86cd0d3a-5cfc-400c-a35b-f27130111d94" />
+
+For example : a boost value of -40% will multiply the score of the product by 0.6
+
+#### Proportional to an attribute value model
+
+TO DO
+
+
+
+
 
 
