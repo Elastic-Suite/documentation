@@ -14,11 +14,11 @@ Gally doesn't allow data creation, it means that the category will have to be cr
 
 It can be accessed under MERCHANDIZE > Categories > Select a category in the tree > switch the category to virtual : 
 
---> SCREEN <--
+<img width="788" height="294" alt="image" src="https://github.com/user-attachments/assets/ef0d1781-5f52-41e4-8178-0937f9618feb" />
 
-Once the category is virtuel, a rule engine will be displayed, and allow user to build the conditions for this virtual category :
+Once the category is virtual, a rule engine will be displayed, and allow user to build the conditions for this virtual category :
 
---> SCREEN <--
+<img width="759" height="497" alt="image" src="https://github.com/user-attachments/assets/f4874b0d-1528-4370-a209-6c792fddebbf" />
 
 Products matching the conditions defined in the rule engine will be automatically displayed in the category.
 All configuration must be saved in order to be effective.
