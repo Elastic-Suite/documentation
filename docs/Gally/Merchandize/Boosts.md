@@ -99,7 +99,7 @@ For example : boost value = 2
 - Attribute weight = 100kg --> product score will be multiplied by 2*100 = **200**
 
 
-### Boost configuration
+### Boost Preview
 
 At the end of the boost page, user can preview product listings before and after boost application.
 First, user has to select the type of request to preview.
