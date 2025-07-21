@@ -16,12 +16,7 @@ At the top of the page, a filter bar is available. User can filter based on ever
 
 The grid lists all the boosts created in Gally : 
 
-<img width="1595" height="750" alt="image" src="https://github.com/Elastic-Suite/documentation/blob/master/static/boost-grid.png" />
-
-![boost-grid](https://github.com/Elastic-Suite/documentation/blob/master/static/boost-grid.png)
-
 ![boost-grid](https://raw.githubusercontent.com/Elastic-Suite/documentation/refs/heads/master/static/boost-grid.png)
-
 
 
 |Parameter   | Description|
@@ -39,9 +34,8 @@ The grid lists all the boosts created in Gally :
 
 The first part of the boost edition page is dedicated to the basic configurations : 
 
-<img width="757" height="592" alt="image" src="https://github.com/Elastic-Suite/documentation/blob/master/static/boost-basic-edition.png" />
-<img width="864" height="381" alt="image" src="https://github.com/Elastic-Suite/documentation/blob/master/static/boost-basic-edition2.png" />
-
+![boost-grid](https://raw.githubusercontent.com/Elastic-Suite/documentation/refs/heads/master/static/boost-basic-edition.png)
+![boost-grid](https://raw.githubusercontent.com/Elastic-Suite/documentation/refs/heads/master/static/boost-basic-edition2.png)
 
 |Parameter   | Default value | Description|
 |:-------------|:------------------|:------|
@@ -59,20 +53,20 @@ This section will allow user to choose the model. According to the model, follow
 
 #### Constant model
 
-<img width="484" height="276" alt="image" src="https://github.com/Elastic-Suite/documentation/blob/master/static/boost-conf-constant.png" />
+![boost-grid](https://raw.githubusercontent.com/Elastic-Suite/documentation/refs/heads/master/static/boost-conf-constant.png)
 
 With the constant model, the value of the boost will influence the score of the products and change sorting in selected product listings. 
 For example a boost value of 30% will multiply the score of the product by 1.3.
 
 It's also possible to deboost a product by selecting a negative value
 
-<img width="417" height="95" alt="image" src="https://github.com/Elastic-Suite/documentation/blob/master/static/boost-value.png" />
+![boost-grid](https://raw.githubusercontent.com/Elastic-Suite/documentation/refs/heads/master/static/boost-value.png)
 
 For example : a boost value of -40% will multiply the score of the product by 0.6
 
 #### Proportional to an attribute value model
 
-<img width="338" height="492" alt="image" src="https://github.com/Elastic-Suite/documentation/blob/master/static/boost-edition-proportional.png" />
+![boost-grid](https://raw.githubusercontent.com/Elastic-Suite/documentation/refs/heads/master/static/boost-edition-proportional.png)
 
 With the proportional to an attribute value model, the boost will be influenced by the value of the attribute.
 Only numerical attributes can be used for this model. 
@@ -103,6 +97,37 @@ For example : boost value = 2
 - Attribute weight = 1kg --> product score will be multiplied by 2*1 = **2** 
 - Attribute weight = 3kg --> product score will be multiplied by 2*3 = **6**
 - Attribute weight = 100kg --> product score will be multiplied by 2*100 = **200**
+
+
+### Boost configuration
+
+At the end of the boost page, user can preview product listings before and after boost application.
+First, user has to select the type of request to preview.
+
+In case of "Category navigation" selection, user has to select the category to preview : 
+
+<img width="1032" height="681" alt="image" src="https://github.com/user-attachments/assets/d47e5d54-1d78-48d0-881f-00710c916b2a" />
+
+In case of "Catalog search" or "Autocomplete" selection, user has to type the search term to preview :
+
+<img width="1009" height="317" alt="image" src="https://github.com/user-attachments/assets/110dae44-475d-4ce8-ac7d-bb4b5a8a8094" />
+
+Then, user clicks on "Preview" : 
+
+<img width="1529" height="716" alt="image" src="https://github.com/user-attachments/assets/2346ebdf-e640-49d9-a804-1d3cb2a5f0b1" />
+
+Table has two major parts : 
+- Base results which is the product listing before boost application
+- Optimized results which is the product listing after boost application
+
+The column "Score" gives the base score and before boost application (for base results section), the calculated score after boost application (for the optimized section).
+
+The column gives the direction of the product after boost application
+- <img width="48" height="50" alt="image" src="https://github.com/user-attachments/assets/5848e1d4-c887-4ecd-9ddf-226d66262366" /> : product has gone up
+- <img width="46" height="46" alt="image" src="https://github.com/user-attachments/assets/bfb2f8f3-94bd-4102-bcf4-a9e7bf4f8d64" /> : product has gone down
+- <img width="49" height="49" alt="image" src="https://github.com/user-attachments/assets/c59102db-d6ab-45e9-972d-e90e289309bf" /> : product didn't change position
+
+
 
 
 
