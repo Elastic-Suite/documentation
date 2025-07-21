@@ -18,6 +18,10 @@ The grid lists all the boosts created in Gally :
 
 <img width="1595" height="750" alt="image" src="https://github.com/Elastic-Suite/documentation/blob/master/static/boost-grid.png" />
 
+![boost-grid](https://github.com/Elastic-Suite/documentation/blob/master/static/boost-grid.png)
+
+
+
 |Parameter   | Description|
 |:-------------|:------|
 |Name|Name of the boost|
