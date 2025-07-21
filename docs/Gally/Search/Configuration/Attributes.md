@@ -25,6 +25,6 @@ The grid with all attributes configured as searchable in Settings > Searchable a
 
 Attributes can be selected in the user grid. Once it's the case, an action bar appears allowing to mass edit attributes and change their configuration : 
 
-![image](https://user-images.githubusercontent.com/98949123/212878157-f0ee215a-bad1-4140-b4f5-36a23fba7941.png)
+<img width="1604" height="697" alt="image" src="https://github.com/user-attachments/assets/429a8b7c-09a1-483f-b6f2-c8b3a133824c" />
 
 Every configuration (Search weight, Used in spellcheck, Used for span queries and Analyzer) can be managed in the action bar.
