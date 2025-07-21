@@ -65,7 +65,40 @@ For example : a boost value of -40% will multiply the score of the product by 0.
 
 #### Proportional to an attribute value model
 
-TO DO
+<img width="338" height="492" alt="image" src="https://github.com/user-attachments/assets/1b77fd99-a8e7-48b1-8bea-3b223a13d8dc" />
+
+With the proportional to an attribute value model, the boost will be influenced by the value of the attribute.
+Only numerical attributes can be used for this model. 
+For example, if the cost attribute is selected for the boost, and the cost of product A is 10€ and cost of product B is 15€, then the score of product B will be higher then product A.
+
+The impact of the boost allows to control the boost value. There is 3 possible impacts :
+- Low : use logarithmic formula
+- Medium : use square formula
+- High : use linear formula
+
+At last, a scale factor can be used to control the score of products.
+
+Calculation is as follow for an example with a weight attribute : 
+<br/>**Low** : log (attribute value * boost value). 
+For example : Boost value = 2 
+- Attribute weight = 1kg --> product score will be multiplied by log(2*1) = **0,3** 
+- Attribute weight = 3kg --> product score will be multiplied by log(2*3) = **0,78**
+- Attribute weight = 100kg --> product score will be multiplied by log(2*100) = **2,3**
+
+<br/> **Medium** : &radic; (attribute value * boost value). 
+For example : boost value = 2 
+- Attribute weight = 1kg --> product score will be multiplied by &radic;(2*1) = **1,99** 
+- Attribute weight = 3kg --> product score will be multiplied by &radic;(2*3) = **2,45**
+- Attribute weight = 100kg --> product score will be multiplied by &radic;(2*100) = **14,14**
+
+<br/> **High** : attribute value * boost value. 
+For example : boost value = 2 
+- Attribute weight = 1kg --> product score will be multiplied by 2*1 = **2** 
+- Attribute weight = 3kg --> product score will be multiplied by 2*3 = **6**
+- Attribute weight = 100kg --> product score will be multiplied by 2*100 = **200**
+
+
+
 
 
 
