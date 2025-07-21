@@ -49,7 +49,7 @@ The first part of the boost edition page is dedicated to the basic configuration
 
 ### Boost configuration
 
-This section will allow user to choose the model. According to the model, following configuraiton will be different : 
+This section will allow user to choose the model. According to the model, following configuration will be different : 
 
 #### Constant model
 
@@ -66,7 +66,7 @@ For example : a boost value of -40% will multiply the score of the product by 0.
 
 #### Proportional to an attribute value model
 
-![boost-grid](https://raw.githubusercontent.com/Elastic-Suite/documentation/refs/heads/master/static/boost-edition-proportional.png)
+<img width="340" height="497" alt="image" src="https://github.com/user-attachments/assets/6f9b9c7a-a1b3-4bc3-b2d1-ca7520eaaa17" />
 
 With the proportional to an attribute value model, the boost will be influenced by the value of the attribute.
 Only numerical attributes can be used for this model. 
@@ -120,7 +120,7 @@ Table has two major parts :
 - Base results which is the product listing before boost application
 - Optimized results which is the product listing after boost application
 
-The column "Score" gives the base score and before boost application (for base results section), the calculated score after boost application (for the optimized section).
+The column "Score" gives the base score before boost application (for base results section), the calculated score after boost application (for the optimized section).
 
 The column gives the direction of the product after boost application
 - <img width="48" height="50" alt="image" src="https://github.com/user-attachments/assets/5848e1d4-c887-4ecd-9ddf-226d66262366" /> : product has gone up
