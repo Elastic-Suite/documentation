@@ -45,7 +45,22 @@ A new thesaurus can be created thanks to the button "Create Thesaurus" at the to
 
 ### Synonyms
 
+If Thesaurus type = synonym, then following field will be displayed : 
+
+<img width="477" height="295" alt="image" src="https://github.com/user-attachments/assets/c1b56a62-8e5c-48ea-8a95-52b70c76f7be" />
+
+Terms that are synonyms must be listed in the same texfield. Press enter when your term is completed and start typing the next term. In the example above, "phone" and "smartphone" are synonyms, it means that when front user will type "phone" in a search, results for "phone" and "smartphone" will come out and vice versa.
+Terms listed in different textfield are not synonym to eachother.
+
 ### Expansions
+
+If Thesaurus type = expansion, then following field will be displayed : 
+
+<img width="1039" height="456" alt="image" src="https://github.com/user-attachments/assets/64da070f-6fc2-40a1-b1fc-9b96dcb8be3d" />
+
+Expansion will allow to add separated lists of words that are expansions of a reference terms.
+In the example above, "blazer" is the reference term and is extended to "jackets" and "tanks", it means that when front user will type "blazer" in a search, results for "blazer", "jackets" and "tanks" will come out, but if front user search for "jackets", engine will only returns results for "jackets", not for "blazer" or "tanks".
+
 
 
 
