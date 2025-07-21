@@ -20,6 +20,8 @@ The grid lists all the boosts created in Gally :
 
 ![boost-grid](https://github.com/Elastic-Suite/documentation/blob/master/static/boost-grid.png)
 
+![boost-grid](https://raw.githubusercontent.com/Elastic-Suite/documentation/refs/heads/master/static/boost-grid.png)
+
 
 
 |Parameter   | Description|
