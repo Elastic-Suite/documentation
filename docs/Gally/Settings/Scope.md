@@ -21,3 +21,9 @@ For each catalogs, associated locales are listed within their catalog.
 Second tab is listing all active locales : 
 
 ![image](https://user-images.githubusercontent.com/98949123/212345353-0e8134d1-c768-41d7-a620-b6594e137263.png)
+
+Each Catalog/Local combination is referred to as a localized catalog. Within Gally’s various features, users will often need to define the scope on which their configuration will apply.
+When setting up a feature, you’ll usually be asked to choose a scope. There are three possible cases:
+* Catalog level – Selecting a Catalog means that the configuration will apply to all localized catalogs associated with that Catalog.
+* Local level – Selecting a Local means that the configuration will apply to all localized catalogs that use that Local.
+* Localized catalog level – Selecting a specific localized catalog means that the configuration will only impact that single localized catalog.
