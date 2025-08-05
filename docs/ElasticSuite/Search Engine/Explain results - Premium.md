@@ -7,7 +7,7 @@ grand_parent: ElasticSuite
 ---
 ElasticSuite allows you to access to the explain and compare page : it will give insights about the search result, the optimizer and product scores.
 
-It can be accessed under the Smile ElasticSuite menu, via the Optimizers entry.
+It can be accessed under the Smile ElasticSuite menu, via SEARCH ENGINE > Explain results entry.
 
 <img width="509" alt="form-explain-result" src="https://user-images.githubusercontent.com/98949123/153380077-f40db411-6e59-43b6-8ee0-f21f1fd5b3d4.PNG">
 
