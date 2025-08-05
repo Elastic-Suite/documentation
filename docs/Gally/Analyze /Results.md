@@ -63,5 +63,8 @@ When Request type = Category listing is selected, then next step is to select th
 <img width="873" height="445" alt="image" src="https://github.com/user-attachments/assets/3fff0f0b-2323-4bdf-aa9b-d7446bb8af19" />
 
 Then user can press "Explain", products of this category will appear exactly as displayed in the frontoffice. 
-Product grid and popup content are the same then below, except all information about score calculation before boost application is not relevant for categories.
+Product grid and popup content are the same then below, except all information about score calculation before boost application is not relevant for categories : 
+
+<img width="1411" height="747" alt="image" src="https://github.com/user-attachments/assets/a5fd9beb-0625-4ff2-a261-a86d62e2de6f" />
+
 
