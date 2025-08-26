@@ -27,6 +27,8 @@ When Request type = Search results is selected, then next step is to give the te
 
 Then user can press "Explain", results for this queries will appear exactly as displayed in the frontoffice. Following details are available : 
 
+<img width="1578" height="520" alt="image" src="https://github.com/user-attachments/assets/b110b651-eb6f-4d23-9319-20209c3b6eaf" />
+
 |Parameter   | Description|
 |:-------------|:------|
 |Code|Code of the product|
