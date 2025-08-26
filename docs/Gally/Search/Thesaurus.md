@@ -39,7 +39,7 @@ A new thesaurus can be created thanks to the button "Create Thesaurus" at the to
 |:-------------|:------------------|:------|
 |Name||Name given to the thesaurus|
 |Enable|True|Thesaurus is enabled or not|
-|Context type||Localized catalog or Locale <p>Localized catalog : The thesaurus will be applied only on the specific selected localized catalog</p> <p>Locale</p>The thesaurus will be applied to all localized catalogs that use the selected local.|
+|Context type||Localized catalog or Locale <p> Localized catalog : The thesaurus will be applied only on the specific selected localized catalog </p> <p> Locale : The thesaurus will be applied to all localized catalogs that use the selected local.</p>|
 |Localized catalog or Local (according to previous selection)||Selection of the loalized catalog(s) on which the thesaurus will be applied. Thesaurus can be applied to one or several localized catalog(s) or Selection of the locale on which the thesaurus will be applied. Thesaurus can be applied to one or several locale.|
 |Thesaurus type||Selection of the thesaurus type : Synonym or Expansion|
 
