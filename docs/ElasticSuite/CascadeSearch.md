@@ -28,7 +28,7 @@ Before going further, ensure your technical team completed the [pre-requisites](
 
 **If you want to enable the cascade search, you will have to set Enabled=yes but also to pick the locales corresponding to the websites you're willing to display cascade suggestions.**
 
-:warning: For now, the cascade search has only been tested with roman languages (french, italian, spanish, etc...). It might not work properly with other languages (english), and especially with languages that rely on word composition (german, dutch, etc...).
+⚠️ For now, the cascade search has only been tested with roman languages (french, italian, spanish, etc...). It might not work properly with other languages (english), and especially with languages that rely on word composition (german, dutch, etc...).
 
 ### Frontend Configuration
 
