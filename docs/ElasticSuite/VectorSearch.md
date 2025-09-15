@@ -10,6 +10,8 @@ nav_order: 8
 
 Before going further, ensure your technical team completed the [pre-requisites](https://elastic-suite.github.io/documentation/docs/ElasticSuite/Installing/NeuralSearch.html).
 
+⚠️ For now, the vector search has only been tested with french and english languages. It might not work properly with other languages (english, spanish, german etc...), and might even need to use language-specific models for some languages, rather than relying on the pre-trained model shipped with Opensearch.
+
 ## Installing the module
 
 The module responsible for neural search is `smile/module-elasticsuite-neural-search` and this module is not part of the standard Premium package. You'll need to install it manually prior going further.
