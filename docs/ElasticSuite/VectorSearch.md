@@ -33,6 +33,14 @@ You can head to **Stores > Configuration > ElasticSuite > Neural Search**
 
 Enable the "Use for Vector Search" option on the attributes you plan to use with Neural Search. Refer to the [attribute configuration page](https://elastic-suite.github.io/documentation/docs/ElasticSuite/Filters%20and%20attributes/Global%20configuration.html) to do so.
 
+## Proceed with reindex
+
+When you'll have configured your attributes for Vector Search, and enabled the feature, you'll be able to reindex the embeddings data.
+
+This is done by rebuilding first the `elasticsuite_products_embeddings` index which will compute the embeddings, and then the `catalogsearch_fulltext` which will copy the embeddings into the fulltext index.
+
+Doing so, you don't need to rebuild the embeddings index as often as your search index, because embeddings are more costly to rebuild.
+
 ## Configuring neural search feature
 
 You can head to **ElasticSuite > Search Relevance > Neural Search**
