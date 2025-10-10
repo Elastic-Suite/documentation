@@ -229,7 +229,7 @@ Depending on how you are building packages to be delivered on staging, pre-produ
 
 We recommend doing it locally (or through a CI/CD pipeline) before packaging the application (like Magento does with the di:compile and static-content:deploy step) rather than letting the target servers to proceed.
 
-#### Building React sources with Magento Cloud
+#### [OPTIONAL] Building React sources with Magento Cloud
 If your project is hosted on magento cloud, you need some specific configuration in order to make the instant search working.
 In your project directory, you should have a .magento.app.yaml file with the definition of the hook "build" in it :
 
@@ -275,7 +275,7 @@ Then you need to indicate to Magento not to update the package.json file during 
 }
 ```
 
-#### Building React sources in isolation when you already have a package.json
+#### [OPTIONAL] Building React sources in isolation when you already have a package.json
 
 When you already have a package.json at the root of your Magento project, for instance per your own theme building requirements, it is possible to isolate the building of the Instant Search's React sources.
 
