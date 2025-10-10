@@ -41,5 +41,5 @@ The API will return a json response like :
 
 There are two options to do this:
 
-- You can save this data in a cookie named @AB-CAMPAIGN@ register in the same domain that the magento api call
-- You can set a http header named @AB-CAMPAIGN@ on every magento api call
+- You can save this data in a cookie named `AB-CAMPAIGN` register in the same domain that the magento api call
+- You can set a http header named `AB-CAMPAIGN` on every magento api call

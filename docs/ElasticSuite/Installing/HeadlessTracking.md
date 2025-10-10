@@ -83,9 +83,9 @@ try {
 As soon as you have done this, the tracking system is ready to tag your website pages.
 You will then have to tag the different pages/rendering events according to the following tagging plan.
 
-Please note that when a call to @smileTracker.sendTag(true)@ is performed, the currently collected tags data are sent to the backend (and on the first call on a given page, some metadata: browser version, resolution, etc) and then disposed of.
+Please note that when a call to `smileTracker.sendTag(true)` is performed, the currently collected tags data are sent to the backend (and on the first call on a given page, some metadata: browser version, resolution, etc) and then disposed of.
 
-With a React-like headless theme based on a rendering loop which acts like a “single page app” and allows for the same browser “page / process” to show different content and perform different actions, you will need to call @smileTracker.sendTag(true)@ each time .
+With a React-like headless theme based on a rendering loop which acts like a “single page app” and allows for the same browser “page / process” to show different content and perform different actions, you will need to call `smileTracker.sendTag(true)` each time .
 
 
 For instance if your theme allows the following actions without any browser refresh/page change: 
@@ -178,8 +178,8 @@ It’s pretty much the same than in category page.
 | type.identifier | catalogsearch_result_index   |
 | type.label  |  Quick Search Form  |
 | search.query | The query that has been typed by the user |
-| search.is_spellchecked | The value of the @is_spellchecked@ variable coming from the @SearchResultPageInfo@ object result |
-| search.query_id   | The value of the @query_id@ variable coming from the @SearchResultPageInfo@ object result |
+| search.is_spellchecked | The value of the `is_spellchecked` variable coming from the `SearchResultPageInfo` object result |
+| search.query_id   | The value of the `query_id` variable coming from the `SearchResultPageInfo` object result |
 | product_list.page_count  | Number of pages of the product listing |
 | product_list.product_count | Number of products of the current listing |
 | product_list.current_page  | Current page of the product listing |
@@ -279,7 +279,7 @@ If you are using Elasticsuite Premium, you will need to add campaign data in the
 |ab_campaign.*X*.id | Id of the campaign |
 |ab_campaign.*X*.scenario | Scenario assign to this visitor for this campaign |
 
-You can find all this data in the @AB-CAMPAIGN@ cookie (the cookie will exist only if at least one campaign is active) if you have the Magento cookies on your front or via the following  API:
+You can find all this data in the `AB-CAMPAIGN` cookie (the cookie will exist only if at least one campaign is active) if you have the Magento cookies on your front or via the following  API:
 Rest:
 
 ```
