@@ -229,7 +229,7 @@ Depending on how you are building packages to be delivered on staging, pre-produ
 
 We recommend doing it locally (or through a CI/CD pipeline) before packaging the application (like Magento does with the di:compile and static-content:deploy step) rather than letting the target servers to proceed.
 
-Building React sources with Magento Cloud
+#### Building React sources with Magento Cloud
 If your project is hosted on magento cloud, you need some specific configuration in order to make the instant search working.
 In your project directory, you should have a .magento.app.yaml file with the definition of the hook "build" in it :
 
@@ -275,6 +275,51 @@ Then you need to indicate to Magento not to update the package.json file during 
 }
 ```
 
+#### Building React sources in isolation when you already have a package.json
+
+When you already have a package.json at the root of your Magento project, for instance per your own theme building requirements, it is possible to isolate the building of the Instant Search's React sources.
+
+In that case, you will want first to prevent the `composer install` step to copy at the root of your Magento project the smile/magento2-react's `package.json` and `webpack.config.js` by adding this in your composer.json :
+```json
+{
+    ...
+    "extra": {
+        ...
+        "magento-deploy-ignore": {
+            "smile/magento2-react": [
+                "/package.json",
+                "/webpack.config.js"
+            ]
+        },
+        ...
+    }
+    ....
+}
+```
+
+Then, when building React sources, you will be able to 
+* use the ability of `yarn` to work elsewhere than in the current directory (your Magento project's root) using the yarn option `--cwd [directory]`
+* use the fact that the `webpack.config.js` can use a `MAGENTO_ROOT` variable to locate your Magento project's root
+
+For instance, on Magento Cloud, this would be the sequence to build the React sources inside the `smile/magento2-react` package directory in vendor 
+```yaml
+hooks:
+   build: |
+        set -e
+        npm install --global yarn
+        composer install
+        php ./vendor/bin/ece-tools run scenario/build/generate.xml
+        mkdir -p var/tmp
+        yarn --cwd vendor/smile/magento2-react install
+        MAGENTO_ROOT=$(pwd) yarn --cwd vendor/smile/magento2-react build
+        php ./vendor/bin/ece-tools run scenario/build/transfer.xml
+```
+
+The first command `yarn --cwd vendor/smile/magento2-react install` will make it so that the `node_modules` and `yarn.lock` specific to dependencies of the Instant Search component are located in the `vendor/smile/magento2-react` directory and do not pollute/conflict any `node_modules` or `yarn.lock` located in the root of your Magento project.
+
+The second command `MAGENTO_ROOT=$(pwd) yarn --cwd vendor/smile/magento2-react build` 
+* makes sure to build the Instant Search React component in that same contained `vendor/smile/magento2-react` space
+* while letting the `vendor/smile/magento2-react/webpack.config.js` file correctly locate all possible React sources in your project (including those of the Instant Search component, of course)  
 
 ## Tracking
 ### Integration with Magento Cloud
