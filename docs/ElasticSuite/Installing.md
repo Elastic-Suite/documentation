@@ -297,9 +297,9 @@ In that case, you will want first to prevent the `composer install` step to copy
 }
 ```
 
-Then, when building React sources, you will be able to 
-* use the ability of `yarn` to work elsewhere than in the current directory (your Magento project's root) using the yarn option `--cwd [directory]`
-* use the fact that the `webpack.config.js` can use a `MAGENTO_ROOT` variable to locate your Magento project's root
+Then, when building React sources, you will be able to use
+* the ability of `yarn` to work elsewhere than in the current directory (your Magento project's root) using the yarn option `--cwd [directory]`
+* the fact that the `webpack.config.js` can use a `MAGENTO_ROOT` environment variable to locate your Magento project's root
 
 For instance, on Magento Cloud, this would be the sequence to build the React sources inside the `smile/magento2-react` package directory in vendor 
 ```yaml
