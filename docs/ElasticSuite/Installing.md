@@ -68,9 +68,9 @@ Add the elasticsuite.repo.packagist.com credentials to your composer's auth.json
 ```
 
 ## Installation
-On Magento 2.4.5, the Elasticsuite composer requirement is: @composer require smile/elasticsuite ~2.10.0@ .
+On Magento 2.4.5, the Elasticsuite composer requirement is: `composer require smile/elasticsuite ~2.10.0` .
 
-The Elasticsuite premium modules follow the same syntax. For instance @composer require smile/module-elasticsuite-facet-recommender ~2.10.0@ for the facet recommender module.
+The Elasticsuite premium modules follow the same syntax. For instance `composer require smile/module-elasticsuite-facet-recommender ~2.10.0` for the facet recommender module.
 
 You just need to require the same version that you already have for the Elasticsuite Open Source version.
 
@@ -122,8 +122,8 @@ smile/module-elasticsuite-term-recommender ~2.11.0 \
 smile/module-elasticsuite-virtual-attribute ~2.11.0
 ```
 
-Please note that in the eventuality of forgetting to install @smile/module-elasticsuite-behavioral-data@,it will be automatically installed since it is required by @smile/module-elasticsuite-behavioral-optimizer@'s composer.json.
-Please also note that @smile/magento2-react@ will be automatically required and installed since required by @smile/module-elasticsuite-instant-search@. This module will add @package-magento-react.json@ in your project repository. You will need to merge the content of this file with your @package.json file@. If you don't have any pre-existing @package.json@ at the project root, you can rename the @package-magento-react.jso@ to @package.json@
+Please note that in the eventuality of forgetting to install `smile/module-elasticsuite-behavioral-data`,it will be automatically installed since it is required by `smile/module-elasticsuite-behavioral-optimizer`'s composer.json.
+Please also note that `smile/magento2-react` will be automatically required and installed since required by `smile/module-elasticsuite-instant-search`. This module will add `package-magento-react.json` in your project repository. You will need to merge the content of this file with your `package.json` file. If you don't have any pre-existing `package.json` at the project root, you can rename the `package-magento-react.json` to `package.json`
 
 ### 2a. Enable all modules if needed : On Magento Open Source
 
@@ -175,7 +175,7 @@ Smile_ElasticsuiteBeacon
 
 ### 3. Run setup and reindex.
 
-As usual after installing a Magento2 module, clean the cache and run @setup:upgrade@ (if in production mode, also run @setup:di:compile@ and @setup:static-content:deploy@).
+As usual after installing a Magento2 module, clean the cache and run `setup:upgrade` (if in production mode, also run `setup:di:compile` and `setup:static-content:deploy`).
 
 You will also need to reindex the catalog with either:
 
@@ -193,9 +193,9 @@ If we provided environment specific client ids, you will have to configure each 
 
 ## Instant Search
 
-The @smile/module-elasticsuite-instant-search@ requires @smile/magento2-react@ to provide a React based autocomplete search feature: it will be automatically required and installed when requiring @smile/module-elasticsuite-instant-search@.
+The `smile/module-elasticsuite-instant-search` requires `smile/magento2-react` to provide a React based autocomplete search feature: it will be automatically required and installed when requiring `smile/module-elasticsuite-instant-search`.
 
-@smile/magento2-react@ requires yarn to be installed on the deployment frontend servers, in order to build and package the React JavaScript sources.
+`smile/magento2-react` requires yarn to be installed on the deployment frontend servers, in order to build and package the React JavaScript sources.
 
 See the instructions below for "Installing yarn".
 
