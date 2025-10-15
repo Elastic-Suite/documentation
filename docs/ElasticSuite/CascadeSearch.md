@@ -22,11 +22,9 @@ Once the module is installed, you can go to **Stores > Configuration > ElasticSu
 
 ### General configuration 
 
-Before going further, ensure your technical team completed the [pre-requisites](https://elastic-suite.github.io/documentation/docs/ElasticSuite/Installing/NeuralSearch.html).
+If you want to enable the cascade search, you will have to set Enabled=yes **but also to pick the locales corresponding to the websites you're willing to display cascade suggestions for.**
 
 ![Sélection_1859](https://elastic-suite.github.io/documentation/docs/ElasticSuite/static/Sélection_1859.png)
-
-**If you want to enable the cascade search, you will have to set Enabled=yes but also to pick the locales corresponding to the websites you're willing to display cascade suggestions.**
 
 ⚠️ For now, the cascade search has only been tested with roman languages (french, italian, spanish, etc...). It might not work properly with other languages (english), and especially with languages that rely on word composition (german, dutch, etc...).
 
