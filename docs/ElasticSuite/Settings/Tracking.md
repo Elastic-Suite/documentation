@@ -4,7 +4,7 @@ title: Tracking
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
-nav_order: 2
+nav_order: 3
 ---
 
 
