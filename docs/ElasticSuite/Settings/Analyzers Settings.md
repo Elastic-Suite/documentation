@@ -15,12 +15,9 @@ These settings allow you to optimize how the search engine processes zeroes in y
 
 | Parameter    | Default value | Description                                                         |
 |:-------------|:--------------|:--------------------------------------------------------------------|
-|Remove leading zeroes of numeric parts| No           |  When enabled, this option automatically drops any zeroes located at the beginning of a numeric sequence within a reference.
-Example: A product with the SKU VT0009 will be indexed as VT9 (generating independent search elements like "VT", "9", and "VT9"). This ensures that a customer searching for vt9, vt 9, or the exact SKU VT0009 will successfully find the product. |
-|Remove trailing zeroes of numeric parts| No           |  When enabled, this option removes any zeroes located at the end of a numeric sequence within a reference.
-Example: A product with the SKU DC3000 will be indexed as DC3 (generating independent search elements like "DC", "3", and "DC3"). This allows a customer searching for dc3, dc 3, or the exact SKU DC3000 to easily find the product. |
-|Reduce series of contiguous zeroes in numeric parts| No           |  When enabled, this option compresses multiple consecutive zeroes within a numeric sequence into a single zero.
-Example: A product with the SKU PL20004 will be indexed as PL204 (generating independent search elements like "PL", "204", and "PL204"). This gives customers the flexibility to find the product whether they search for pl204, pl 204, pl2004, pl 2004, or the exact SKU PL20004.     |
+|Remove leading zeroes of numeric parts| No           |  When enabled, this option automatically drops any zeroes located at the beginning of a numeric sequence within a reference. Example: A product with the SKU VT0009 will be indexed as VT9 (generating independent search elements like "VT", "9", and "VT9"). This ensures that a customer searching for vt9, vt 9, or the exact SKU VT0009 will successfully find the product. |
+|Remove trailing zeroes of numeric parts| No           |  When enabled, this option removes any zeroes located at the end of a numeric sequence within a reference. Example: A product with the SKU DC3000 will be indexed as DC3 (generating independent search elements like "DC", "3", and "DC3"). This allows a customer searching for dc3, dc 3, or the exact SKU DC3000 to easily find the product. |
+|Reduce series of contiguous zeroes in numeric parts| No           |  When enabled, this option compresses multiple consecutive zeroes within a numeric sequence into a single zero. Example: A product with the SKU PL20004 will be indexed as PL204 (generating independent search elements like "PL", "204", and "PL204"). This gives customers the flexibility to find the product whether they search for pl204, pl 204, pl2004, pl 2004, or the exact SKU PL20004.     |
 
 ⚠️ Important Configuration Notes:
 Reindexing Required: Any changes made to these three settings will require a full catalog search reindex (catalogsearch_fulltext) to take effect on your storefront.
@@ -39,11 +36,8 @@ This setting determines whether the search engine uses the standard stemming alg
 
 | Parameter    | Default value | Description                                                         |
 |:-------------|:--------------|:--------------------------------------------------------------------|
-|Use default stemmer|Yes|Yes: Elasticsuite automatically applies the standard language stemmer defined in the system's elasticsuite_analysis.xml configuration file.
-No: Unlocks a dropdown menu allowing you to manually select an alternative stemming algorithm. This is highly useful if the default stemmer does not perfectly recognize the plural forms or conjugations specific to your catalog's vocabulary. Alternative stemmers are available for the following languages: Dutch, English, Finnish, French, Galician, German, Hungarian, Italian, Norwegian (Bokmål and Nynorsk), Portuguese, Russian, Spanish, and Swedish.|
-|Custom stemmer (This option becomes visible only if "Use default stemmer" is set to "No".)||Use this dropdown menu to select the specific stemming algorithm you want to apply to your store's locale. To help guide your choice, the options in the list include helpful visual tags:
-[default]: Identifies the historical stemmer that ElasticSuite uses out-of-the-box for this language.
-[recommended]: Identifies the stemmer officially recommended by the Elasticsearch/OpenSearch documentation for this specific language.|
+|Use default stemmer|Yes|Yes: Elasticsuite automatically applies the standard language stemmer defined in the system's elasticsuite_analysis.xml configuration file. No: Unlocks a dropdown menu allowing you to manually select an alternative stemming algorithm. This is highly useful if the default stemmer does not perfectly recognize the plural forms or conjugations specific to your catalog's vocabulary. Alternative stemmers are available for the following languages: Dutch, English, Finnish, French, Galician, German, Hungarian, Italian, Norwegian (Bokmål and Nynorsk), Portuguese, Russian, Spanish, and Swedish.|
+|Custom stemmer (This option becomes visible only if "Use default stemmer" is set to "No".)||Use this dropdown menu to select the specific stemming algorithm you want to apply to your store's locale. To help guide your choice, the options in the list include helpful visual tags:[default]: Identifies the historical stemmer that ElasticSuite uses out-of-the-box for this language. [recommended]: Identifies the stemmer officially recommended by the Elasticsearch/OpenSearch documentation for this specific language.|
 
 ⚠️ Important Configuration Note: If you change this setting to use a new stemmer, you must perform a full catalog search reindex (catalogsearch_fulltext) for the new linguistic rules to be applied to your existing products and categories.
 
@@ -59,8 +53,7 @@ To utilize this feature, you are required to manually upload Hunspell dictionary
 
 | Parameter    | Default value | Description   |
 |:-------------|:--------------|:--------------------------------------------------------------------|
-|Enable dictionary stemming|No|Yes : The search engine injects a dictionary-based stemming step into the text analyzers. Where applicable, this will override and replace the default, traditional algorithmic stemming process to provide more accurate matching for your language.
-No : The search engine will continue to rely on the standard out-of-the-box algorithmic stemmers.|
+|Enable dictionary stemming|No|Yes : The search engine injects a dictionary-based stemming step into the text analyzers. Where applicable, this will override and replace the default, traditional algorithmic stemming process to provide more accurate matching for your language. No : The search engine will continue to rely on the standard out-of-the-box algorithmic stemmers.|
 
 ## Hyphenation Words decompounder configuration
 
@@ -73,26 +66,15 @@ To ensure accuracy and prevent the engine from generating meaningless fragments 
 
 | Parameter    | Default value | Description   |
 |:-------------|:--------------|:--------------------------------------------------------------------|
-| Enable words decompounding    | No |  Yes: An additional step is injected into the text analyzers to split compound words. Example: In German, the word kaffeetasse will be intelligently split and indexed as kaffe tasse.
-No : Compound words will remain intact and will not be split.  |
-| Apply the decompounder before the stemmer | Yes| Yes (Recommended): The word is split before the stemming algorithm is applied. This is highly effective because it allows the search engine to match the root of the generated subwords.
-Example: Kaffeetassen is decompounded into kaffee tassen, which is then stemmed to kaffee tass. This allows a product named "kaffeetassen" to successfully match user searches for kaffee tassen, kaffeetassen, kaffee tasse, or kaffeetasse.
-Requirement: Your whitelist dictionary must contain the standard forms of the words (both tasse and tassen).
-No: The word is split after the stemming algorithm is applied. This can reduce noise and prevent weird matches on overly small subwords.
-Requirement: Your whitelist dictionary must contain the stemmed versions of the words (e.g., it must contain tass instead of tasse or tassen).   |
-| Hyphenation patterns path    |  | Specify the file path to the Apache FOP XML hyphenation patterns file for this store's language. The path must be either absolute or relative to the config directory of your Elasticsearch/OpenSearch server.
-💡 Note: You can download a zip archive containing OFFO (Objects For Formatting Objects) hyphenation patterns directly from the official Elasticsearch online documentation.
-⚠️ Important: This XML file must be physically deployed and present on all data nodes of your cluster.|
-| Use word list file   |  | Determines how you want to provide the whitelist of authorized subwords to the engine.
-Yes: You will provide a server-side path to a dedicated text file (configured in the field below).
-No: You will manually enter the list of authorized words directly into a text area within the Magento admin.   |
-| Word list path    |  | (This field is only visible if "Use word list file" is set to Yes). Specify the file path to the UTF-8 encoded text file containing your authorized subwords. Just like the patterns file, this path must be absolute or relative to the config directory of your Elasticsearch/OpenSearch server.
-⚠️ Important: This text file must be physically deployed and present on all data nodes of your cluster.   |
+| Enable words decompounding    | No |  Yes: An additional step is injected into the text analyzers to split compound words. Example: In German, the word kaffeetasse will be intelligently split and indexed as kaffe tasse. No : Compound words will remain intact and will not be split.  |
+| Apply the decompounder before the stemmer | Yes| Yes (Recommended): The word is split before the stemming algorithm is applied. This is highly effective because it allows the search engine to match the root of the generated subwords. Example: Kaffeetassen is decompounded into kaffee tassen, which is then stemmed to kaffee tass. This allows a product named "kaffeetassen" to successfully match user searches for kaffee tassen, kaffeetassen, kaffee tasse, or kaffeetasse. Requirement: Your whitelist dictionary must contain the standard forms of the words (both tasse and tassen). No: The word is split after the stemming algorithm is applied. This can reduce noise and prevent weird matches on overly small subwords. Requirement: Your whitelist dictionary must contain the stemmed versions of the words (e.g., it must contain tass instead of tasse or tassen).   |
+| Hyphenation patterns path    |  | Specify the file path to the Apache FOP XML hyphenation patterns file for this store's language. The path must be either absolute or relative to the config directory of your Elasticsearch/OpenSearch server.💡 Note: You can download a zip archive containing OFFO (Objects For Formatting Objects) hyphenation patterns directly from the official Elasticsearch online documentation. ⚠️ Important: This XML file must be physically deployed and present on all data nodes of your cluster.|
+| Use word list file   |  | Determines how you want to provide the whitelist of authorized subwords to the engine. Yes: You will provide a server-side path to a dedicated text file (configured in the field below). No: You will manually enter the list of authorized words directly into a text area within the Magento admin.   |
+| Word list path    |  | (This field is only visible if "Use word list file" is set to Yes). Specify the file path to the UTF-8 encoded text file containing your authorized subwords. Just like the patterns file, this path must be absolute or relative to the config directory of your Elasticsearch/OpenSearch server. ⚠️ Important: This text file must be physically deployed and present on all data nodes of your cluster.   |
 | Minimum word size to decompound     | 5 | The minimum character length a word/token must reach before the engine attempts to break it down. 
 Note: If you configured the decompounder to run after the stemmer, be aware that tokens might already be shorter than expected when they reach this step.   |
 | Maximum subword size    | 15 | The maximum allowed character length for any generated subword.    |
-| Minimum subword size     | 2 | The minimum allowed character length for any generated subword.
-Warning: Due to native behaviors in both Elasticsearch and OpenSearch, you may occasionally see generated subwords that are slightly shorter than this configured threshold.  |
+| Minimum subword size     | 2 | The minimum allowed character length for any generated subword. Warning: Due to native behaviors in both Elasticsearch and OpenSearch, you may occasionally see generated subwords that are slightly shorter than this configured threshold.  |
 
 When decompounding long words, the engine might generate multiple subwords from the same segment. With a large dictionary, this can sometimes produce fragments that do not make sense in the original context.
 The Problem: The Dutch word afrasteringspalen (fence posts) should ideally be split into afrastering (fence) and palen (poles). However, the engine might also extract rastering (rasterization), tering (consumption), and ring (ring), creating unnecessary noise in your search results.
@@ -104,15 +86,9 @@ Reference Example: To understand how each setting behaves, consider the German w
 
 | Parameter    | Default value | Description   |
 |:-------------|:--------------|:--------------------------------------------------------------------|
-|Only longest match |No |  When enabled, the engine only keeps the longest possible matching subword starting at any given hyphenation break point.
-Example: For kaffeetassenwärmer, it will only produce kaffeetassen, tassenwarmer, and warmer. (It drops kaffee and tassen because they start at the same positions as the longer matched words).
-Note: Be aware that with this enabled, a standalone word like kaffetassen will no longer be decomposed into kaffee and tassen.  |
-| No sub matches     | No| When enabled, the engine will not emit a subword if it is completely enclosed within a longer valid subword.
-Example: For kaffeetassenwärmer, it will only produce kaffeetassen and tassenwarmer. (The word warmer is discarded because it is fully contained within tassenwarmer).
-⚠️ Compatibility Warning: This setting is only supported if your server runs Elasticsearch 8.17 or higher.   |
-| No overlapping matches    | No | When enabled, the engine strictly prevents any subwords from overlapping with one another. This is the most restrictive option.
-Example: For kaffeetassenwärmer, it will only produce kaffeetassen and warmer. (The word tassenwarmer is discarded because it overlaps with kaffeetassen).
-⚠️ Compatibility Warning: This setting is only supported if your server runs Elasticsearch 8.17 or higher.   |
+|Only longest match |No |  When enabled, the engine only keeps the longest possible matching subword starting at any given hyphenation break point. Example: For kaffeetassenwärmer, it will only produce kaffeetassen, tassenwarmer, and warmer. (It drops kaffee and tassen because they start at the same positions as the longer matched words). Note: Be aware that with this enabled, a standalone word like kaffetassen will no longer be decomposed into kaffee and tassen.  |
+| No sub matches     | No| When enabled, the engine will not emit a subword if it is completely enclosed within a longer valid subword. Example: For kaffeetassenwärmer, it will only produce kaffeetassen and tassenwarmer. (The word warmer is discarded because it is fully contained within tassenwarmer). ⚠️ Compatibility Warning: This setting is only supported if your server runs Elasticsearch 8.17 or higher.   |
+| No overlapping matches    | No | When enabled, the engine strictly prevents any subwords from overlapping with one another. This is the most restrictive option. Example: For kaffeetassenwärmer, it will only produce kaffeetassen and warmer. (The word tassenwarmer is discarded because it overlaps with kaffeetassen). ⚠️ Compatibility Warning: This setting is only supported if your server runs Elasticsearch 8.17 or higher.   |
 
 ## Unit detection configuration
 
@@ -125,8 +101,7 @@ Custom/Specific Units: Map a notation like # to diameter (preceding the quantity
 
 | Parameter    | Default value | Description   |
 |:-------------|:--------------|:--------------------------------------------------------------------|
-| Enable unit detection    | No | Yes: Unlocks the ability to define custom "search and replace" mapping rules for your unit symbols.
-No : Standard legacy behavior applies (special characters are stripped).   |
+| Enable unit detection    | No | Yes: Unlocks the ability to define custom "search and replace" mapping rules for your unit symbols. No : Standard legacy behavior applies (special characters are stripped).   |
 
 ## [Experimental] Special characters handling
 
@@ -134,13 +109,10 @@ No : Standard legacy behavior applies (special characters are stripped).   |
 
 | Parameter    | Default value | Description   |
 |:-------------|:--------------|:--------------------------------------------------------------------|
-| Enable special characters config  |No  |Yes: Unlocks the ability to define custom rules for specific special characters and their contexts.
-No : Standard legacy behavior applies (most special characters are stripped or used to break words).    |
+| Enable special characters config  |No  |Yes: Unlocks the ability to define custom rules for specific special characters and their contexts. No : Standard legacy behavior applies (most special characters are stripped or used to break words).    |
 | Special characters to treat as normal characters    |  | (Visible only if "Enable special characters config" is set to Yes) Define the specific symbols you want to preserve during text analysis and assign them a functional role (digit, alphabetical, or alphanumerical). Once mapped, the engine will keep these characters in your indexed data rather than using them as word delimiters. Any special characters not added to this list will continue to act as normal delimiters.   |
-| Analyzers to Apply To    |  | Select which text analyzers should enforce your special character protection rules. We highly recommend not applying this everywhere to avoid unintended search behaviors.
-💡 Best Practice: Start by applying it only to the Standard analyzer. If necessary, you can later add the Whitespace analyzer.   |
-| Try to remove extra special characters    | Default value | Yes: Adds a secondary filtering pass to strip out this extra noise. Trade-off: You may lose some of the engine's legacy word-splitting and recomposing behaviors.
-No : Allows the extra noise into the index, which preserves legacy text breaking and recomposing behaviors.   |
+| Analyzers to Apply To    |  | Select which text analyzers should enforce your special character protection rules. We highly recommend not applying this everywhere to avoid unintended search behaviors. 💡 Best Practice: Start by applying it only to the Standard analyzer. If necessary, you can later add the Whitespace analyzer.   |
+| Try to remove extra special characters    | Default value | Yes: Adds a secondary filtering pass to strip out this extra noise. Trade-off: You may lose some of the engine's legacy word-splitting and recomposing behaviors. No : Allows the extra noise into the index, which preserves legacy text breaking and recomposing behaviors.   |
 
 
 
