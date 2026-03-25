@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Analyzers Settings
-has_children: true
+has_children: false
 parent: Settings
 grand_parent: ElasticSuite
 nav_order: 2
