@@ -1,0 +1,14 @@
+---
+layout: default
+title: General
+has_children: false
+parent: Catalog
+grand_parent: Settings
+nav_order: 12
+---
+
+<img width="956" height="226" alt="image" src="https://github.com/user-attachments/assets/9680e138-9624-4fb1-8a9c-eaea4afa8bf6" />
+
+| Parameter | Default value | Description |
+|:----------|:--------------|:------------|
+| Display the image of the best performing child product | Yes | When enabled, category and search result pages will automatically display the image of the best-selling child variant (based on actual sales data) instead of the default parent configurable product image. |
