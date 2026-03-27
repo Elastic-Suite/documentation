@@ -9,9 +9,10 @@ nav_order: 5
 
 It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Recommender entry
 
-<img width="511" alt="events-co-occurence-config" src="https://user-images.githubusercontent.com/98949123/156194011-d604ca69-903b-44d6-a0b0-414afe4b97f2.PNG">
+<img width="1008" height="775" alt="image" src="https://github.com/user-attachments/assets/e449efe9-9933-4796-8983-59d87e36c398" />
 
-| Parameter    | Default value | Description |
-|:-------------|:------------------|:------|
-|Min doc count|2|When gathering co-occurrence of products related events (products also viewed, added to cart, bought), in how many distinct sessions an event must occur at the minimum to be taken into account. Lowering it can be helpful on sites without much events tracking history to avoid a cold start.|
-|Similarity attributes||Attributes that will be used to find products similar to the co-occurrent products. The list is made of attributes that are searchable, can provide text values to the search engine and are configured to either be sortable or filterable in layer navigation.|
+| Parameter | Default value | Description |
+|:----------|:--------------|:------------|
+| Minimum sessions count | 2 | Defines the minimum number of unique user sessions required for a related event (e.g., "products also viewed", "added to cart", or "bought") to be considered a valid co-occurrence. Lowering this threshold can be helpful to prevent a "cold start" on websites with limited tracking history. |
+| Similarity attributes | [List of eligible attributes]* | Specifies which product attributes the recommendation engine uses to find items similar to the co-occurring products. <br><br>*\*Note: This multi-select list is dynamically populated with attributes that are searchable, provide text values to the search engine, and are configured as either sortable or filterable in layered navigation.* |
+| Similarity Minimum Should Match | 30% | Defines the "Minimum Should Match" (MSM) threshold used for the full-text similarity request. If you select multiple similarity attributes and want to ensure all of them are taken into account, you should configure a value in the format of `N<30%` or `N<80%` (where `N` represents the total number of selected attributes), keeping in mind that each attribute might contribute at least one term. |
