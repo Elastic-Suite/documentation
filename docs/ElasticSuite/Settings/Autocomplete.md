@@ -4,7 +4,7 @@ title: Autocomplete
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
-nav_order: 5
+nav_order: 6
 ---
 
 ## Max Size for section in the autocomplete box
