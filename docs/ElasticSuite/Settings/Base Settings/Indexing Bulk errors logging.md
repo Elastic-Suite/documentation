@@ -4,6 +4,7 @@ title: Indexing / Bulk errors logging
 has_children: false
 parent: Base Settings
 grand_parent: Settings
+nav_order: 3
 ---
 
 ## Indexing / Bulk Errors Logging
