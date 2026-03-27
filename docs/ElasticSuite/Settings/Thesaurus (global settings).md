@@ -4,7 +4,7 @@ title: Thesaurus (global settings).md
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
-nav_order: 8
+nav_order: 9
 ---
 
 ## Cache Settings
