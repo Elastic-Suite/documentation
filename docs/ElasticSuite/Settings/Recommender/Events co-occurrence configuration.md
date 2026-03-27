@@ -4,7 +4,7 @@ title: Events co-occurrence configuration
 has_children: false
 parent: Recommender - Premium
 grand_parent: Settings
-nav_order: 2
+nav_order: 5
 ---
 
 It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Recommender entry
