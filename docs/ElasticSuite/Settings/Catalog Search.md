@@ -4,7 +4,7 @@ title: Catalog Search
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
-nav_order: 6
+nav_order: 7
 ---
 
 ## Catalog Search Configuration 
