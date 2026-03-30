@@ -4,7 +4,7 @@ title: Miscellaneous
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
-nav_order: 11
+nav_order: 14
 ---
 
 It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Miscellaneous entry
