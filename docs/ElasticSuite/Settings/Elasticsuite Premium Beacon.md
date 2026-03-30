@@ -4,7 +4,7 @@ title: Elasticsuite Premium Beacon
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
-nav_order: 10
+nav_order: 15
 ---
 
 It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Elasticsuite Premium Beacon entry
