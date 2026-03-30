@@ -2,8 +2,8 @@
 layout: default
 title: General
 has_children: false
-parent: Catalog
-grand_parent: Settings
+parent: Settings
+grand_parent: ElasticSuite
 nav_order: 12
 ---
 
