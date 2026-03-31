@@ -1,6 +1,6 @@
 ---
 layout: default
-title: General
+title: Catalog
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
