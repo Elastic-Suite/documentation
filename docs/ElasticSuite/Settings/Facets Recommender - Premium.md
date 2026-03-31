@@ -4,7 +4,7 @@ title: Facets Recommender - Premium
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
-nav_order: 12
+nav_order: 20
 ---
 
 It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Facets Recommender entry
