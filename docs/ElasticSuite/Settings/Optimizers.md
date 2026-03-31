@@ -1,6 +1,6 @@
 ---
 layout: default
-title: General
+title: Optimizers
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
