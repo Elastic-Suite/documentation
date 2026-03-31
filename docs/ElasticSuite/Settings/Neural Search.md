@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Analytics
+title: Neural Search
 has_children: false
 parent: Settings
 grand_parent: ElasticSuite
