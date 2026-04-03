@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 13
 ---
 
+Located under Store > Configuration > ElasticSuite > Optimizers
+
 These advanced configuration settings give you deeper control over how ElasticSuite calculates and applies relevance boosts, directly leveraging Elasticsearch's native function score queries.
 
 <img width="1195" height="658" alt="image" src="https://github.com/user-attachments/assets/e09d2603-4e00-4d2c-9ca0-83fce54418b9" />
