@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 17
 ---
 
+Located under Store > Configuration > ElasticSuite > Store locator Settings
+
 <img width="1005" height="296" alt="image" src="https://github.com/user-attachments/assets/62c8696f-b243-455e-8399-86103fec9c50" />
 
 ## General Settings
