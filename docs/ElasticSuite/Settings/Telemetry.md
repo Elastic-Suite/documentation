@@ -6,6 +6,9 @@ parent: Settings
 grand_parent: ElasticSuite
 nav_order: 4
 ---
+
+Located under Store > Configuration > ElasticSuite > Telemetry
+
 Since releases 2.8.16 2.8.16 and 2.10.9 Elasticsuite is embedding a telemetry tracking mechanism.
 
 That means, starting from this version, we’ll include a completely optional telemetry mechanism to understand how you are using this extension and where to focus our effort in improvement.
