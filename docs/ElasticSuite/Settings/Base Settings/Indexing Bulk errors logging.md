@@ -7,6 +7,8 @@ grand_parent: Settings
 nav_order: 3
 ---
 
+Located under Store > Configuration > ElasticSuite > Base Settings > Indexing / Bulk Errors logging
+
 ## Indexing / Bulk Errors Logging
 
 <img width="1195" height="323" alt="image" src="https://github.com/user-attachments/assets/a34d181c-e74e-4da8-ab2d-aacd4685251a" />
