@@ -7,7 +7,7 @@ grand_parent: Settings
 nav_order: 1
 ---
 
-It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Recommender entry
+Located under Store > Configuration > ElasticSuite > Recommender > General
 
 <img width="514" alt="recommender-general" src="https://user-images.githubusercontent.com/98949123/156156551-a51cf777-31de-4d0a-913c-3fc2666685b0.PNG">
 
