@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 7
 ---
 
+Located under Store > Configuration > ElasticSuite > Catalog Search
+
 ## Catalog Search Configuration 
 
 <img width="506" alt="catalog-search-configuration" src="https://user-images.githubusercontent.com/98949123/155971312-a6bf21f8-9bad-4a38-ad6f-80dc00751b67.PNG">
