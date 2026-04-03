@@ -7,6 +7,8 @@ grand_parent: Settings
 nav_order: 4
 ---
 
+Located under Store > Configuration > ElasticSuite > Recommender > Upsell products
+
 <img width="982" height="634" alt="image" src="https://github.com/user-attachments/assets/92bff662-9a83-406e-9dc7-39e6e1bb6075" />
 
 | Parameter | Default value | Description |
