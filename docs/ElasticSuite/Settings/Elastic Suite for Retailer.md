@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 16
 ---
 
+Located under Store > Configuration > ElasticSuite > Elastic Suite for Retailer
+
 <img width="1020" height="405" alt="image" src="https://github.com/user-attachments/assets/b3f4860f-41f8-4667-8ec1-7ea043e563ce" />
 
 ## Main Settings
