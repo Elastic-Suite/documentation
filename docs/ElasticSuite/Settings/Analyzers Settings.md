@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 2
 ---
 
+Located under Store > Configuration > ElasticSuite > Analyzers Settings
+
 ## Reference analyzer configuration
 
 <img width="1202" height="633" alt="Image" src="https://github.com/user-attachments/assets/8f013fec-68a4-4cd6-80ba-2e86f441c8ed" />
