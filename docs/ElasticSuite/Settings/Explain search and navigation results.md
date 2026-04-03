@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 23
 ---
 
+Located under Store > Configuration > ElasticSuite > Explain search and navigation results
+
 <img width="1003" height="208" alt="image" src="https://github.com/user-attachments/assets/779445d2-13a7-407d-83fe-2a0e5dc9bd74" />
 
 ## Matches highlights
