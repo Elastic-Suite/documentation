@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 21
 ---
 
+Located under Store > Configuration > ElasticSuite > Instant Search
+
 <img width="1162" height="684" alt="image" src="https://github.com/user-attachments/assets/40a22a20-950a-460a-864c-e64fa740dde5" />
 
 ## Product Autocomplete
