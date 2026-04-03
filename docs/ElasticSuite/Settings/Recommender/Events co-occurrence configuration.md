@@ -7,7 +7,7 @@ grand_parent: Settings
 nav_order: 5
 ---
 
-It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Recommender entry
+Located under Store > Configuration > ElasticSuite > Recommender > Events co-occurence configuration
 
 <img width="1008" height="775" alt="image" src="https://github.com/user-attachments/assets/e449efe9-9933-4796-8983-59d87e36c398" />
 
