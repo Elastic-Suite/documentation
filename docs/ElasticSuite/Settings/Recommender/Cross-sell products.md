@@ -7,6 +7,8 @@ grand_parent: Settings
 nav_order: 3
 ---
 
+Located under Store > Configuration > ElasticSuite > Recommender > Cross-sell products
+
 ## Cross sell products
 
 <img width="978" height="513" alt="image" src="https://github.com/user-attachments/assets/a4a17deb-2b6f-4258-99af-d45145bd3ea0" />
