@@ -7,6 +7,8 @@ grand_parent: Settings
 nav_order: 6
 ---
 
+Located under Store > Configuration > ElasticSuite > Recommender > Advanced similarity configuration
+
 <img width="988" height="783" alt="image" src="https://github.com/user-attachments/assets/a2485508-4b6d-4a0c-87f6-2e707b5aaf21" />
 
 | Parameter | Default value | Description |
