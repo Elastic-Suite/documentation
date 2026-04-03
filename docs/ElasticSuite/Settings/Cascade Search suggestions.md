@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 24
 ---
 
+Located under Store > Configuration > ElasticSuite > Cascade Search suggestions
+
 The Cascade Search module leverages your behavioral data to suggest finer, more specific popular search terms to your users. This allows them to easily navigate from a very broad, vague search query to the exact item type they might be looking for. 
 
 ## General
