@@ -7,6 +7,8 @@ grand_parent: Settings
 nav_order: 2
 ---
 
+Located under Store > Configuration > ElasticSuite > Recommender > Related products
+
 ## Related products
 
 <img width="958" height="633" alt="image" src="https://github.com/user-attachments/assets/16b67e77-027b-426b-8801-ba8ae28e74d7" />
