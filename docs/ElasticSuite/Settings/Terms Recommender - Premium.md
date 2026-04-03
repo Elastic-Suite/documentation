@@ -7,7 +7,7 @@ grand_parent: ElasticSuite
 nav_order: 22
 ---
 
-It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Terms Recommender entry
+Located under Store > Configuration > ElasticSuite > Terms Recommender
 
 <img width="1002" height="306" alt="image" src="https://github.com/user-attachments/assets/536cb3d5-17fa-4167-a28e-e6da8577c915" />
 
