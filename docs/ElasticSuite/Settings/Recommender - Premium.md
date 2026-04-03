@@ -6,3 +6,5 @@ parent: Settings
 grand_parent: ElasticSuite
 nav_order: 11
 ---
+
+Located under Store > Configuration > ElasticSuite > Recommender
