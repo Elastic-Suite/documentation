@@ -7,7 +7,7 @@ grand_parent: ElasticSuite
 nav_order: 14
 ---
 
-It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Miscellaneous entry
+Located under Store > Configuration > ElasticSuite > Miscellaneous
 
 <img width="481" alt="miscellaneous-footer-settings" src="https://user-images.githubusercontent.com/98949123/156195865-63602680-1828-48e4-9a7a-1716ff8d4d33.PNG">
 
