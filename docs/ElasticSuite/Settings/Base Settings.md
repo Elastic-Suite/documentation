@@ -6,3 +6,5 @@ parent: Settings
 grand_parent: ElasticSuite
 nav_order: 1
 ---
+
+Located under Store > Configuration > ElasticSuite > Base Settings
