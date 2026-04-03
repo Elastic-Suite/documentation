@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 5
 ---
 
+Located under Store > Configuration > ElasticSuite > Indices Mapping
+
 <img width="478" alt="indices-mapping" src="https://user-images.githubusercontent.com/98949123/155969671-bf1f51d0-bfc6-459e-8b07-c059e45be53f.PNG">
 
 This configuration allow to associate index names (in Elasticsearch) with indexer keys (in Magento).
