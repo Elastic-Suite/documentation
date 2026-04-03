@@ -6,6 +6,8 @@ parent: Base Settings
 grand_parent: Settings
 ---
 
+Located under Store > Configuration > ElasticSuite > Base Settings > Elasticsearch Client
+
 <img width="504" alt="base-settings" src="https://user-images.githubusercontent.com/98949123/155967436-1b226fc7-fc0f-453d-9fea-1e30d6987d40.PNG">
 
 Parameter                          | Default value  | Description
