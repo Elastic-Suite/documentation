@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 6
 ---
 
+Located under Store > Configuration > ElasticSuite > Autocomplete
+
 ## Max Size for section in the autocomplete box
 
 <img width="506" alt="autocomplete-configuration" src="https://user-images.githubusercontent.com/98949123/155970323-b820d955-f670-4cc1-82f0-51dfd4e3d7e9.PNG">
