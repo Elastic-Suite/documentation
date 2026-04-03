@@ -7,6 +7,7 @@ grand_parent: ElasticSuite
 nav_order: 3
 ---
 
+Located under Store > Configuration > ElasticSuite > Tracking
 
 ## Global Configuration
 
