@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 10
 ---
 
+Located under Store > Configuration > ElasticSuite > Neural Search
+
 Neural Search enhances your catalog search by using advanced machine learning models (Large Language Models) to understand the semantic meaning and context of a user's query, rather than just relying on exact keyword matches. The settings below allow you to configure how the engine generates and manages the vector embeddings required for this semantic search capability.
 
 ## General Configuration
