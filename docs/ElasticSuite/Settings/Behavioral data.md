@@ -7,7 +7,7 @@ grand_parent: ElasticSuite
 nav_order: 19
 ---
 
-It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Behavioral data entry
+Located under Store > Configuration > ElasticSuite > Behavioral data
 
 <img width="1003" height="435" alt="image" src="https://github.com/user-attachments/assets/b403f3fe-c7a4-4872-b2c7-d41af96fa2b3" />
 
