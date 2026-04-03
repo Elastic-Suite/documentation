@@ -7,6 +7,8 @@ grand_parent: ElasticSuite
 nav_order: 9
 ---
 
+Located under Store > Configuration > ElasticSuite > Thesaurus (global settings)
+
 ## Cache Settings
 
 <img width="1198" height="597" alt="Image" src="https://github.com/user-attachments/assets/91ca850d-56f6-46cd-9648-dca427fabd03" />
