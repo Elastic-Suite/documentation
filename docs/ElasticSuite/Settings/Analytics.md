@@ -7,7 +7,7 @@ grand_parent: ElasticSuite
 nav_order: 8
 ---
 
-It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Analytics entry
+Located under Store > Configuration > ElasticSuite > Analytics
 
 ## Search terms configuration
 
