@@ -7,7 +7,7 @@ grand_parent: ElasticSuite
 nav_order: 20
 ---
 
-It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Facets Recommender entry
+Located under Store > Configuration > ElasticSuite > Facets Recommender
 
 <img width="479" alt="facets-recommender-config" src="https://user-images.githubusercontent.com/98949123/156196553-89236890-60e0-4cee-895a-28e458edc32d.PNG">
 
