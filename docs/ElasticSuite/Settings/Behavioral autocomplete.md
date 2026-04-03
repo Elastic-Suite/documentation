@@ -7,7 +7,7 @@ grand_parent: ElasticSuite
 nav_order: 18
 ---
 
-It can be accessed under the Stores menu > Configuration > ElasticSuite entry > Behavioral autocomplete entry
+Located under Store > Configuration > ElasticSuite > Behavioral autocomplete
 
 ## Trend Based Autocomplete
 
