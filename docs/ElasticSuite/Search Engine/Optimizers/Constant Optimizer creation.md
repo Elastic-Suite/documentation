@@ -4,7 +4,7 @@ title: Constant Optimizer creation
 has_children: false
 parent: Optimizers
 grand_parent: Search Engine
-nav_order: 1
+nav_order: 2
 ---
 ## Customizing product Sorting.
 
@@ -16,7 +16,7 @@ ElasticSuite allows you to customize product sorting in several ways :
 
 ### Using the Search Optimizers
 
-It can be accessed under the **Smile ElasticSuite** menu, via the **Optimizers** entry.
+It can be accessed under the **ElasticSuite** menu, via the **Optimizers** entry.
 
 You can create, update and delete your search optimizers here.
 
