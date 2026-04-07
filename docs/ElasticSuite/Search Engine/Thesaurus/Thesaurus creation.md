@@ -6,75 +6,57 @@ parent: Thesaurus
 grand_parent: Search Engine
 nav_order: 1
 ---
-## Thesaurus Administration
+You can access the Thesaurus administration via the **ElasticSuite > Thesaurus** menu. 
 
-It can be accessed under the Smile ElasticSuite menu, via the Thesaurus entry.
-
-You can create, update and delete your thesauri here.
+From this grid, you can create, update, and delete your thesauri.
 
 ### Creating a Thesaurus
 
-In this page you have a grid displaying all your thesauri. You can add a new one by clicking on the **Add Thesaurus** button.
+The main page displays a grid of all your existing thesauri. To add a new one, click the **Add Thesaurus** button.
 
-First thing you will be prompted on when creating a thesaurus is choosing a type. **Beware, the type can not be modified once the thesaurus is created.**
+When creating a new thesaurus, the first step is to choose its type. **⚠️ Beware: The type cannot be modified once the thesaurus is created.**
 
 #### Synonym
 
 <img width="631" alt="configuration-synonym-creation" src="https://user-images.githubusercontent.com/98949123/152959831-bd296d83-a678-404b-8acf-2591e2116432.PNG">
 
-| Parameter    | Description |
-|:-------------|:------|
-|Thesaurus name|Name the synonym|
-|Active|The synonym will be active or not|
-|Store|Scope of the synonym. Synonym can only be applied at storeview level.|
+| Parameter | Description |
+|:----------|:------------|
+| Thesaurus name | The internal name for this synonym rule. |
+| Active | Toggles whether the synonym rule is enabled or disabled. |
+| Store | Defines the scope of the synonym. Thesauri can only be applied at the store view level. |
 
-Synonyms thesaurus will allow you to add separated lists of words that are synonyms of each other.
+A **Synonym** thesaurus allows you to create separate lists of words that share the exact same meaning and should be treated identically by the search engine.
 
-![synonyms](https://user-images.githubusercontent.com/98949123/152956847-2e2cb442-7d04-492e-8bb9-c682bae36189.png)
+<img width="292" height="153" alt="image" src="https://github.com/user-attachments/assets/70763542-00bf-4333-81b3-f32f5c8e34c4" />
 
-You can add as many list of words as you need. Each list of words has to be **comma-separated**.
+You can add as many word lists as you need. The terms in each list must be **comma-separated**. 
 
-In the example above, we have added a synonym between "man" and "men", and also between "woman" and "women".
+*In the example above, we created a synonym relationship between "tank", "t-shirt" and "top".*
 
 #### Expansion
 
 <img width="631" alt="configuration-expansion-creation" src="https://user-images.githubusercontent.com/98949123/152960658-111deebf-b7a7-436a-bdf2-d40ff56803f6.PNG">
 
-| Parameter    | Description |
-|:-------------|:------|
-|Thesaurus name|Name the expansion|
-|Active|The expansion will be active or not|
-|Store|Scope of the expansion. Expansion can only be applied at storeview level.|
+| Parameter | Description |
+|:----------|:------------|
+| Thesaurus name | The internal name for this expansion rule. |
+| Active | Toggles whether the expansion rule is enabled or disabled. |
+| Store | Defines the scope of the expansion. Thesauri can only be applied at the store view level. |
 
-Expansions thesaurus will allow you to add separated lists of words that are expansions of a reference term.
+An **Expansion** thesaurus allows you to define a reference term and associate it with a list of broader or related expansion terms.
 
 ![expansions](https://user-images.githubusercontent.com/98949123/152957001-80d9c359-5d24-4522-962b-da0a0ebe0f32.png)
 
-You can add as many bag of words as you need. Each bag of words has to be **comma-separated**.
+You can add as many groups of words as you need. Each group must be **comma-separated**.
 
-In the example above, we have added an expansion from the reference term "sport" to the terms "fitness", "gym" and "running".
+*In the example above, we created an expansion from the core reference term "sport" to the related terms "fitness", "gym", and "running".*
 
 ### Updating a Thesaurus
 
-You can edit a previously created thesaurus and add or remove some elements (a new synonym list or a new expansion).
+You can edit any previously created thesaurus to add, modify, or remove elements (such as adding a new synonym list or tweaking an expansion).
 
 ### Removing a Thesaurus
 
-You can remove a previously created thesaurus from the grid or by clicking the **Delete Thesaurus** button on the Thesaurus edit page.
+You can remove a previously created thesaurus directly from the main grid, or by clicking the **Delete Thesaurus** button on the specific Thesaurus edit page.
 
-## How does it works ?
-
-Given the 2 precedent examples, someone searching for "women sport pants" on the website will trigger the following search queries :
-
-* women sport pants (the base query)
-* woman sport pants (based on the women/woman synonym)
-* women fitness pants (based on the expansion on "sport")
-* women gym pants (based on the expansion on "sport")
-* women running pants (based on the expansion on "sport")
-* woman fitness pants (based on the women/woman synonym and the expansion on "sport")
-* woman gym pants (based on the women/woman synonym and the expansion on "sport")
-* woman running pants (based on the women/woman synonym and the expansion on "sport")
-
-The generated "extended queries" will be weighted according to the [Thesaurus configuration](https://elastic-suite.github.io/documentation/docs/Search%20Engine/Search%20Relevance/Thesaurus%20Configuration.html)
-
-NB : Technically speaking, it will only generate one query to the engine, with a boolean structure.
