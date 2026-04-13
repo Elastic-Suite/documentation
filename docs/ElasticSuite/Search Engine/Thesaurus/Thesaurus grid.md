@@ -4,7 +4,7 @@ title: Thesaurus grid
 has_children: false
 parent: Thesaurus
 grand_parent: Search Engine
-nav_order: 2
+nav_order: 1
 ---
 
 It can be accessed under the Smile ElasticSuite menu, via the Thesaurus entry.
