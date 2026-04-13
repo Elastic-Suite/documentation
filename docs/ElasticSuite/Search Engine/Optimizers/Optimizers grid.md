@@ -13,8 +13,9 @@ It can be accessed under the ElasticSuite menu, via the Optimizer entry.
 | Parameter    | Description |
 |:-------------|:------|
 |Name|Optimizer name|
-|Model|Constant score </br> Based on attribute value </br> Based on behavioral data|
+|Model|Constant score <br> Based on attribute value <br> Based on behavioral data|
 |Boost value (%)|Value of the boost in percentage|
 |Request type|On what type of listing the boost will be based on|
 |Status|The optimizer is active or not|
+|Store view|On which store view the boost is applied|
 |Action|Edit : redirect to the optimizer edition page </br> Duplicate : will duplicate the boost and redirect to the duplicated optimizer edition page </br> Delete : delete the optimizer|
