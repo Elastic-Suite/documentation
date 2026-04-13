@@ -4,7 +4,7 @@ title: Behavioral Optimizer creation - Premium
 has_children: false
 parent: Optimizers
 grand_parent: Search Engine
-nav_order: 2
+nav_order: 3
 ---
 
 #### Creating an Optimizer
