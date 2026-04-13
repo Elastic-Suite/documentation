@@ -63,7 +63,9 @@ Basic details including the product's name, SKU, price, and current stock status
 
 #### Behavioral Data Table
 
-*(Note: This table is only visible if the Premium Behavioral Data tracking feature is enabled in your configuration).*|This table provides a comprehensive breakdown of the real-user interaction metrics collected by the This table provides a comprehensive breakdown of the real-user interaction metrics collected by the Elasticsuite tracker for this specific product. Understanding these metrics is crucial if you are using Behavioral Optimizers, as this table shows the exact data the search engine uses to calculate dynamic relevance boosts.
+*(Note: This table is only visible if the Premium Behavioral Data tracking feature is enabled in your configuration).*
+
+This table provides a comprehensive breakdown of the real-user interaction metrics collected by the This table provides a comprehensive breakdown of the real-user interaction metrics collected by the Elasticsuite tracker for this specific product. Understanding these metrics is crucial if you are using Behavioral Optimizers, as this table shows the exact data the search engine uses to calculate dynamic relevance boosts.
 
 | Metric Type | Description |
 |:------------|:------------|
