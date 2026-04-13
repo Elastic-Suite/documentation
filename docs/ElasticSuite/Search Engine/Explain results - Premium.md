@@ -5,48 +5,90 @@ has_children: false
 parent: Search Engine
 grand_parent: ElasticSuite
 ---
-ElasticSuite allows you to access to the explain and compare page : it will give insights about the search result, the optimizer and product scores.
 
-It can be accessed under the Smile ElasticSuite menu, via SEARCH ENGINE > Explain results entry.
+ElasticSuite provides an "Explain and Compare" page that gives you deep insights into your search relevance. It allows you to understand exactly how product scores are calculated, why certain products rank higher than others, and how your active search optimizers are impacting the final results. 
+
+You can access this tool by navigating to **Smile ElasticSuite > Search Engine > Explain results** in your Magento admin panel.
 
 <img width="509" alt="form-explain-result" src="https://user-images.githubusercontent.com/98949123/153380077-f40db411-6e59-43b6-8ee0-f21f1fd5b3d4.PNG">
 
-| Parameter    | Default value | Description |
-|:-------------|:------------------|:------|
-|Store view|Default Store View|The storeview where information is needed. Only storeviews can be selected here|
-|Request type|Catalog Product Search|Catalog Product Search : will display products of a search result listing <br/> Catalog Product Autocomplete : will display products on the autocomplete <br/> Category Product View : will display products of a category listing|
-|Query text (for Catalog Product Search and Catalog Product Autocomplete)||Query for which information is needed|
-|Category Preview (for Category Product View)||Dropdown with all categories from the platform. User can select the category for which information is needed|
-|Explain||Button explain, by clicking explain and compare is displayed|
+### Configuration Form
+
+| Parameter | Default value | Description |
+|:----------|:--------------|:------------|
+| Store view | Default Store View | Defines the specific store view for which you want to analyze the results. *(Note: Only store views can be selected here).* |
+| Request type | Catalog Product Search | Determines the context of the search you want to explain: <br><br>• **Catalog Product Search:** Analyzes products displayed on a standard search results listing.<br>• **Catalog Product Autocomplete:** Analyzes products suggested in the autocomplete dropdown.<br>• **Category Product View:** Analyzes products displayed on a specific category listing page. |
+| Query text | *(Empty)* | *(Applicable for Catalog Product Search and Catalog Product Autocomplete).* The exact search query or term you want to analyze. |
+| Category Preview | *(Empty)* | *(Applicable for Category Product View).* A dropdown containing all categories from your catalog. Select the specific category you want to analyze. |
+| Explain | *(Button)* | Clicking this button processes your configuration and displays the "Explain and compare" dashboard. |
+
+### Explain and Compare Dashboard
+
+Once the configuration is submitted, the dashboard displays a comprehensive breakdown of your search or category results.
 
 ![explain-results](https://user-images.githubusercontent.com/98949123/153381927-86c71933-bb1c-4045-8665-36a61b026a9f.png)
 
-| Block    | Description |
-|:-------------|:------|
-|Synonyms and expansions|If thesaurus are configured on this term, they will be displayed here|
-|Optimizers|If optimizers are applied on products from this query, they will be displayed here|
-|Product listing|Product listing resulting from this query. For each product, information are displayed (more details bellow)|
+| Dashboard Section | Description |
+|:------------------|:------------|
+| **Synonyms and expansions** | Displays any active thesaurus rules (synonyms or expansions) that were triggered by the analyzed search term. |
+| **Optimizers** | Lists any active search optimizers that are currently influencing the products returned for this specific query. |
+| **Product listing** | Shows the actual products returned by the query in their exact ranked order. Each product card provides key scoring information. |
+
+***
+
+### Product Card Overview
+
+Each product card in the listing features specific indicators to help you quickly understand its ranking:
 
 <img width="160" alt="explain-results-products" src="https://user-images.githubusercontent.com/98949123/153383086-7ac1ce9b-db62-49a9-b981-0deabbbb2102.png">
 
-| Block    | Description |
-|:-------------|:------|
-|Locker|The product is manually sorted|
-|Green arrow|The product is boosted thanks to an optimizer|
-|Score|Score of the product resulting from optimizer value|
-|Question mark|By clicking, a popup will be displayed for giving more information about the score calculation (more details bellow)|
+| Indicator | Description |
+|:----------|:------------|
+| **Locker Icon** | Indicates that the product's position has been manually pinned/sorted for this specific query or category. |
+| **Green Arrow** | Indicates that the product has received a relevance boost from an active search optimizer. |
+| **Score** | The final calculated relevance score of the product (including any optimizer multipliers). |
+| **Question Mark** | Clicking this icon opens a detailed popup explaining exactly how this product's final score was calculated. |
 
-<img width="703" alt="explain-detail-product" src="https://user-images.githubusercontent.com/98949123/153388237-c0694c32-1c9c-4ac5-b978-c643b1fe3298.PNG">
+***
 
-| Block    | Description |
-|:-------------|:------|
-|Product information|Product name, SKU, price and stock status|
-|Matches|Field : Field indexed <br/> Term : searched <br/> Weight : Weight of the field <br/> Score : Score of the field <br/> ____________________ <br/> **Field matches total** : sum of all the field score <br/> **Boost** : value of the boost. Score of the product is multiplied by this value <br/> **Total** : Field matches total * boost value|
+### Detailed Score Breakdown
+
+Clicking the question mark on any product card opens a detailed breakdown popup containing several informational tables.
+
+<img width="1397" height="605" alt="image" src="https://github.com/user-attachments/assets/ac965b24-bd10-4a10-9584-3c2cbc80c817" />
+
+#### Product information
+
+Basic details including the product's name, SKU, price, and current stock status.
+
+#### Behavioral Data Table
+
+*(Note: This table is only visible if the Premium Behavioral Data tracking feature is enabled in your configuration).*|This table provides a comprehensive breakdown of the real-user interaction metrics collected by the This table provides a comprehensive breakdown of the real-user interaction metrics collected by the Elasticsuite tracker for this specific product. Understanding these metrics is crucial if you are using Behavioral Optimizers, as this table shows the exact data the search engine uses to calculate dynamic relevance boosts.
+
+| Metric Type | Description |
+|:------------|:------------|
+| **Views** | Displays the number of times this product has been viewed by users. |
+| **Sales** | Displays the number of times this product has been purchased. |
+| **Conversion Rate** | Shows the percentage of views that successfully resulted in a sale for this specific product. |
+| **Revenue** | Displays the accumulated revenue generated by this product. |
+
+*For each of the metrics listed above, the table breaks down the data into specific timeframes based on your tracker configuration:*
+*   **Total:** The all-time accumulated value or exact number for the metric.
+*   **Daily:** The metric calculated over your configured daily sliding window (e.g., averaged or cumulative over the last 30 days).
+*   **Weekly:** The metric calculated over your configured weekly sliding window (e.g., averaged or cumulative over the last 60 days).
+
+#### Matches
+
+A detailed log of how the search terms matched the product's attributes.<br><br>• **Field:** The specific indexed attribute matched.<br>• **Term:** The exact term matched.<br>• **Weight:** The configured search weight of the matched field.<br>• **Score:** The base score generated by this specific field match.<br><br>***<br>**Field matches total:** The sum of all individual field scores.<br>**Boost:** The multiplier applied by active optimizers.<br>**Total:** The final product score (`Field matches total` × `Boost` value). |
+
+#### Field Explanation Table
 
 <img width="695" alt="explain-field-explanation" src="https://user-images.githubusercontent.com/98949123/153420502-44fbf2bc-aee8-4b77-a859-53e26a39a82e.png">
 
-This table gives explanation about how fields are working.
+This table provides technical insights into how the search engine processes and evaluates the individual fields for this product.
+
+#### Indexed Content Table
 
 <img width="684" alt="explain-indexed-content" src="https://user-images.githubusercontent.com/98949123/153421509-9492b62e-7d04-49d0-bece-47d07cf16ce5.png">
 
-This table gives detail about how product content is indexed.
+This table details exactly how the product's content is stored within the Elasticsearch/OpenSearch index, allowing you to verify the raw data the search engine "sees".
