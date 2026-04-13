@@ -4,7 +4,7 @@ title: Thesaurus creation
 has_children: false
 parent: Thesaurus
 grand_parent: Search Engine
-nav_order: 1
+nav_order: 2
 ---
 You can access the Thesaurus administration via the **ElasticSuite > Thesaurus** menu. 
 
