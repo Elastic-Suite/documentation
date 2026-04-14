@@ -4,6 +4,7 @@ title: Indices
 has_children: false
 parent: System
 grand_parent: ElasticSuite
+nav_order: 1
 ---
 It can be accessed under the ElasticSuite menu > System > Indices.
 
