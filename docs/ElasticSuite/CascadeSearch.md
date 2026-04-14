@@ -14,7 +14,7 @@ You should head to the Troubleshooting section of this documentation before goin
 
 ## Installing the module
 
-The module responsible for neural search is `smile/module-elasticsuite-cascade-search` and this module was not part of the standard Premium package initially. You might need to install it manually prior going further.
+The module responsible for the cascade search is `smile/module-elasticsuite-cascade-search` and this module is available as part of the Elasticsuite Premium package [1, 2]. You might need to install it manually prior to going further.
 
 ## Configuring the Cascade Search
 
@@ -26,7 +26,7 @@ If you want to enable the cascade search, you will have to set Enabled=yes **but
 
 ![Sélection_1859](https://elastic-suite.github.io/documentation/docs/ElasticSuite/static/Sélection_1859.png)
 
-⚠️ For now, the cascade search has only been tested with roman languages (french, italian, spanish, etc...). It might not work properly with other languages (english), and especially with languages that rely on word composition (german, dutch, etc...).
+⚠️ **Language Support Note:** By design, the cascade search works out-of-the-box for common romance languages (French, Italian, Spanish, Portuguese, etc.) and English. While an implicit word delimiter parameter has been added in recent versions for better analysis, it might still require additional configuration for languages that rely heavily on word composition (like German and Dutch), where adding a word decompounder step in your analysis configuration may be required.
 
 ### Frontend Configuration
 
@@ -34,7 +34,9 @@ If you want to enable the cascade search, you will have to set Enabled=yes **but
 
 Here you can configure the number of suggestions displayed and how they should be sorted. 
 
-We recommend to let the "Replace Search Recommendations" parameter to "No".
+We recommend leaving the "Replace Search Recommendations" parameter to "No". 
+
+*Note: The frontend display is dynamic. Each suggestion is visually decorated with the best matching product for that term, and the suggestion block will automatically hide itself when there are no longer finer suggestions popular enough to be displayed*.
 
 ### Additional Configuration
 
@@ -42,11 +44,13 @@ We recommend to let the "Replace Search Recommendations" parameter to "No".
 
 The default values are recommended and should rather not be edited.
 
-## Computing the suggestions
+## Computing the suggestions (Post-Installation)
 
-Before the suggestions to be shown on the frontend part, you will need to reindex the "ElasticSuite Search Events" and "ElasticSuite Search Suggestions" indices, either by invalidating them through the Magento back-office, or by reindexing them via the command line.
+Because Cascade Search aggregates and analyzes popular searches based on your Elasticsuite Tracker retention delay, it relies on two dedicated indexers: `elasticsuite_search_events` and `elasticsuite_search_suggestions`.
 
-Once you're done with this, suggestions will begin to show in the website frontend.
+Before suggestions can be shown on the frontend, you **must** configure these two indexers to **"Update by Schedule"**. 
+
+Furthermore, because building the events index can be very resource-intensive, the `elasticsuite_search_events` indexer is protected from accidental rebuilding requests. It must be manually reset to an "Invalid" state before you can trigger the initial reindex.
 
 ## Tweaking of the suggestions
 
