@@ -8,6 +8,8 @@ nav_order: 1
 ---
 ## System Indices Dashboard
 
+<img width="1780" height="782" alt="indices-status" src="https://github.com/user-attachments/assets/d0190e5b-0e33-4423-b853-bbf6bdf15eb9" />
+
 **Overview**
 The Indices dashboard allows you to monitor the status and usage of your Elasticsearch/OpenSearch cluster directly from the Magento Back-Office. It provides a comprehensive grid listing all indices, their sizes, document counts, and routing configurations. From here, you can also easily access any index's specific mapping or settings to troubleshoot search relevance.
 
