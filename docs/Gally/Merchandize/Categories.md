@@ -58,10 +58,17 @@ Once user selects a category in the category tree, products from this category a
 ![image](https://user-images.githubusercontent.com/98949123/211290954-46088219-cf6b-42e1-9eda-a646df11ea05.png)
 
 Grid contains following columns :
- 
-|Selection |Code |Image |Name |Score |Stock |Price |Display |
-|:-------------|:------------------|:------|:------|:------|:------|:------|:------|
-|Checkbox for selecting products and pin or unpin products (see dedicated section)|Product SKU|Image of the product. The base image is displayed on Gally, other images are not displayed.|Product label|Product score. If boosts are applied on this category listing, score will be affected (detail for boost calculation is described in a dedicated section.|Stock status. 2 possible values : "In stock" or "Out of stock"|Product price|Switcher allowing to display or hide a in front.|
+
+|Field|Description|
+|:-------------|:------------------|
+|Selection |Checkbox for selecting products and pin or unpin products (see dedicated section)|
+|Code |Product SKU|
+|Image |Image of the product. The base image is displayed on Gally, other images are not displayed.|
+|Name |Product label|
+|Score |Product score. If boosts are applied on this category listing, score will be affected (detail for boost calculation is described in a dedicated section.|
+|Stock |Stock status. 2 possible values : "In stock" or "Out of stock"|
+|Price |Product price|
+|Display |Switcher allowing to display or hide a in front.|
 
 This product grid is a preview area. It means that sorting must be the same then the e-commerce front application.
 
