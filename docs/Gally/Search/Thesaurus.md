@@ -12,6 +12,8 @@ This entry allows user to manage thesaurus on search.
 
 ## Thesaurus grid
 
+### Grid
+
 At the top of the page, a filter bar is available. User can filter based on every column of the grid (name, thesaurus type, terms, enable, context).
 
 The grid lists all the thessaurus created in Gally :
@@ -28,6 +30,12 @@ The grid lists all the thessaurus created in Gally :
 |Actions|Button "Edit" allowing to access the edition page of the thesaurus.|
 
 A new thesaurus can be created thanks to the button "Create Thesaurus" at the top right of the page.
+
+### Import and Export Thesaurus
+
+<img width="1592" height="122" alt="image" src="https://github.com/user-attachments/assets/60e9d02d-8183-4898-a5b9-70532deb9804" />
+
+At the top right of the page, two buttons are available : "Export thesaurus" and "Import thesaurus", these buttons will redirect users to the dedicated entry for import and export.
 
 ## Thesaurus edition page
 
