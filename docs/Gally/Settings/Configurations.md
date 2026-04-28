@@ -153,9 +153,45 @@ Rewards products where the searched terms appear close to each other or at the v
 
 ## Boost
 
+The Boost configuration section in Gally allows you to fine-tune the core boost behaviors.
+
+### Model: attribute value
+
+Allows the admin to list the type of attribute that can be used in proportionnal to an attribute value boost.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| Proportional boost attribute types | Int, Float | Specifies the data types of the attributes (such as integers or floats) that are eligible to be used for proportional boosting. |
 
 ## Thesaurus
 
+These settings allow you to configure the behavior of the thesaurus, controlling how synonyms and expansions are applied to search queries to provide relevant alternative results.
+
+#### General
+
+This section defines the global limits and behavior of the thesaurus rewriting process.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Maximum number of rewrites** | `2` | Maximum number of thesaurus rules applied at a given time to a given search query to produce alternative queries. That number applies first to the synonyms rules and then the expansion rules. For instance if the setting's value is 2, it means each alternative query will be the result of the application of at most 2 synonyms rules and at most 2 expansion rules. But if you have 10 synonym rules and 5 expansion rules, they could all end up being applied by pairs. So be careful about augmenting this setting's value, especially if you already have a lot of rules with long lists of alternative terms. |
+
+#### Synonym
+
+These settings control the activation and scoring impact of synonym rules.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Enable synonyms** | `Yes` | Determines whether synonym rules are actively applied to search queries. |
+| **Synonym weight divider** | `10` | The factor by which the score of a synonym match is divided. This ensures that exact matches generally rank higher than synonym matches. |
+
+#### Expansion
+
+These settings control the activation and scoring impact of expansion rules.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Enable expansions** | `Yes` | Determines whether expansion rules are actively applied to search queries. |
+| **Expansion weight divider** | `10` | The factor by which the score of an expansion match is divided, adjusting its relevance score relative to the original search term. |
 
 ## Vector Search
 
