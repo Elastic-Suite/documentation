@@ -4,7 +4,7 @@ title: Boosts - Premium
 has_children: false
 parent: Merchandize
 grand_parent: Gally
-nav_order: 3
+nav_order: 4
 ---
 
 It can be accessed under MERCHANDIZE menu : MERCHANDIZE > Boosts.
