@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Recommenders
-has_children: false
+has_children: true
 parent: Merchandize
 grand_parent: Gally
-nav_order: 3
+nav_order: 2
 ---
