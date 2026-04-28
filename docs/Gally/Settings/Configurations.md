@@ -94,6 +94,62 @@ The Configuration menu in Gally includes the **Search** tab, which handles the c
 
 ## Relevance
 
+The **Relevance** configuration section in Gally allows you to fine-tune the core search engine behaviors, adjusting how aggressively the engine matches user queries with product data and how it calculates the final score (ranking) of the results. 
+
+### Fulltext Search
+
+These settings control the base full-text matching logic for user queries.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Minimum should match** | `100%` | Defines the minimum percentage of words from the search query that a product must contain to be considered a valid result. A value of 100% ensures highly relevant results by requiring all words to be present. |
+| **Tie breaker** | `1` | Determines how much the scores of the lesser-matching fields affect the final score when a search term is found in multiple attributes. |
+
+### Phrase Search
+
+These settings allow you to reward products that contain the exact phrase searched by the user (the exact words in the exact same order).
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Enable phrase boost** | `No` | Activates phrase-level boosting to reward products that contain the exact phrase searched by the user. |
+| **Boost value** | `0` | The multiplier applied to the score when the exact phrase is matched. |
+
+### Stopwords Detection
+
+This section dynamically ignores extremely common words to improve performance and relevance.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Cutoff frequency** | `0,15` | Determines the frequency threshold (e.g., 15%) at which a term is dynamically considered a stopword and ignored by the engine because it appears in too many products. |
+
+### Fuzzy Search
+
+Fuzzy search helps catch typos and spelling mistakes made by users.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Enable fuzzy search** | `Yes` | Activates typo tolerance to help catch spelling mistakes made by users. |
+| **Fuzzy search similarity** | `AUTO` | The edit distance allowed for typo correction, usually dynamically adjusted based on the length of the searched word. |
+| **Fuzzy search prefix** | `1` | The number of initial characters that must match exactly before fuzzy logic is applied (e.g., a prefix of 1 means the first letter must be strictly identical). |
+| **Maximum number of expansions** | `10` | The maximum number of alternate typo-corrected terms the engine will generate and search for. |
+
+### Phonetic Search
+
+Allows the engine to match words that sound similar even if they are spelled differently.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Enable phonetic search** | `Yes` | Activates phonetic text analysis, allowing the engine to match words that sound similar even if they are spelled differently. |
+
+### Proximity Search
+
+Rewards products where the searched terms appear close to each other or at the very beginning of the field.
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Span boost** | `10` | The multiplier applied to the score when terms are found in close proximity to each other or at the very beginning of the field. |
+| **Span slop** | `10` | The maximum number of intervening words allowed between the searched terms for them to still receive the proximity boost. |
+| **Span in order** | `No` | Determines whether the words must appear in the exact same order as typed by the user to receive the boost. |
 
 ## Boost
 
