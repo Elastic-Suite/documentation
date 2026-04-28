@@ -34,6 +34,8 @@ The main grid lists all configured recommender types and provides the following 
 
 When creating a new recommender type, you will be presented with a dedicated creation form containing two mandatory fields:
 
+<img width="1427" height="495" alt="image" src="https://github.com/user-attachments/assets/f347132f-a7ac-4b7f-94f2-8d76fc78bf7e" />
+
 *   **Name:** The human-readable label for the recommender type (for example, "Up-sell" or "Cross-sell").
 *   **Code:** The unique internal technical identifier used by the system for this type.
 
