@@ -47,10 +47,10 @@ The system continuously runs a variety of checks covering core engine settings, 
 
 #### Behavioral Data Tracking
 *   **tracker_pending_events:** Monitors the behavioral tracker queue to ensure that events (like views and sales) are being regularly indexed as expected. 
-*   **invalid_tracker_events:** Scans for malformed tracker events (e.g., missing unique visitor or session IDs) that could slow down your behavioral indices or cause data collection failures.
+*   **invalid_tracker_events:** Scans for malformed tracker events (e.g., missing unique visitor or session IDs) that were stopped from being put into your behavioral indices to prevent performance or data collection issues.
 
 #### Package & License Validation
-*   **packages_version_check:** Verifies that all additional Elasticsuite add-on packages installed on your instance perfectly match the version of the core `smile/elasticsuite` package, preventing compatibility errors.
+*   **packages_version_check:** *(Premium only)* Verifies that all Elasticsuite Premium packages installed on your instance perfectly match the version of the core `smile/elasticsuite` package, preventing compatibility errors.
 *   **premium_client_id_checker:** *(Premium only)* Validates that your Elasticsuite Premium Client ID is correctly configured according to your onboarding license terms.
 *   **recommender_similarity_attr_check:** *(Premium only)* Ensures that the Recommender module is properly configured with valid similarity attributes.
 
