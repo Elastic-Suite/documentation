@@ -210,7 +210,25 @@ These settings allow you to configure the behavior of vector search (often refer
 
 ## Explain
 
+These settings allow you to configure the behavior of the Explain feature, which provides detailed insights into why specific products are returned for a given search query and how their relevance scores are calculated. 
+
+#### General
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Highlight collector fields** | `yes` | Determines whether to visually highlight the matched search terms within the aggregate collector fields when analyzing search results. This helps administrators quickly identify exactly which tokens or aggregated attributes contributed to a product's match and final score. |
 
 ## Term suggestion
 
+### Term Suggestion
+
+These settings allow you to configure the behavior of term suggestions. By leveraging historical search data, you can dynamically guide users toward popular and relevant queries based on past browsing activity.
+
+#### General
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **Suggested terms period (in day)** | `180` | Determines the historical timeframe (in days) from which the system will pull past user search data to generate suggestions. For example, a value of 180 means suggestions are based on the last 6 months of search activity. |
+| **Boost suggested terms period (in day)** | `7` | Applies a relevance boost to terms that have been frequently searched within a more recent, shorter timeframe (e.g., the last 7 days). This helps trending or highly active recent searches appear higher in the suggestions list. |
+| **Max suggestion terms** | `10` | The maximum number of suggested search terms that will be returned and displayed to the user at any given time. |
 
