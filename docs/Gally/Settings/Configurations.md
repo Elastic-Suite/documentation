@@ -195,6 +195,18 @@ These settings control the activation and scoring impact of expansion rules.
 
 ## Vector Search
 
+These settings allow you to configure the behavior of vector search (often referred to as neural, k-NN, or semantic search). Vector search leverages machine learning models to understand the broader context and meaning of a user's query, allowing the engine to return highly relevant products based on conceptual similarity rather than relying strictly on exact keyword matching.
+
+#### Search Configuration
+
+| Configuration Field | Default Value | Description |
+| :--- | :--- | :--- |
+| **K value** | `100` | Determines the number of nearest neighbors (top matching documents) the engine retrieves from the cluster during the initial vector search phase. A higher value increases the number of potential matches (recall) but may slightly impact performance. |
+| **Minimum score** | `0,015` | Sets the absolute similarity threshold required for a vector match to be considered valid. Results with a similarity score below this value will be considered irrelevant and automatically excluded from the final results. |
+| **Use for spellcheck** | `No` | Determines whether vector search should be utilized to retrieve or blend results when the system detects a misspelled query or applies a typo correction. |
+| **Use for exact match** | `No` | Defines whether vector search should be executed and combined with standard full-text results even when the engine has already successfully found exact keyword matches. |
+| **Use on no result** | `No` | Determines if the engine should automatically fall back to vector search to provide conceptual recommendations when the standard full-text query returns 0 results, helping to prevent "dead-end" empty pages. |
+
 
 ## Explain
 
