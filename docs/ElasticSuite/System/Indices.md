@@ -11,14 +11,14 @@ nav_order: 1
 <img width="1780" height="782" alt="indices-status" src="https://github.com/user-attachments/assets/d0190e5b-0e33-4423-b853-bbf6bdf15eb9" />
 
 **Overview**
-The Indices dashboard allows you to monitor the status and usage of your Elasticsearch/OpenSearch cluster directly from the Magento Back-Office. It provides a comprehensive grid listing all indices, their sizes, document counts, and routing configurations. From here, you can also easily access any index's specific mapping or settings to troubleshoot search relevance.
+The Indices dashboard allows you to monitor the status and usage of your Elasticsearch/OpenSearch cluster directly from the Magento Back-Office. It provides a comprehensive grid listing all indices, their sizes, document counts, and sharding configurations. From here, you can also easily access any index's specific mapping or settings to troubleshoot search relevance.
 
 You can access this page by navigating to **Smile ElasticSuite > System > Indices**.
 
 ### Filtering and Management
 
 At the top of the grid, you have several tools to refine the view and manage your cluster:
-*   **Search/Filter:** You can easily filter the grid by searching for either the **Index Title** (exact name) or the **Index Alias**.
+*   **Search/Filter:** You can easily filter the grid by searching for either the **Index Title** (exact index name) or the **Index Alias**.
 *   **Hide External Indices:** You can toggle a filter to hide external indices, allowing you to only display the indices specifically built and managed by ElasticSuite.
 *   **Purge Ghost Indices:** A dedicated mass-action button is available at the top of the screen to safely remove all "Ghost" indices at once.
 
@@ -32,7 +32,7 @@ At the top of the grid, you have several tools to refine the view and manage you
 | **Size** | The physical storage size of the index on your cluster. |
 | **Primary Shards** | The number of primary shards configured for this specific index. |
 | **Replicas** | The number of replica shards configured for this specific index. |
-| **Index Status** | The current operational status of the index. Common statuses include:<br><br>• **Live:** The active index that is currently linked to the alias and serving queries.<br>• **Ghost:** An orphaned index (usually from a failed reindex) that is no longer linked to an alias and is drawing useless resources.<br>• **Closed:** An index that has been explicitly closed in the cluster.<br>• **Unknown:** Displayed if retrieving the index statistics fails. |
+| **Index Status** | The current operational status of the index. Common statuses include:<br><br>• **Live:** The active index that is currently linked to the alias and serving queries.<br>• **Ghost:** An orphaned index (usually from a failed reindex) that is no longer linked to an alias and is drawing useless resources.<br>• **Closed:** An index that has been explicitly closed in the cluster.<br>• **Unknown:** Displayed if retrieving the index statistics fails.<br>• **External:** An index that is not managed by Elasticsuite **for the current Magento environment**.|
 | **Action** | Available actions for the specific index. You can click to view its **Mapping** or **Settings**. If the index is flagged as a "Ghost", a **Delete** action will also be available here. |
 
 ***
