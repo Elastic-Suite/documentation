@@ -21,6 +21,8 @@ The main grid provides a clear overview of all configured users. From this inter
 
 ### Creating a New User
 
+<img width="731" height="684" alt="image" src="https://github.com/user-attachments/assets/0b4e2ce6-f9b3-4032-90f3-fddae2626e91" />
+
 When you click to create a new user, you will be presented with a dedicated form containing the following fields:
 
 | Configuration Field | Default Value | Description |
