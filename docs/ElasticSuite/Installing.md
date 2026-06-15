@@ -79,51 +79,16 @@ You just need to require the same version that you already have for the Elastics
 For Magento Open Source edition, you will not be able to install the modules smile/module-elasticsuite-catalog-optimizer-customer-segment and smile/module-elasticsuite-ab-campaign-customer-segment because they requires the magento/module-customer-segment which is only included in Adobe Commerce.
 
 ```
-composer --ignore-platform-reqs require \
-smile/module-elasticsuite-ab-campaign ~2.11.0 \
-smile/module-elasticsuite-behavioral-autocomplete ~2.11.0 \
-smile/module-elasticsuite-behavioral-data ~2.11.0 \
-smile/module-elasticsuite-behavioral-optimizer ~2.11.0 \
-smile/module-elasticsuite-cascade-search ~2.11.0 \
-smile/module-elasticsuite-catalog-optimizer-customer-group \
-smile/module-elasticsuite-configurable-product ~2.11.0 \
-smile/module-elasticsuite-explain ~2.11.0 \
-smile/module-elasticsuite-facet-recommender ~2.11.0 \
-smile/module-elasticsuite-instant-search ~2.11.0 \
-smile/module-elasticsuite-layered-navigation ~2.11.0 \
-smile/module-elasticsuite-merchandiser ~2.11.0 \
-smile/module-elasticsuite-recommender ~2.11.0 \
-smile/module-elasticsuite-recommender-graph-ql ~2.11.0 \
-smile/module-elasticsuite-term-recommender ~2.11.0 \
-smile/module-elasticsuite-virtual-attribute ~2.11.0
+composer --ignore-platform-reqs require smile/elasticsuite-premium-magento
 ```
 
 ### 1b. Install the modules : On Adobe Commerce
 
 ```
-composer --ignore-platform-reqs require \
-smile/module-elasticsuite-ab-campaign ~2.11.0 \
-smile/module-elasticsuite-ab-campaign-customer-segment ~2.11.0 \
-smile/module-elasticsuite-behavioral-autocomplete ~2.11.0 \
-smile/module-elasticsuite-behavioral-data ~2.11.0 \
-smile/module-elasticsuite-behavioral-optimizer ~2.11.0 \
-smile/module-elasticsuite-cascade-search ~2.11.0 \
-smile/module-elasticsuite-catalog-optimizer-customer-group \
-smile/module-elasticsuite-catalog-optimizer-customer-segment ~2.11.0 \
-smile/module-elasticsuite-configurable-product ~2.11.0 \
-smile/module-elasticsuite-explain ~2.11.0 \
-smile/module-elasticsuite-facet-recommender ~2.11.0 \
-smile/module-elasticsuite-instant-search ~2.11.0 \
-smile/module-elasticsuite-layered-navigation ~2.11.0 \
-smile/module-elasticsuite-merchandiser ~2.11.0 \
-smile/module-elasticsuite-recommender ~2.11.0 \
-smile/module-elasticsuite-recommender-graph-ql ~2.11.0 \
-smile/module-elasticsuite-term-recommender ~2.11.0 \
-smile/module-elasticsuite-virtual-attribute ~2.11.0
+composer --ignore-platform-reqs require smile/elasticsuite-premium-commerce
 ```
 
-Please note that in the eventuality of forgetting to install `smile/module-elasticsuite-behavioral-data`,it will be automatically installed since it is required by `smile/module-elasticsuite-behavioral-optimizer`'s composer.json.
-Please also note that `smile/magento2-react` will be automatically required and installed since required by `smile/module-elasticsuite-instant-search`. This module will add `package-magento-react.json` in your project repository. You will need to merge the content of this file with your `package.json` file. If you don't have any pre-existing `package.json` at the project root, you can rename the `package-magento-react.json` to `package.json`
+Please note that `smile/magento2-react` will be automatically required and installed since required by `smile/module-elasticsuite-instant-search`. This module will add `package-magento-react.json` in your project repository. You will need to merge the content of this file with your `package.json` file. If you don't have any pre-existing `package.json` at the project root, you can rename the `package-magento-react.json` to `package.json`
 
 ### 2a. Enable all modules if needed : On Magento Open Source
 
@@ -145,6 +110,7 @@ Smile_ElasticsuiteMerchandiser \
 Smile_ElasticsuiteTermRecommender \
 Smile_ElasticsuiteCascadeSearch \
 Smile_ElasticsuiteCatalogOptimizerCustomerGroup \
+Smile_ElasticsuiteAdvancedAnalysis \
 Smile_ElasticsuiteBeacon
 ```
 
