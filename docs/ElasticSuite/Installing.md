@@ -74,6 +74,46 @@ The Elasticsuite premium modules follow the same syntax. For instance `composer 
 
 You just need to require the same version that you already have for the Elasticsuite Open Source version.
 
+<details markdown="block">
+  <summary>
+    List of modules and their compatibility
+  </summary>
+
+| Package | Module | Magento Open Source | Adobe Commerce | Notes |
+|---|---|:---:|:---:|---|
+| `smile/magento2-react` | `Smile_React` | ✅ | ✅ | Installed automatically as a dependency of `smile/module-elasticsuite-instant-search` |
+| `smile/module-elasticsuite-ab-campaign` | `Smile_ElasticsuiteAbCampaign` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-ab-campaign-customer-segment` | `Smile_ElasticsuiteAbCampaignCustomerSegment` | ❌ | ✅ | Requires `magento/module-customer-segment` |
+| `smile/module-elasticsuite-advanced-analysis` | `Smile_ElasticsuiteAdvancedAnalysis` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-amasty-compatibility` | `Smile_ElasticsuiteAmastyCompatibility` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-beacon` | `Smile_ElasticsuiteBeacon` | ✅ | ✅ | Installed automatically as a dependency of every premium module |
+| `smile/module-elasticsuite-behavioral-autocomplete` | `Smile_ElasticsuiteBehavioralAutocomplete` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-behavioral-data` | `Smile_ElasticsuiteBehavioralData` | ✅ | ✅ | Installed automatically as a dependency of `smile/module-elasticsuite-behavioral-optimizer` |
+| `smile/module-elasticsuite-behavioral-optimizer` | `Smile_ElasticsuiteBehavioralOptimizer` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-cascade-search` | `Smile_ElasticsuiteCascadeSearch` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-catalog-optimizer-customer-group` | `Smile_ElasticsuiteCatalogOptimizerCustomerGroup` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-catalog-optimizer-customer-segment` | `Smile_ElasticsuiteCatalogOptimizerCustomerSegment` | ❌ | ✅ | Requires `magento/module-customer-segment` |
+| `smile/module-elasticsuite-category-monitoring` | `Smile_ElasticsuiteCategoryMonitoring` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-cms-instant-search` | `Smile_ElasticsuiteCmsInstantSearch` | ✅ | ✅ | [Extra package](#extra-packages) |
+| `smile/module-elasticsuite-configurable-product` | `Smile_ElasticsuiteConfigurableProduct` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-explain` | `Smile_ElasticsuiteExplain` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-facet-recommender` | `Smile_ElasticsuiteFacetRecommender` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-global-behavioral-data` | `Smile_ElasticsuiteGlobalBehavioralData` | ✅ | ✅ | [Extra package](#extra-packages) |
+| `smile/module-elasticsuite-global-optimizer` | `Smile_ElasticsuiteGlobalOptimizer` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-google-analytics` | `Smile_ElasticsuiteGoogleAnalytics` | ❌ | ✅ | Relies on `Magento_GoogleTagManager` |
+| `smile/module-elasticsuite-hyva-compatibility` | `Smile_ElasticsuiteHyvaCompatibility` | ✅ | ✅ | [Extra package](#extra-packages), Hyvä theme only |
+| `smile/module-elasticsuite-instant-search` | `Smile_ElasticsuiteInstantSearch` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-layered-navigation` | `Smile_ElasticsuiteLayeredNavigation` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-neural-search` | `Smile_ElasticsuiteNeuralSearch` | ✅ | ✅ | [Extra package](#extra-packages), from `~2.11.0`, OpenSearch >= 2.13 |
+| `smile/module-elasticsuite-recommender` | `Smile_ElasticsuiteRecommender` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-recommender-explain` | `Smile_ElasticsuiteRecommenderExplain` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-recommender-graph-ql` | `Smile_ElasticsuiteRecommenderGraphQl` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-recommender-target-rule-proxy` | `Smile_ElasticsuiteRecommenderTargetRuleProxy` | ❌ | ✅ | Requires `magento/module-target-rule` |
+| `smile/module-elasticsuite-term-recommender` | `Smile_ElasticsuiteTermRecommender` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-virtual-attribute` | `Smile_ElasticsuiteVirtualAttribute` | ✅ | ✅ |  |
+
+</details>
+
 ### 1a. Install the modules : On Magento Open Source
 
 For Magento Open Source edition, you would not be able to install the modules `smile/module-elasticsuite-catalog-optimizer-customer-segment` and `smile/module-elasticsuite-ab-campaign-customer-segment` because they require the `magento/module-customer-segment` which is only included in Adobe Commerce.
@@ -99,6 +139,7 @@ Where `[version-requirement]` must match the Elasticsuite Open Source branch com
 | `~2.10.0`               | 2.4.1 <= Magento < 2.4.6   |
 | `~2.11.0`               | 2.4.6 <= Magento < 2.4.9   |
 | `~2.12.0`               | Magento >= 2.4.9           |
+{: #version-requirement }
 
 See the [Elasticsuite compatibility matrix](https://github.com/Smile-SA/elasticsuite#which-version-should-i-use).
 
@@ -186,7 +227,7 @@ If we provided environment specific client ids, you will have to configure each 
 ## Extra packages
 
 The following premium modules are not part of the `smile/elasticsuite-premium-magento` and `smile/elasticsuite-premium-commerce` metapackages and must be required and enabled separately, if needed.
-They follow the same `[version-requirement]` as the metapackages (see the table above).
+They follow the same `[version-requirement]` as the metapackages (see the [`[version-requirement]` / Magento version table](#version-requirement)).
 
 | Package | Module | Notes |
 |---|---|---|
