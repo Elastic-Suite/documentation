@@ -94,17 +94,17 @@ You just need to require the same version that you already have for the Elastics
 | `smile/module-elasticsuite-catalog-optimizer-customer-group`<br>`Smile_ElasticsuiteCatalogOptimizerCustomerGroup` | ✅ | ✅ |  |
 | `smile/module-elasticsuite-catalog-optimizer-customer-segment`<br>`Smile_ElasticsuiteCatalogOptimizerCustomerSegment` | ❌ | ✅ | Requires `magento/module-customer-segment` |
 | `smile/module-elasticsuite-category-monitoring`<br>`Smile_ElasticsuiteCategoryMonitoring` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-cms-instant-search`<br>`Smile_ElasticsuiteCmsInstantSearch` | ✅ | ✅ | [Extra package](#extra-packages) |
+| `smile/module-elasticsuite-cms-instant-search`<br>`Smile_ElasticsuiteCmsInstantSearch` | ✅ | ✅ | [Extra module](#extra-modules) |
 | `smile/module-elasticsuite-configurable-product`<br>`Smile_ElasticsuiteConfigurableProduct` | ✅ | ✅ |  |
 | `smile/module-elasticsuite-explain`<br>`Smile_ElasticsuiteExplain` | ✅ | ✅ |  |
 | `smile/module-elasticsuite-facet-recommender`<br>`Smile_ElasticsuiteFacetRecommender` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-global-behavioral-data`<br>`Smile_ElasticsuiteGlobalBehavioralData` | ✅ | ✅ | [Extra package](#extra-packages) |
+| `smile/module-elasticsuite-global-behavioral-data`<br>`Smile_ElasticsuiteGlobalBehavioralData` | ✅ | ✅ | [Extra module](#extra-modules) |
 | `smile/module-elasticsuite-global-optimizer`<br>`Smile_ElasticsuiteGlobalOptimizer` | ✅ | ✅ |  |
 | `smile/module-elasticsuite-google-analytics`<br>`Smile_ElasticsuiteGoogleAnalytics` | ❌ | ✅ | Relies on `Magento_GoogleTagManager` |
-| `smile/module-elasticsuite-hyva-compatibility`<br>`Smile_ElasticsuiteHyvaCompatibility` | ✅ | ✅ | [Extra package](#extra-packages), Hyvä theme only |
+| `smile/module-elasticsuite-hyva-compatibility`<br>`Smile_ElasticsuiteHyvaCompatibility` | ✅ | ✅ | [Extra module](#extra-modules), Hyvä theme only |
 | `smile/module-elasticsuite-instant-search`<br>`Smile_ElasticsuiteInstantSearch` | ✅ | ✅ |  |
 | `smile/module-elasticsuite-layered-navigation`<br>`Smile_ElasticsuiteLayeredNavigation` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-neural-search`<br>`Smile_ElasticsuiteNeuralSearch` | ✅ | ✅ | [Extra package](#extra-packages), from `~2.11.0`, OpenSearch >= 2.13 |
+| `smile/module-elasticsuite-neural-search`<br>`Smile_ElasticsuiteNeuralSearch` | ✅ | ✅ | [Extra module](#extra-modules), from `~2.11.0`, OpenSearch >= 2.13 |
 | `smile/module-elasticsuite-recommender`<br>`Smile_ElasticsuiteRecommender` | ✅ | ✅ |  |
 | `smile/module-elasticsuite-recommender-explain`<br>`Smile_ElasticsuiteRecommenderExplain` | ✅ | ✅ |  |
 | `smile/module-elasticsuite-recommender-graph-ql`<br>`Smile_ElasticsuiteRecommenderGraphQl` | ✅ | ✅ |  |
@@ -124,14 +124,6 @@ The simplest way to install all the modules compatible with Magento Open Source 
 composer --ignore-platform-reqs require smile/elasticsuite-premium-magento [version-requirement]
 ```
 
-### 1b. Install the modules : On Adobe Commerce
-
-The simplest way to install all the modules compatible with Adobe Commerce is to require our composer **metapackage**:
-
-```
-composer --ignore-platform-reqs require smile/elasticsuite-premium-commerce [version-requirement]
-```
-
 Where `[version-requirement]` must match the Elasticsuite Open Source branch compatible with your Magento version:
 
 | `[version-requirement]` | Magento version            |
@@ -145,7 +137,15 @@ See the [Elasticsuite compatibility matrix](https://github.com/Smile-SA/elastics
 
 For instance, on Magento 2.4.7: `composer --ignore-platform-reqs require smile/elasticsuite-premium-magento ~2.11.0`
 
-Please note that `smile/magento2-react` will be automatically required and installed since required by `smile/module-elasticsuite-instant-search`. This module will add `package-magento-react.json` in your project repository. You will need to merge the content of this file with your `package.json` file. If you don't have any pre-existing `package.json` at the project root, you can rename the `package-magento-react.json` to `package.json`
+### 1b. Install the modules : On Adobe Commerce
+
+The simplest way to install all the modules compatible with Adobe Commerce is to require our composer **metapackage**:
+
+```
+composer --ignore-platform-reqs require smile/elasticsuite-premium-commerce [version-requirement]
+```
+
+See the [`[version-requirement]` / Magento version table](#version-requirement) above.
 
 ### 2a. Enable all modules if needed : On Magento Open Source
 
@@ -224,7 +224,7 @@ To configure this, you have to go to **Stores > Configuration > Elasticsuite > E
 
 If we provided environment specific client ids, you will have to configure each environment with the proper client Id.
 
-## Extra packages
+## Extra modules
 
 The following premium modules are not part of the `smile/elasticsuite-premium-magento` and `smile/elasticsuite-premium-commerce` metapackages and must be required and enabled separately, if needed.
 They follow the same `[version-requirement]` as the metapackages (see the [`[version-requirement]` / Magento version table](#version-requirement)).
@@ -248,6 +248,8 @@ Then run setup and reindex as described in [step 3](#run-setup-and-reindex).
 ## Instant Search
 
 The `smile/module-elasticsuite-instant-search` requires `smile/magento2-react` to provide a React based autocomplete search feature: it will be automatically required and installed when requiring `smile/module-elasticsuite-instant-search`.
+
+`smile/magento2-react` will add `package-magento-react.json` in your project repository. You will need to merge the content of this file with your `package.json` file. If you don't have any pre-existing `package.json` at the project root, you can rename the `package-magento-react.json` to `package.json`
 
 `smile/magento2-react` requires yarn to be installed on the deployment frontend servers, in order to build and package the React JavaScript sources.
 
