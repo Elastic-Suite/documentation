@@ -44,7 +44,8 @@ For instance, on Magento 2.4.8:
 * the composer command to install Elasticsuite Open Source `composer --ignore-platform-reqs require smile/elasticsuite [version-requirement]` becomes `composer --ignore-platform-reqs require smile/elasticsuite ~2.11.0`
 * the command to install, for instance, the facet recommender module `composer --ignore-platform-reqs require smile/module-elasticsuite-facet-recommender [version-requirement]` becomes `composer --ignore-platform-reqs require smile/module-elasticsuite-facet-recommender ~2.11.0`.
 
-#### Keeping Elasticsuite and Elasticsuite Premium synchronized
+### Keeping Elasticsuite and Elasticsuite Premium synchronized
+{: #keeping-synchronized }
 
 More than the same version branch as Elasticsuite, Elasticsuite Premium modules must be installed at the exact same version as Elasticsuite Open Source. Their releases are synchronized: each Elasticsuite release comes with an Elasticsuite Premium release with the exact same version number, even when no Premium module has changed.
 
@@ -150,7 +151,9 @@ Where `[version-requirement]` is to be replaced according to your Magento versio
 | `~2.11.0`               | 2.4.6 <= Magento < 2.4.9   |
 | `~2.12.0`               | Magento >= 2.4.9           |
 
-Requiring `smile/elasticsuite` and the use of the `--with-all-dependencies` are to keep the version of the Premium modules and Elasticsuite Open Source synchronized.
+Requiring `smile/elasticsuite` and the use of the `--with-all-dependencies` are to keep the versions of the Premium modules and Elasticsuite Open Source synchronized.
+
+See [Keeping Elasticsuite and Elasticsuite Premium synchronized](#keeping-synchronized).
 
 ### 1b. Install the modules : On Adobe Commerce
 
@@ -168,7 +171,9 @@ Where `[version-requirement]` is to be replaced according to your Magento versio
 | `~2.11.0`               | 2.4.6 <= Magento < 2.4.9   |
 | `~2.12.0`               | Magento >= 2.4.9           |
 
-Requiring `smile/elasticsuite` and the use of the `--with-all-dependencies` are to keep the version of the Premium modules and Elasticsuite Open Source synchronized.
+Requiring `smile/elasticsuite` and the use of the `--with-all-dependencies` are to keep the versions of the Premium modules and Elasticsuite Open Source synchronized.
+
+See [Keeping Elasticsuite and Elasticsuite Premium synchronized](#keeping-synchronized).
 
 ### 2a. Enable all modules if needed : On Magento Open Source
 
