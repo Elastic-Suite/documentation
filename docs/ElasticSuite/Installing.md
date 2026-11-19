@@ -79,38 +79,38 @@ You just need to require the same version that you already have for the Elastics
     List of modules and their compatibility
   </summary>
 
-| Package | Module | Magento Open Source | Adobe Commerce | Notes |
-|---|---|:---:|:---:|---|
-| `smile/magento2-react` | `Smile_React` | ✅ | ✅ | Installed automatically as a dependency of `smile/module-elasticsuite-instant-search` |
-| `smile/module-elasticsuite-ab-campaign` | `Smile_ElasticsuiteAbCampaign` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-ab-campaign-customer-segment` | `Smile_ElasticsuiteAbCampaignCustomerSegment` | ❌ | ✅ | Requires `magento/module-customer-segment` |
-| `smile/module-elasticsuite-advanced-analysis` | `Smile_ElasticsuiteAdvancedAnalysis` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-amasty-compatibility` | `Smile_ElasticsuiteAmastyCompatibility` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-beacon` | `Smile_ElasticsuiteBeacon` | ✅ | ✅ | Installed automatically as a dependency of every premium module |
-| `smile/module-elasticsuite-behavioral-autocomplete` | `Smile_ElasticsuiteBehavioralAutocomplete` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-behavioral-data` | `Smile_ElasticsuiteBehavioralData` | ✅ | ✅ | Installed automatically as a dependency of `smile/module-elasticsuite-behavioral-optimizer` |
-| `smile/module-elasticsuite-behavioral-optimizer` | `Smile_ElasticsuiteBehavioralOptimizer` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-cascade-search` | `Smile_ElasticsuiteCascadeSearch` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-catalog-optimizer-customer-group` | `Smile_ElasticsuiteCatalogOptimizerCustomerGroup` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-catalog-optimizer-customer-segment` | `Smile_ElasticsuiteCatalogOptimizerCustomerSegment` | ❌ | ✅ | Requires `magento/module-customer-segment` |
-| `smile/module-elasticsuite-category-monitoring` | `Smile_ElasticsuiteCategoryMonitoring` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-cms-instant-search` | `Smile_ElasticsuiteCmsInstantSearch` | ✅ | ✅ | [Extra package](#extra-packages) |
-| `smile/module-elasticsuite-configurable-product` | `Smile_ElasticsuiteConfigurableProduct` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-explain` | `Smile_ElasticsuiteExplain` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-facet-recommender` | `Smile_ElasticsuiteFacetRecommender` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-global-behavioral-data` | `Smile_ElasticsuiteGlobalBehavioralData` | ✅ | ✅ | [Extra package](#extra-packages) |
-| `smile/module-elasticsuite-global-optimizer` | `Smile_ElasticsuiteGlobalOptimizer` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-google-analytics` | `Smile_ElasticsuiteGoogleAnalytics` | ❌ | ✅ | Relies on `Magento_GoogleTagManager` |
-| `smile/module-elasticsuite-hyva-compatibility` | `Smile_ElasticsuiteHyvaCompatibility` | ✅ | ✅ | [Extra package](#extra-packages), Hyvä theme only |
-| `smile/module-elasticsuite-instant-search` | `Smile_ElasticsuiteInstantSearch` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-layered-navigation` | `Smile_ElasticsuiteLayeredNavigation` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-neural-search` | `Smile_ElasticsuiteNeuralSearch` | ✅ | ✅ | [Extra package](#extra-packages), from `~2.11.0`, OpenSearch >= 2.13 |
-| `smile/module-elasticsuite-recommender` | `Smile_ElasticsuiteRecommender` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-recommender-explain` | `Smile_ElasticsuiteRecommenderExplain` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-recommender-graph-ql` | `Smile_ElasticsuiteRecommenderGraphQl` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-recommender-target-rule-proxy` | `Smile_ElasticsuiteRecommenderTargetRuleProxy` | ❌ | ✅ | Requires `magento/module-target-rule` |
-| `smile/module-elasticsuite-term-recommender` | `Smile_ElasticsuiteTermRecommender` | ✅ | ✅ |  |
-| `smile/module-elasticsuite-virtual-attribute` | `Smile_ElasticsuiteVirtualAttribute` | ✅ | ✅ |  |
+| Package / Module | Magento Open Source | Adobe Commerce | Notes |
+|---|:---:|:---:|---|
+| `smile/magento2-react`<br>`Smile_React` | ✅ | ✅ | Installed automatically as a dependency of `smile/module-elasticsuite-instant-search` |
+| `smile/module-elasticsuite-ab-campaign`<br>`Smile_ElasticsuiteAbCampaign` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-ab-campaign-customer-segment`<br>`Smile_ElasticsuiteAbCampaignCustomerSegment` | ❌ | ✅ | Requires `magento/module-customer-segment` |
+| `smile/module-elasticsuite-advanced-analysis`<br>`Smile_ElasticsuiteAdvancedAnalysis` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-amasty-compatibility`<br>`Smile_ElasticsuiteAmastyCompatibility` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-beacon`<br>`Smile_ElasticsuiteBeacon` | ✅ | ✅ | Installed automatically as a dependency of every premium module |
+| `smile/module-elasticsuite-behavioral-autocomplete`<br>`Smile_ElasticsuiteBehavioralAutocomplete` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-behavioral-data`<br>`Smile_ElasticsuiteBehavioralData` | ✅ | ✅ | Installed automatically as a dependency of `smile/module-elasticsuite-behavioral-optimizer` |
+| `smile/module-elasticsuite-behavioral-optimizer`<br>`Smile_ElasticsuiteBehavioralOptimizer` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-cascade-search`<br>`Smile_ElasticsuiteCascadeSearch` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-catalog-optimizer-customer-group`<br>`Smile_ElasticsuiteCatalogOptimizerCustomerGroup` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-catalog-optimizer-customer-segment`<br>`Smile_ElasticsuiteCatalogOptimizerCustomerSegment` | ❌ | ✅ | Requires `magento/module-customer-segment` |
+| `smile/module-elasticsuite-category-monitoring`<br>`Smile_ElasticsuiteCategoryMonitoring` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-cms-instant-search`<br>`Smile_ElasticsuiteCmsInstantSearch` | ✅ | ✅ | [Extra package](#extra-packages) |
+| `smile/module-elasticsuite-configurable-product`<br>`Smile_ElasticsuiteConfigurableProduct` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-explain`<br>`Smile_ElasticsuiteExplain` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-facet-recommender`<br>`Smile_ElasticsuiteFacetRecommender` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-global-behavioral-data`<br>`Smile_ElasticsuiteGlobalBehavioralData` | ✅ | ✅ | [Extra package](#extra-packages) |
+| `smile/module-elasticsuite-global-optimizer`<br>`Smile_ElasticsuiteGlobalOptimizer` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-google-analytics`<br>`Smile_ElasticsuiteGoogleAnalytics` | ❌ | ✅ | Relies on `Magento_GoogleTagManager` |
+| `smile/module-elasticsuite-hyva-compatibility`<br>`Smile_ElasticsuiteHyvaCompatibility` | ✅ | ✅ | [Extra package](#extra-packages), Hyvä theme only |
+| `smile/module-elasticsuite-instant-search`<br>`Smile_ElasticsuiteInstantSearch` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-layered-navigation`<br>`Smile_ElasticsuiteLayeredNavigation` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-neural-search`<br>`Smile_ElasticsuiteNeuralSearch` | ✅ | ✅ | [Extra package](#extra-packages), from `~2.11.0`, OpenSearch >= 2.13 |
+| `smile/module-elasticsuite-recommender`<br>`Smile_ElasticsuiteRecommender` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-recommender-explain`<br>`Smile_ElasticsuiteRecommenderExplain` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-recommender-graph-ql`<br>`Smile_ElasticsuiteRecommenderGraphQl` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-recommender-target-rule-proxy`<br>`Smile_ElasticsuiteRecommenderTargetRuleProxy` | ❌ | ✅ | Requires `magento/module-target-rule` |
+| `smile/module-elasticsuite-term-recommender`<br>`Smile_ElasticsuiteTermRecommender` | ✅ | ✅ |  |
+| `smile/module-elasticsuite-virtual-attribute`<br>`Smile_ElasticsuiteVirtualAttribute` | ✅ | ✅ |  |
 
 </details>
 
