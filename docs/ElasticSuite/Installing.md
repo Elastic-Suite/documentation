@@ -20,11 +20,11 @@ Elasticsuite Open Source is required for any premium module.
 
 Each module's composer requirements should install the correct version of Elasticsuite if that's not already done.
 
-For now, the following versions of ElasticSuite Open Source are supported: 
- 2.8.x (Magento 2.3.x < 2.3.5)
- 2.9.x (Magento 2.3.x >= 2.3.5)
- 2.10.x (Magento 2.4.x >= 2.4.1 && 2.4.x < 2.4.6)
- 2.11.x (Magento 2.4.x >= 2.4.6)
+For now, the following versions of ElasticSuite Open Source are supported:
+
+- 2.10.x (Magento 2.4.x >= 2.4.1 && 2.4.x < 2.4.6)
+- 2.11.x (Magento 2.4.x >= 2.4.6 && 2.4.x < 2.4.9)
+- 2.12.x (Magento 2.4.x >= 2.4.9)
 
 ## Composer configuration
 Elasticsuite Premium is made of several private packages accessible only through authentication on the privately available Smile packagist. To do so, you need to configure your composer to provide your credentials. 
@@ -79,14 +79,26 @@ You just need to require the same version that you already have for the Elastics
 For Magento Open Source edition, you will not be able to install the modules smile/module-elasticsuite-catalog-optimizer-customer-segment and smile/module-elasticsuite-ab-campaign-customer-segment because they requires the magento/module-customer-segment which is only included in Adobe Commerce.
 
 ```
-composer --ignore-platform-reqs require smile/elasticsuite-premium-magento
+composer --ignore-platform-reqs require smile/elasticsuite-premium-magento [version-requirement]
 ```
 
 ### 1b. Install the modules : On Adobe Commerce
 
 ```
-composer --ignore-platform-reqs require smile/elasticsuite-premium-commerce
+composer --ignore-platform-reqs require smile/elasticsuite-premium-commerce [version-requirement]
 ```
+
+Where `[version-requirement]` must match the Elasticsuite Open Source branch compatible with your Magento version:
+
+| `[version-requirement]` | Magento version            |
+|-------------------------|----------------------------|
+| `~2.10.0`               | 2.4.1 <= Magento < 2.4.6   |
+| `~2.11.0`               | 2.4.6 <= Magento < 2.4.9   |
+| `~2.12.0`               | Magento >= 2.4.9           |
+
+See the [Elasticsuite compatibility matrix](https://github.com/Smile-SA/elasticsuite#which-version-should-i-use).
+
+For instance, on Magento 2.4.7: `composer --ignore-platform-reqs require smile/elasticsuite-premium-magento ~2.11.0`
 
 Please note that `smile/magento2-react` will be automatically required and installed since required by `smile/module-elasticsuite-instant-search`. This module will add `package-magento-react.json` in your project repository. You will need to merge the content of this file with your `package.json` file. If you don't have any pre-existing `package.json` at the project root, you can rename the `package-magento-react.json` to `package.json`
 
