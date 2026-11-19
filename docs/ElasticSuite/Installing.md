@@ -105,50 +105,59 @@ Please note that `smile/magento2-react` will be automatically required and insta
 ### 2a. Enable all modules if needed : On Magento Open Source
 
 ```
-php bin/magento module:enable Smile_ElasticsuiteBehavioralAutocomplete \
+php bin/magento module:enable Smile_ElasticsuiteAbCampaign \
+Smile_ElasticsuiteAdvancedAnalysis \
+Smile_ElasticsuiteAmastyCompatibility \
+Smile_ElasticsuiteBeacon \
+Smile_ElasticsuiteBehavioralAutocomplete \
 Smile_ElasticsuiteBehavioralData \
 Smile_ElasticsuiteBehavioralOptimizer \
-Smile_ElasticsuiteFacetRecommender \
-Smile_React \
-Smile_ElasticsuiteInstantSearch \
-Smile_ElasticsuiteRecommender \
-Smile_ElasticsuiteRecommenderGraphQl \
-Smile_ElasticsuiteVirtualAttribute \
-Smile_ElasticsuiteExplain \
-Smile_ElasticsuiteAbCampaign \
-Smile_ElasticsuiteConfigurableProduct \
-Smile_ElasticsuiteLayeredNavigation \
-Smile_ElasticsuiteMerchandiser \
-Smile_ElasticsuiteTermRecommender \
 Smile_ElasticsuiteCascadeSearch \
 Smile_ElasticsuiteCatalogOptimizerCustomerGroup \
-Smile_ElasticsuiteAdvancedAnalysis \
-Smile_ElasticsuiteBeacon
+Smile_ElasticsuiteCategoryMonitoring \
+Smile_ElasticsuiteConfigurableProduct \
+Smile_ElasticsuiteExplain \
+Smile_ElasticsuiteFacetRecommender \
+Smile_ElasticsuiteGlobalOptimizer \
+Smile_ElasticsuiteInstantSearch \
+Smile_ElasticsuiteLayeredNavigation \
+Smile_ElasticsuiteRecommender \
+Smile_ElasticsuiteRecommenderExplain \
+Smile_ElasticsuiteRecommenderGraphQl \
+Smile_ElasticsuiteTermRecommender \
+Smile_ElasticsuiteVirtualAttribute \
+Smile_React
 ```
 
 ### 2b. Enable all modules if needed : On Adobe Commerce
 
 ```
-php bin/magento module:enable Smile_ElasticsuiteBehavioralAutocomplete \
+php bin/magento module:enable Smile_ElasticsuiteAbCampaign \
+Smile_ElasticsuiteAbCampaignCustomerSegment \
+Smile_ElasticsuiteAdvancedAnalysis \
+Smile_ElasticsuiteAmastyCompatibility \
+Smile_ElasticsuiteBeacon \
+Smile_ElasticsuiteBehavioralAutocomplete \
 Smile_ElasticsuiteBehavioralData \
 Smile_ElasticsuiteBehavioralOptimizer \
-Smile_ElasticsuiteCatalogOptimizerCustomerSegment \
-Smile_ElasticsuiteFacetRecommender \
-Smile_React \
-Smile_ElasticsuiteInstantSearch \
-Smile_ElasticsuiteRecommender \
-Smile_ElasticsuiteRecommenderGraphQl \
-Smile_ElasticsuiteVirtualAttribute \
-Smile_ElasticsuiteExplain \
-Smile_ElasticsuiteAbCampaign \
-Smile_ElasticsuiteAbCampaignCustomerSegment \
-Smile_ElasticsuiteConfigurableProduct \
-Smile_ElasticsuiteLayeredNavigation \
-Smile_ElasticsuiteMerchandiser \
-Smile_ElasticsuiteTermRecommender \
 Smile_ElasticsuiteCascadeSearch \
 Smile_ElasticsuiteCatalogOptimizerCustomerGroup \
-Smile_ElasticsuiteBeacon
+Smile_ElasticsuiteCatalogOptimizerCustomerSegment \
+Smile_ElasticsuiteCategoryMonitoring \
+Smile_ElasticsuiteConfigurableProduct \
+Smile_ElasticsuiteExplain \
+Smile_ElasticsuiteFacetRecommender \
+Smile_ElasticsuiteGlobalOptimizer \
+Smile_ElasticsuiteGoogleAnalytics \
+Smile_ElasticsuiteInstantSearch \
+Smile_ElasticsuiteLayeredNavigation \
+Smile_ElasticsuiteRecommender \
+Smile_ElasticsuiteRecommenderExplain \
+Smile_ElasticsuiteRecommenderGraphQl \
+Smile_ElasticsuiteRecommenderTargetRuleProxy \
+Smile_ElasticsuiteTermRecommender \
+Smile_ElasticsuiteVirtualAttribute \
+Smile_React
 ```
 
 ### 3. Run setup and reindex.
