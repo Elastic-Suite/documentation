@@ -76,13 +76,17 @@ You just need to require the same version that you already have for the Elastics
 
 ### 1a. Install the modules : On Magento Open Source
 
-For Magento Open Source edition, you will not be able to install the modules smile/module-elasticsuite-catalog-optimizer-customer-segment and smile/module-elasticsuite-ab-campaign-customer-segment because they requires the magento/module-customer-segment which is only included in Adobe Commerce.
+For Magento Open Source edition, you would not be able to install the modules `smile/module-elasticsuite-catalog-optimizer-customer-segment` and `smile/module-elasticsuite-ab-campaign-customer-segment` because they require the `magento/module-customer-segment` which is only included in Adobe Commerce.
+
+The simplest way to install all the modules compatible with Magento Open Source is to require our composer **metapackage**:
 
 ```
 composer --ignore-platform-reqs require smile/elasticsuite-premium-magento [version-requirement]
 ```
 
 ### 1b. Install the modules : On Adobe Commerce
+
+The simplest way to install all the modules compatible with Adobe Commerce is to require our composer **metapackage**:
 
 ```
 composer --ignore-platform-reqs require smile/elasticsuite-premium-commerce [version-requirement]
@@ -161,6 +165,7 @@ Smile_React
 ```
 
 ### 3. Run setup and reindex.
+{: #run-setup-and-reindex }
 
 As usual after installing a Magento2 module, clean the cache and run `setup:upgrade` (if in production mode, also run `setup:di:compile` and `setup:static-content:deploy`).
 
@@ -177,6 +182,27 @@ Elasticsuite premium packages are embedded with a “beacon” feature that will
 To configure this, you have to go to **Stores > Configuration > Elasticsuite > Elasticsuite Premium Beacon** and fill the Client ID field with the value that has been provided to you.
 
 If we provided environment specific client ids, you will have to configure each environment with the proper client Id.
+
+## Extra packages
+
+The following premium modules are not part of the `smile/elasticsuite-premium-magento` and `smile/elasticsuite-premium-commerce` metapackages and must be required and enabled separately, if needed.
+They follow the same `[version-requirement]` as the metapackages (see the table above).
+
+| Package | Module | Notes |
+|---|---|---|
+| `smile/module-elasticsuite-global-behavioral-data` | `Smile_ElasticsuiteGlobalBehavioralData` | For multi-store installations, allows Elasticsuite to "share" the behavioral data between stores, so a newly launched or low traffic store can benefit from your main store products related behavioral metrics. |
+| `smile/module-elasticsuite-cms-instant-search` | `Smile_ElasticsuiteCmsInstantSearch` | Adds CMS pages to the Instant Search. Also installs the Open Source `smile/module-elasticsuite-cms-search` module, which must be enabled too (`Smile_ElasticsuiteCms`). |
+| `smile/module-elasticsuite-hyva-compatibility` | `Smile_ElasticsuiteHyvaCompatibility` | Makes Premium features compatible with the Hyvä theme (requires `hyva-themes/magento2-smile-elasticsuite` which does the same for Elasticsuite Open Source). |
+| `smile/module-elasticsuite-neural-search` | `Smile_ElasticsuiteNeuralSearch` | Starting from `~2.11.0` only. Requires OpenSearch >= 2.13, see the "Installing and configuring Neural Search module" page. |
+
+For instance:
+
+```
+composer --ignore-platform-reqs require smile/module-elasticsuite-global-behavioral-data [version-requirement]
+php bin/magento module:enable Smile_ElasticsuiteGlobalBehavioralData
+```
+
+Then run setup and reindex as described in [step 3](#run-setup-and-reindex).
 
 ## Instant Search
 
