@@ -68,11 +68,6 @@ Add the elasticsuite.repo.packagist.com credentials to your composer's auth.json
 ```
 
 ## Installation
-On Magento 2.4.5, the Elasticsuite composer requirement is: `composer require smile/elasticsuite ~2.10.0` .
-
-The Elasticsuite premium modules follow the same syntax. For instance `composer require smile/module-elasticsuite-facet-recommender ~2.10.0` for the facet recommender module.
-
-You just need to require the same version that you already have for the Elasticsuite Open Source version.
 
 <details markdown="block">
   <summary>
@@ -114,38 +109,45 @@ You just need to require the same version that you already have for the Elastics
 
 </details>
 
-### 1a. Install the modules : On Magento Open Source
+#### Composer version requirement
 
-For Magento Open Source edition, you would not be able to install the modules `smile/module-elasticsuite-catalog-optimizer-customer-segment` and `smile/module-elasticsuite-ab-campaign-customer-segment` because they require the `magento/module-customer-segment` which is only included in Adobe Commerce.
+Elasticsuite Open Source (`smile/elasticsuite`) is maintained on several version branches, each one compatible with a range of Magento versions.
 
-The simplest way to install all the modules compatible with Magento Open Source is to require our composer **metapackage**:
+Elasticsuite Premium **follows the exact same logic** and the `[version-requirement]` used in the sections below refer to the following:
 
-```
-composer --ignore-platform-reqs require smile/elasticsuite-premium-magento [version-requirement]
-```
-
-Where `[version-requirement]` must match the Elasticsuite Open Source branch compatible with your Magento version:
-
-| `[version-requirement]` | Magento version            |
-|-------------------------|----------------------------|
-| `~2.10.0`               | 2.4.1 <= Magento < 2.4.6   |
-| `~2.11.0`               | 2.4.6 <= Magento < 2.4.9   |
-| `~2.12.0`               | Magento >= 2.4.9           |
+| Composer command `[version-requirement]` | Magento version            |
+|------------------------------------------|----------------------------|
+| `~2.10.0`                                | 2.4.1 <= Magento < 2.4.6   |
+| `~2.11.0`                                | 2.4.6 <= Magento < 2.4.9   |
+| `~2.12.0`                                | Magento >= 2.4.9           |
 {: #version-requirement }
 
-See the [Elasticsuite compatibility matrix](https://github.com/Smile-SA/elasticsuite#which-version-should-i-use).
+For instance, on Magento 2.4.8:
+* the composer command to install Elasticsuite Open Source `composer --ignore-platform-reqs require smile/elasticsuite [version-requirement]` becomes `composer --ignore-platform-reqs require smile/elasticsuite ~2.11.0`
+* the command command to install, for instance, the facet recommender module `composer --ignore-platform-reqs require smile/module-elasticsuite-facet-recommender [version-requirement]` becomes `composer --ignore-platform-reqs require smile/module-elasticsuite-facet-recommender ~2.11.0`.
 
-For instance, on Magento 2.4.7: `composer --ignore-platform-reqs require smile/elasticsuite-premium-magento ~2.11.0`
+#### Keeping Elasticsuite and Elasticsuite Premium synchronized
+
+More than the same version branch as Elasticsuite, Elasticsuite Premium modules must be installed at the exact same version as Elasticsuite Open Source. Their releases are synchronized: each Elasticsuite release comes with an Elasticsuite Premium release with the exact same version number, even when no Premium module has changed.
+
+Since `smile/elasticsuite` is usually already required in your project's `composer.json`, Composer will not upgrade it on its own when installing or upgrading the Premium modules. It is therefore recommended to require both packages together, with the `--with-all-dependencies` (or `-W`) option.
+
+### 1a. Install the modules : On Magento Open Source
+
+The simplest way to install all the modules compatible with Magento Open Source is to require our composer **metapackage**, along with Elasticsuite Open Source:
+
+```
+composer --ignore-platform-reqs require smile/elasticsuite [version-requirement] smile/elasticsuite-premium-magento [version-requirement] --with-all-dependencies
+```
+
 
 ### 1b. Install the modules : On Adobe Commerce
 
-The simplest way to install all the modules compatible with Adobe Commerce is to require our composer **metapackage**:
+The simplest way to install all the modules compatible with Adobe Commerce is to require our composer **metapackage**, along with Elasticsuite Open Source:
 
 ```
-composer --ignore-platform-reqs require smile/elasticsuite-premium-commerce [version-requirement]
+composer --ignore-platform-reqs require smile/elasticsuite [version-requirement] smile/elasticsuite-premium-commerce [version-requirement] --with-all-dependencies
 ```
-
-See the [`[version-requirement]` / Magento version table](#version-requirement) above.
 
 ### 2a. Enable all modules if needed : On Magento Open Source
 
